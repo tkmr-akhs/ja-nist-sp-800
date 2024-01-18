@@ -43,72 +43,29 @@ This publication is intended to:
 
 The considerations set forth in this publication are applicable to all federal systems other than those systems designated as national security systems as defined in 44 U.S.C., Section 3542.[^6] These considerations have been broadly developed from a technical and technical management perspective to complement similar considerations for national security systems and may be used for such systems with the approval of federal officials who exercise policy authority over such systems. State, local, and tribal governments, as well as private sector entities, are encouraged to consider using the material in this publication, as appropriate.
 
-[^6]: > Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.  “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”  -- An Objective of Security in the Future of Systems Engineering [7]
+[^6]: Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.  “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”  -- An Objective of Security in the Future of Systems Engineering [7]
 
-The applicability statement is not meant to limit the technical and management application of
-these considerations. That is, the security design principles, concepts, and techniques described
-in this publication are part of a trustworthy secure design approach as described in Appendix D
-and can be applied in any of the following cases:
-• Development of a new capability or system
-The engineering effort includes such activities as concept exploration, preliminary or applied
-research to refine the concepts and/or feasibility of technologies employed in a new system,
-and an assessment of alternative solutions. This effort is initiated during the concept and
-development stages of the system life cycle.
-• Modification of an existing capability or system
-- Reactive modifications to fielded systems: The engineering effort occurs in response to
-adversity that diminishes or prevents the system from achieving the design intent. This
-effort can occur during the production, utilization, or support stages of the system life
-cycle and may be performed concurrently with or independent of day-to-day system
-operations.
-- Planned upgrades to fielded systems while continuing to sustain day-to-day operations:
-Planned system upgrades may enhance an existing system capability, provide a new
-capability, or constitute a technology refresh of an existing capability. This effort occurs
-during the production, utilization, or support stages of the system life cycle.
-- Planned upgrades to fielded systems that result in new systems: The engineering effort is
-conducted as if developing a new system with a system life cycle that is distinct from the
-life cycle of a fielded system. The upgrades are performed in a development environment
-that is independent of the fielded system.
-• Evolution of an existing capability or system
-The engineering effort involves migrating or adapting a system or system implementation
-from one operational environment or set of operating conditions to another operational
-environment or set of operating conditions.7
-• Retirement of an existing capability or system
-The engineering effort removes system functions, services, elements, or the entire system
-from operation and may include the transition of system functions and services to another
-system. The effort occurs during the retirement stage of the system life cycle and may be
-conducted while sustaining day-to-day operations.
-• Development of a dedicated, domain-specific, or special-purpose capability or system
-- Security-dedicated or security-purposed system: The engineering effort delivers a system
-that satisfies a security-dedicated need or provides a security-oriented purpose and does
-so as a stand-alone system that may monitor or interact with other systems. Such systems
-7
- There is a growing need to reuse or leverage system implementation successes within operational environments that are different from how they
-were originally designed and developed. This type of reuse or reimplementation of systems within other operational environments is more
-efficient and represents potential advantages in maximizing interoperability between various system implementations. It should be noted that
-reuse may violate the assumptions used to determine that a system or system component was trustworthy.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-4
-can include surveillance systems, physical protection systems, monitoring systems, and
-security service provisioning systems.
-- High-confidence, dedicated-purpose system: The engineering effort delivers a system that
-satisfies the need for real-time vehicular control, industrial or utility processes, weapons,
-nuclear power plants, and other special-purpose needs. Such systems may include
-multiple operational states or modes with varying forms of manual, semi-manual,
-automated, or autonomous modes. These systems have highly deterministic properties,
-strict timing constraints, functional interlocks, and severe or catastrophic consequences of
-failure.
-• Development of a system of systems
-The engineering effort occurs across a set of constituent systems, each with its own
-stakeholders, primary purpose, and planned evolution. The composition of the constituent
-systems into a system of systems as noted in [9] produces a capability that would otherwise
-be difficult or impractical to achieve. This effort can occur across a variety of system of
-systems from a relatively informal, unplanned system of systems concept and evolution that
-emerges over time via voluntary participation to a more formal execution with the most
-formal being a system of systems concept that is directed, structured, planned, and achieved
-via a centrally managed engineering effort. Any resulting emergent behavior often introduces
-opportunities and additional challenges for systems security engineering.
-Target Audience
+[^6j]: システムの信用度を高めることは、システム、システムコンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計、開発において相当な投資を必要とする重要な取り組みである。[8]の方針では、連邦機関に対して、この出版物のシステムセキュリティエンジニアリングの原則、概念、技術、システムライフサイクルプロセスを全ての高価値資産に対して実施することを要求している。  「セキュリティはシステムに組み込まれている。他を守ることを目的とした2つのシステムを設計する2つのエンジニアリンググループではなく、システムエンジニアリングは、システムとそのコンポーネントにセキュリティを組み込んだ単一のシステムを指定し設計する。」  -- An Objective of Security in the Future of Systems Engineering [7]
+
+The applicability statement is not meant to limit the technical and management application of these considerations. That is, the security design principles, concepts, and techniques described in this publication are part of a trustworthy secure design approach as described in Appendix D and can be applied in any of the following cases:
+* Development of a new capability or system
+  * The engineering effort includes such activities as concept exploration, preliminary or applied research to refine the concepts and/or feasibility of technologies employed in a new system, and an assessment of alternative solutions. This effort is initiated during the concept and development stages of the system life cycle.
+* Modification of an existing capability or system
+  * Reactive modifications to fielded systems: The engineering effort occurs in response to adversity that diminishes or prevents the system from achieving the design intent. This effort can occur during the production, utilization, or support stages of the system life cycle and may be performed concurrently with or independent of day-to-day system operations.
+  * Planned upgrades to fielded systems while continuing to sustain day-to-day operations:
+Planned system upgrades may enhance an existing system capability, provide a new capability, or constitute a technology refresh of an existing capability. This effort occurs during the production, utilization, or support stages of the system life cycle.
+  * Planned upgrades to fielded systems that result in new systems: The engineering effort is conducted as if developing a new system with a system life cycle that is distinct from the life cycle of a fielded system. The upgrades are performed in a development environment that is independent of the fielded system.
+* Evolution of an existing capability or system
+  * The engineering effort involves migrating or adapting a system or system implementation from one operational environment or set of operating conditions to another operational environment or set of operating conditions.[^7]
+* Retirement of an existing capability or system
+  * The engineering effort removes system functions, services, elements, or the entire system from operation and may include the transition of system functions and services to another system. The effort occurs during the retirement stage of the system life cycle and may be conducted while sustaining day-to-day operations.
+* Development of a dedicated, domain-specific, or special-purpose capability or system
+  * Security-dedicated or security-purposed system: The engineering effort delivers a system that satisfies a security-dedicated need or provides a security-oriented purpose and does so as a stand-alone system that may monitor or interact with other systems. Such systems can include surveillance systems, physical protection systems, monitoring systems, and security service provisioning systems.
+  * High-confidence, dedicated-purpose system: The engineering effort delivers a system that satisfies the need for real-time vehicular control, industrial or utility processes, weapons, nuclear power plants, and other special-purpose needs. Such systems may include multiple operational states or modes with varying forms of manual, semi-manual, automated, or autonomous modes. These systems have highly deterministic properties, strict timing constraints, functional interlocks, and severe or catastrophic consequences of failure.
+* Development of a system of systems
+  * The engineering effort occurs across a set of constituent systems, each with its own stakeholders, primary purpose, and planned evolution. The composition of the constituent systems into a system of systems as noted in [9] produces a capability that would otherwise be difficult or impractical to achieve. This effort can occur across a variety of system of systems from a relatively informal, unplanned system of systems concept and evolution that emerges over time via voluntary participation to a more formal execution with the most formal being a system of systems concept that is directed, structured, planned, and achieved via a centrally managed engineering effort. Any resulting emergent behavior often introduces opportunities and additional challenges for systems security engineering.
+
+## Target Audience
 This publication is intended for systems engineers, security engineers, and other engineering
 professionals. The term systems security engineer is used to include systems engineers and
 security professionals who apply the concepts and principles and perform the activities and tasks
@@ -126,9 +83,14 @@ computer science, software engineering, and computer security programs
 processes, or organizations. Regardless of the size or complexity of the entity, a transdisciplinary systems engineering team is needed to deliver
 systems that are trustworthy and that satisfy the protection needs and concerns of stakeholders. The processes are intended to be tailored to
 facilitate effectiveness.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-5
+
+
+
+
+
+[^7]: There is a growing need to reuse or leverage system implementation successes within operational environments that are different from how they were originally designed and developed. This type of reuse or reimplementation of systems within other operational environments is more efficient and represents potential advantages in maximizing interoperability between various system implementations. It should be noted that reuse may violate the assumptions used to determine that a system or system component was trustworthy.
+
+
 How to Use this Publication
 This publication is intended to serve as a reference and educational resource for systems
 engineers, engineering specialties, architects, designers, and any individuals involved in the
@@ -167,9 +129,7 @@ secure systems:
 • Appendix A: Glossary
 • Appendix B: Acronyms
 • Appendix C: Security Policy and Requirements
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-6
+
 • Appendix D: Trustworthy Secure Design
 • Appendix E: Principles for Trustworthy Secure Design
 • Appendix F: Trustworthiness and Assurance

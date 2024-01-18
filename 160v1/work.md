@@ -405,9 +405,7 @@ typically involve (for example) attributes of security, reliability, performance
 survivability under a wide range of potential adversities. Measures of trustworthiness
 are meaningful only to the extent that (a) the requirements are sufficiently complete
 and well defined, and (b) can be accurately evaluated.”
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-2
+
 Systems security engineering provides complementary engineering capabilities that extend the
 concept of trustworthiness to deliver trustworthy secure systems. Trustworthiness is not only
 about demonstrably meeting a set of requirements. The requirements must also be complete,
@@ -444,9 +442,7 @@ systems security engineering principles, concepts, techniques, and system life c
 systems, one intended to protect the other, systems engineering specifies and designs
 a single system with security embedded in the system and its components.”
 -- An Objective of Security in the Future of Systems Engineering [7]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-3
+
 The applicability statement is not meant to limit the technical and management application of
 these considerations. That is, the security design principles, concepts, and techniques described
 in this publication are part of a trustworthy secure design approach as described in Appendix D
@@ -488,9 +484,7 @@ so as a stand-alone system that may monitor or interact with other systems. Such
 were originally designed and developed. This type of reuse or reimplementation of systems within other operational environments is more
 efficient and represents potential advantages in maximizing interoperability between various system implementations. It should be noted that
 reuse may violate the assumptions used to determine that a system or system component was trustworthy.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-4
+
 can include surveillance systems, physical protection systems, monitoring systems, and
 security service provisioning systems.
 - High-confidence, dedicated-purpose system: The engineering effort delivers a system that
@@ -528,9 +522,7 @@ computer science, software engineering, and computer security programs
 processes, or organizations. Regardless of the size or complexity of the entity, a transdisciplinary systems engineering team is needed to deliver
 systems that are trustworthy and that satisfy the protection needs and concerns of stakeholders. The processes are intended to be tailored to
 facilitate effectiveness.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-5
+
 How to Use this Publication
 This publication is intended to serve as a reference and educational resource for systems
 engineers, engineering specialties, architects, designers, and any individuals involved in the
@@ -569,9 +561,7 @@ secure systems:
 • Appendix A: Glossary
 • Appendix B: Acronyms
 • Appendix C: Security Policy and Requirements
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-6
+
 • Appendix D: Trustworthy Secure Design
 • Appendix E: Principles for Trustworthy Secure Design
 • Appendix F: Trustworthiness and Assurance
@@ -602,9 +592,7 @@ and assets that they do not own but must protect) and expressing those needs
 through a set of well-defined security requirements is an investment in the
 organization’s mission and business success in the modern age of global commerce,
 powerful computing systems, and network connectivity.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-7
+
 Systems Engineering Overview
 This chapter presents system, systems engineering, trust, and trustworthiness concepts that
 provide the foundation for engineering trustworthy secure systems.
@@ -635,9 +623,7 @@ elements are implemented by hardware, software, and firmware that perform operat
 components in the operational environment; and the people, processes, and procedures for operating, sustaining, and supporting the elements.
 11 Systems with few or no active functions (e.g., physical infrastructure) may also exhibit assured trustworthiness. For example, the interstate
 highway system employs safety barriers such as Jersey walls (a system element) that contribute to the transportation system’s trustworthiness.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-8
+
 Figure 2 is a general hierarchical model for the representation of a system. Not all systems, such
 as networks, are hierarchical in nature. Non-hierarchical systems have models that can more
 accurately reflect the relationships of their constituent elements. A system element may itself be
@@ -660,9 +646,7 @@ interoperating systems.
 • Enabling systems provide the essential services required to create and sustain the system of
 interest. Examples of enabling systems include software development environments,
 production systems, training systems, and maintenance systems.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-9
+
 • Interoperating systems interact with the system of interest for the purpose of jointly
 performing a function.
 Figure 3 illustrates the relationship between the system of interest and its interfacing systems in
@@ -681,9 +665,7 @@ Transdisciplinary thinking encourages thinking in terms of new relationships amo
 concepts that might arise from such thinking.” 13 Systems science is an interdisciplinary field that studies complex systems in nature, society, and science. It aims to develop interdisciplinary
 foundations that are applicable in a variety of areas, such as social sciences, engineering, biology, and medicine. Systems thinking is a discipline
 of examining wholes, interrelationships, and patterns [13].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-10
+
 performance, and effectiveness. The objective is to limit uncertainty and thereby manage risk.
 Systems engineering is outcome-oriented and leverages engineering processes to realize a system
 while effectively managing complexity and serving as the principal integrating mechanism for
@@ -726,9 +708,7 @@ retirement and disposal.
 16 INCOSE offers a systems engineering handbook [15] and Systems Engineering Book of Knowledge [13] as general resources. The National
 Aeronautical and Space Administration (NASA) also offers systems engineering material as it is applied within the NASA community.
 Publications include the NASA Systems Engineering Handbook [17] and two volumes of expanded systems engineering guidance [18] [19].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-11
+
 failure. Trust that is granted without establishing the required trustworthiness is a significant
 contributor to risk. The concepts of trust and trustworthiness are discussed in Appendix F.
 ENGINEERING FOR TRUST
@@ -739,9 +719,7 @@ increased confidence in systems to improve the practice of engineering trusted s
 As noted in [7], a key problem to address in realizing Vision 2035 is that “systems security
 has moved from its traditional focus on trust to a more singular focus on risk.” The need
 is to prove a level of system security through evidence-based assurance.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-12
+
 System Security Concepts
 This chapter describes the aspects necessary for a systems engineering perspective on security. A
 systems engineering perspective on security requires an understanding of the concept of security
@@ -781,9 +759,7 @@ entities), objects (passive entities), and the operations that the subject can p
 accomplish, even if that behavior or outcome is authorized for some other entity.
 19 A security policy is a set of rules that govern security-relevant system and system element behavior (Appendix C).
 20 Life cycle concepts include operation, sustainment, evolution, maintenance, training, startup, and shutdown.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-13
+
 the object.21 The rules govern subject-to-object and subject-to-subject behaviors and outcomes.
 Each security policy rule must be accurate, consistent, compatible, and complete with respect to
 stakeholder objectives for the defined scope of control.22 Inconsistency, incompatibility,
@@ -822,9 +798,7 @@ combination of both
 system secure [22] – the ideal cannot be achieved without some uncertainty.
 25 The concept of adequately secure is an adaptation of the concept of adequately safe from [23].
 26 Below such levels, the system is considered insecure.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-14
+
 As secure as reasonably practicable means that an incremental improvement in security would
 require a disproportionate deterioration of meeting other system cost, schedule, or performance
 objectives; would violate system constraints; or would require unacceptable concessions such as
@@ -846,9 +820,7 @@ idle, recovery), how the system is used (e.g., operational, training, maintenanc
 wartime), and by environmental conditions (e.g., under fire or not, temperature ranges). There
 are security characteristics that determine whether each state or transition is secure, insecure, or
 indeterminate (i.e., unknown whether secure or insecure). Adequate security depends on being
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-15
+
 able to distinguish among secure, insecure, and indeterminate states and to keep the system
 operating in secure states by applying the principles of Protective Failure and Protective
 Recovery.
@@ -871,9 +843,7 @@ securely transition from an insecure state to a secure state (or a less insecure
 state achieved after completing protective recovery actions includes those actions that limit or
 prevent any further state transition and those that constitute a type of degraded capability, mode,
 or operation.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-16
+
 Characteristics of Systems
 The characteristics of systems, their interrelationships with other systems, and their roles within
 a system of systems all impact security and determinations of adequate security and system
@@ -922,9 +892,7 @@ delivering only the authorized and intended
 protecting their assets against loss and the consequences of loss.
 28 Humans are perhaps the most important and valuable of all intangible assets. Safety and security explicitly consider the human asset.
 29 Adapted from the Merriam Webster and Oxford definitions of infrastructure.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-17
+
 ASSET CLASS DESCRIPTION LOSS PROTECTION CRITERIA
 (NAS) may be considered infrastructure that itself is a
 system and contains other elements that are forms
@@ -1003,9 +971,7 @@ the scope of reasoning for a specific asset, asset type, or asset class. The val
 [24]. Examples include microcomputer design and computer programs.
 31 The term technology is defined as the application of scientific knowledge, tools, techniques, crafts, systems, or methods of organization to solve
 a problem or achieve an objective [25].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-18
+
 key input in decision-making about investments to protect an asset (Section 3.6). For those cases
 where an asset is associated with multiple stakeholders, there may be differing, contradictory,
 competing, or conflicting views about the valuation that must be resolved.
@@ -1044,9 +1010,7 @@ other stakeholder objectives.
 The potential to experience loss suggests the need for loss control objectives that serve as the
 basis for judgments about effectively addressing the prevention and limiting of loss. This
 32 Adapted from the Merriam Webster definition of loss.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-19
+
 includes the resultant adverse events and conditions and their ramifications. The loss control
 objectives also serve as the basis to acquire evidence of assurance that the system as designed,
 built, used, and sustained will adequately protect against loss while achieving its design intent.
@@ -1094,9 +1058,7 @@ of authorized and intended system behavior and outcomes (i.e., the faults, error
 tolerated).
 LOSS LIMITATION • This covers cases where a loss can or has occurred, and the extent of loss is to be limited.
 • The extent of loss can be limited in terms of any combination of the following:
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-20
+
 LOSS CONTROL
 OBJECTIVE DISCUSSION
 (Limit the extent of
@@ -1142,9 +1104,7 @@ organization (i.e., organization-driven asset reasoning), and enterprise (i.e., 
 34 Valuation is a stakeholder determination. Factors that stakeholders may consider include the various costs associated with the asset and the
 effects of loss. The effects of loss may be short-term (e.g., completing a business transaction) or long-term (e.g., extended loss of capability
 awaiting replacement of asset).
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-21
+
 • Objective 2: Satisfy asset protection needs
 - Cause of Loss: The events, conditions, or circumstances that describe what has happened
 before and what can happen in the future that constitute the potential for loss to occur
@@ -1162,9 +1122,7 @@ the analysis needed to determine the protection-relevant impact of changes to re
 The context of loss establishes the boundary, scope, and time frame for the reasoning, analyses,
 assessments, and conclusions about the asset of interest. The context of loss also provides a basis
 to relate and trace asset dependencies and interactions and to group assets for protection. The
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-22
+
 context of loss time frame is particularly important because the asset of interest has a life cycle35
 that is different from the system of interest.36 For example, the asset of interest may be created,
 configured, or modified outside of the scope of control of the system of interest yet be within the
@@ -1202,9 +1160,7 @@ cycle. Each asset of interest within the portfolio may have differing protection
 at different times depending on the type of asset, market conditions, regulatory
 jurisdiction, risk position, and other asset management factors that are imposed on
 the system.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-23
+
 The significance of loss requires clarity in what loss means for the asset of interest. Examples of
 terms used to describe asset loss include ability, accessibility, accuracy, assurance, advantage
 (technological, competitive, combatant), capability, control, correctness, existence, investment,
@@ -1243,9 +1199,7 @@ resultant adverse effect may be to impact some other object (i.e., a crash). The
 effect of the loss of steering (loss of control) is specific, while the adverse effect of a crash
 is general (many other circumstances may result in a crash without any loss of the ability
 to steer the vehicle).
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-24
+
 • Events and conditions that are desirable, intended, and even planned yet produce
 unanticipated, unforeseen, and unpredictable results
 • Cascading and ripple events and conditions
@@ -1279,9 +1233,7 @@ This means proactively planning and designing to prevent the loss of an asset th
 you are not willing to accept, to be able to minimize the consequences should such
 a loss occur, and to be in an informed position to reactively recover from the loss
 when it does happen.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-25
+
 Determining Protection Needs
 Stakeholders need to achieve their mission or business objectives in a secure manner that
 preserves assets and limits the extent of asset loss. Asset protection must be continuous, thereby
@@ -1305,9 +1257,7 @@ and requirements.40
 40 Requirements provide a formal and clear expression of the needs, concerns, priorities, and constraints to be satisfied for system function,
 operation, and maintenance. Each requirement is accompanied by verification methods for demonstrating that the requirement is satisfied.
 Requirements must be accurate, unambiguous, comprehensive, evaluatable, and achievable.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-26
+
 Fig. 8. Relationship among Asset, Loss, and Consequence
 To summarize, the following considerations impact the identification of protection needs:
 • Assets have different classes and types.
@@ -1325,9 +1275,7 @@ system design and behavior, and are typically unknown to stakeholders.
 utilized
 • Asset-based judgments are subjective.
 - Asset valuation
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-27
+
 - Asset loss ramifications
 - Asset protection suitability, effectiveness, and dependability
 The stakeholder perspective is based on the assets that belong to stakeholders. Therefore, those
@@ -1367,9 +1315,7 @@ The security function of the system has both passive and active aspects:
 nature). They include the system architecture and design elements. The passive aspects are
 41 Criticality and priority based on asset valuation are typically used in decisions on protection needs. An asset with higher criticality and priority
 would take precedence in providing protection should there be constraints that require choosing between the overall protection needs.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-28
+
 part of the system structure and are, therefore, embodied in the architecture of the system.
 For example, the functional architecture may segment system functions (including security
 functions) into different subsystems, reducing the possibility of interference among functions
@@ -1408,9 +1354,7 @@ enable, interface, interact, and interoperate with the system of interest.
 43 An emergent property is a property exhibited by entities that is meaningful only when attributed to the whole, not to any individual constituent
 element [27]. Emergent properties of systems include its capability, safety, security, reliability, resilience, survivability, agility, maintainability,
 and availability. Appendix D discusses emergence in greater detail.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-29
+
 • The limits of certainty44
 In particular, the limits of certainty apply to requirements and accepting the potential errors,
 inconsistencies, or gaps in the completeness and coverage of those requirements. Therefore, the
@@ -1449,9 +1393,7 @@ of cost, schedule, performance, feasibility, and practicality. As such, trade-of
 made routinely across contradictory, competing, and conflicting needs and
 constraints are optimized to achieve adequate security, which reflects a decision
 made by stakeholders.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-30
+
 Systems security engineering overlaps with other subdisciplines and leverages multiple
 specialties to accomplish systems security engineering activities and tasks. These specialties
 include computer security; communications security; transmission security; electronic emissions
@@ -1474,9 +1416,7 @@ measures of performance [MOPs]), and associated validation methods are defined
 resilience engineering; and human factors engineering (ergonomics).
 47 This includes assessing potential supply chain assurance deficiencies when third parties and reuse are considered in planning the system and its
 realization.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-31
+
 • Defines system security requirements48 and associated verification methods
 • Develops security views and viewpoints of the system architecture and design
 • Identifies and assesses susceptibilities and vulnerabilities to life cycle hazards and adversities
@@ -1505,9 +1445,7 @@ the limits of human certainty, the uncertainty that exists in the life cycle of 
 and the constraints of cost, schedule, performance, feasibility, and practicality. As such,
 trade-offs made routinely across contradictory, competing, and conflicting needs and
 constraints are optimized to provide adequate security.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-32
+
 Systems Security Engineering Framework
 The systems security engineering framework [29] provides a conceptual view of the key contexts
 within which systems security engineering activities are conducted. It defines, bounds, and
@@ -1546,9 +1484,7 @@ applied within the systems security engineering framework
 51 Engineering and stakeholder decision-making involves architecture, assurance, behavior, cost, criticality, design, effectiveness, emergence,
 exposure, fit-for-purpose, life cycle concepts, penetration resistance, performance (including security performance), protection needs, security
 objectives, privacy, requirements, resilience, risk, strength of function, threats, trades, uncertainty, vulnerability, verification, and validation.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-33
+
 • Are performed with a level of fidelity, rigor, and formality to produce data with a level of
 confidence that matches the assurance required by the stakeholders and engineering team
 (Appendix F)
@@ -1562,9 +1498,7 @@ complete an understanding of the stakeholder problem as practical, to explore al
 solution class options, and to select the solution class option or options to be pursued. The
 problem context includes:
 • Defining security objectives
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-34
+
 • Defining security requirements
 • Determining measures of success
 • Determining life cycle security concepts52
@@ -1607,9 +1541,7 @@ distribution, logistics, maintenance, training, clearances, and background check
 54 The system security protection strategy is consistent with the overall concept of secure function. The concept of secure function, defined during
 the problem context, constitutes a strategy for a preemptive and reactive protection capability throughout the system life cycle (Section D.2). The
 strategy has the objective to provide freedom from specific concerns associated with asset loss and loss consequences.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-35
+
 • Producing evidence for the security aspects of the solution
 The security aspects of the solution include the development of a system protection strategy;
 allocated, decomposed, and derived security requirements; security architecture views and
@@ -1648,9 +1580,7 @@ inferences that affect the reasoning process. As part of assurance case developm
 55 Assurance is the measure of confidence associated with a given requirement. As the level of assurance increases, so does the scope, depth, and
 rigor associated with the methods and analyses conducted (Appendix F).
 56 Software Engineering Institute, Carnegie Mellon University.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-36
+
 the arguments relating the evidence to the claims. Assurance cases must be maintained in
 response to variances throughout the engineering effort.
 The specific form of an assurance case and the level of rigor and formality in acquiring the
@@ -1670,9 +1600,7 @@ by a set of stakeholder security objectives, security concerns, protection needs
 security requirements. This understanding is essential to developing effective security
 solutions – that is, a system that is sufficiently trustworthy and adequately secure to
 protect stakeholder’s assets in terms of loss and the associated consequences.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-37
+
 References
 [1] Executive Order 14028 (2021), Improving the Nation’s Cybersecurity. (The White House,
 Washington, DC), May 12, 2021. https://www.federalregister.gov/d/2021-10460
@@ -1714,9 +1642,7 @@ Knowledge (SEBoK), v. 2.0, ed Cloutier RJ (The Trustees of the Stevens Institute
 Technology, Hoboken, NJ).
 https://www.sebokwiki.org/wiki/Guide_to_the_Systems_Engineering_Body_of_Knowledge
 _(SEBoK)
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-38
+
 [14] International Council On Systems Engineering (2022) Systems Engineering Principles.
 https://www.incose.org/products-and-publications/se-principles
 [15] International Council on Systems Engineering (2015) System Engineering Handbook – A
@@ -1760,9 +1686,7 @@ Commission/Institute of Electrical and Electronics Engineers (2019) ISO/IEC/IEEE
 21840:2019 – Systems and software engineering – Guidelines for the utilization of
 ISO/IEC/IEEE 15288 in the context of system of systems (SoS).
 https://www.iso.org/standard/71956.html
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-39
+
 [28] International Organization for Standardization (2009) ISO Guide 73:2009 – Risk
 management – Vocabulary. https://www.iso.org/standard/44651.html
 [29] McEvilley M (2015) Towards a Notional Framework for Systems Security Engineering.
@@ -1801,9 +1725,7 @@ https://onlinelibrary.wiley.com/doi/abs/10.1002/j.2334-5837.2017.00373.x
 [42] Neumann P (2000) Practical Architectures for Survivable Systems and Networks. Technical
 Report, Final Report, Phase Two, Project 1688, SRI International, Menlo Park, California.
 http://www.csl.sri.com/neumann/survivability.html
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-40
+
 [43] Smith RE (2012) A Contemporary Look at Saltzer and Schroeder’s 1975 Design Principles.
 IEEE Security & Privacy, Vol. 10, No. 6, November/December 2012.
 [44] Saltzer JH, Kaashoek MF (2009) Principles of Computer System Design. Morgan
@@ -1848,9 +1770,7 @@ CA.
 [59] Bryant WD, Ball RE (2020) Developing the Fundamentals of Aircraft Cyber Combat
 Survivability: Part 2. Joint Aircraft Survivability Program Office, Aircraft Survivability
 Journal, Spring 2020.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-41
+
 [60] Ball RE (2003) The Fundamentals of Aircraft Combat Survivability Analysis and Design.
 2nd Edition. AIAA Education Series. https://arc.aiaa.org/doi/book/10.2514/4.862519
 [61] International Organization for Standardization/International Electrotechnical
@@ -1893,9 +1813,7 @@ https://www.iso.org/standard/50508.html
 machinery – Functional safety – Part 4: Design and evaluation of software and data
 transmission for safety-related parts of the control system.
 https://www.iso.org/standard/70718.html
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-42
+
 [73] International Organization for Standardization (1989) ISO 7498-2:1989 – Information
 processing systems – Open Systems Interconnection – Basic Reference Model – Part 2:
 Security Architecture. https://www.iso.org/standard/14256.html
@@ -1939,9 +1857,7 @@ security evaluation of biometric systems – Part 3, Presentation attack detecti
 https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:19989:-3:ed-1:v1:en
 [86] International Organization for Standardization/International Electrotechnical
 Commission/Institute of Electrical and Electronics Engineers (2017) ISO/IEC/IEEE
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-43
+
 12207:2017 – Systems and software engineering – Software life cycle processes.
 https://www.iso.org/standard/63712.html
 [87] International Organization for Standardization (2019) ISO 17757:2019 – Earth-moving
@@ -1986,9 +1902,7 @@ Validation Lifecycle Manual. https://connect.incose.org/pages/store.aspx
 [98] International Organization for Standardization/International Electrotechnical Commission
 (2015) ISO/IEC 15026-3:2015 – Systems and software engineering – Systems and software
 assurance – Part 3: System integrity levels. https://www.iso.org/standard/64842.html
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-44
+
 [99] International Organization for Standardization/International Electrotechnical Commission
 (2021) ISO/IEC 15026-4:2021 – Systems and software engineering – Systems and software
 assurance – Part 4: Assurance in the life cycle. https://www.iso.org/standard/74396.html
@@ -2033,9 +1947,7 @@ Application security – Part 1: Overview and concepts.
 https://www.iso.org/standard/44378.html
 [110] International Council on Systems Engineering (2010) Systems Engineering Measurement
 Primer – INCOSE TP‐2010‐005‐02. https://www.incose.org/docs/default-
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-45
+
 source/ProductsPublications/systems-engineering-measurement-primer---december2010.pdf
 [111] International Organization for Standardization/International Electrotechnical Commission
 (2021) ISO/IEC 27036-1:2021 – Cybersecurity – Supplier relationships – Part 1: Overview
@@ -2078,9 +1990,7 @@ Part 3: Test documentation. https://www.iso.org/standard/79429.html
 Part 4: Test techniques. https://www.iso.org/standard/60245.html
 [123] Roedler G, Jones C (2005) Technical Measurement, International Council on Systems
 Engineering, INCOSE TP-2003-020-01. https://www.incose.org/docs/default-
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-46
+
 source/ProductsPublications/technical-measurement-guide---dec2005.pdf?sfvrsn=4&sfvrsn=4
 [124] International Organization for Standardization/International Electrotechnical Commission
 (2021) ISO/IEC 16085:2021 – Systems and software engineering – Life cycle processes –
@@ -2119,9 +2029,7 @@ Requirements for performing process assessment.
 https://www.iso.org/standard/54176.html
 [135] Stember, M (1991) Advancing the social sciences through the interdisciplinary enterprise
 The Social Science Journal, 28:1, 1-14.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-47
+
 Appendix A. Acronyms
 ACM
 Association for Computing Machinery
@@ -2161,9 +2069,7 @@ INCOSE
 International Council on Systems Engineering
 ISO
 International Organization for Standardization
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-48
+
 IT
 Information Technology
 ITL
@@ -2198,9 +2104,7 @@ SWaP
 Size, Weight, and Power
 USC
 United States Code
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-49
+
 Appendix B. Glossary
 abstraction
 View of an object that focuses on the information relevant to a particular purpose and ignores the remainder of the
@@ -2244,9 +2148,7 @@ A work product used to express an architecture. [71]
 architecture framework
 Conventions, principles, and practices for the description of architectures established within a specific domain of
 application and/or community of stakeholders. [71]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-50
+
 architecture view
 A work product expressing the architecture of a system from the perspective of specific system concerns. [71]
 architecture viewpoint
@@ -2290,9 +2192,7 @@ Note: The engineering process generates many artifacts that are maintained as a 
 the engineering effort and after its completion. The configuration control processes of the engineering
 effort manage baselined artifacts. Examples include stakeholder requirements baseline, system
 requirements baseline, architecture/design baseline, and configuration baseline.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-51
+
 behavior
 The way that an entity functions as an action, reaction, or interaction.
 How a system element, system, or system of systems acts, reacts, and interacts. [75]
@@ -2336,9 +2236,7 @@ concern
 Matter of interest or importance to a stakeholder. [71]
 concern (system)
 Interest in a system relevant to one or more of its stakeholders. [71]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-52
+
 configuration item
 Item or aggregation of hardware, software, or both that is designated for configuration management and treated as a
 single entity in the configuration management process. [4]
@@ -2381,9 +2279,7 @@ Note 1: Information, including the specification of system elements and their re
 sufficiently complete to support a compliant implementation of the architecture.
 Note 2: Design provides the detailed implementation-level physical structure, behavior, temporal
 relationships, and other attributes of system elements.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-53
+
 design characteristics
 Design attributes or distinguishing features that pertain to a measurable description of a product or service. [24]
 design margin
@@ -2427,9 +2323,7 @@ Note 2: The security perspective places focus on credible evidence used to obtai
 trustworthiness, and assess risk.
 facility
 Physical means or equipment for facilitating the performance of an action (e.g., buildings, instruments, tools). [4]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-54
+
 flaw
 Imperfection or defect.
 generalized reference monitor concept
@@ -2473,9 +2367,7 @@ margin
 A spare amount or measure or degree allowed or given for contingencies or special situations. The allowances
 carried to account for uncertainties and risks. [39]
 See design margin and operational margin.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-55
+
 mechanism
 A process or system that is used to produce a particular result.
 The fundamental processes involved in or responsible for an action, reaction, or other natural phenomenon.
@@ -2518,9 +2410,7 @@ Note: An identified part of an organization (even as small as a single individua
 organizations can be regarded as an organization if it has responsibilities, authorities, and relationships. A
 body of persons organized for some specific purpose – such as a club, union, corporation, or society – is an
 organization.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-56
+
 outcome
 Result of the performance (or non-performance) of a function or process(es). [84]
 party
@@ -2564,9 +2454,7 @@ quality characteristic
 Inherent characteristic of a product, process, or system related to a requirement. [78]
 Note: Critical quality characteristics commonly include those related to health, safety, security, assurance,
 reliability, availability, and supportability.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-57
+
 quality management
 Coordinated activities to direct and control an organization with regard to quality. [78]
 reference monitor concept
@@ -2610,9 +2498,7 @@ risk assessment
 Overall process of risk identification, risk analysis, and risk evaluation. [28]
 risk criteria
 Terms of reference against which the significance of a risk is evaluated. [28]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-58
+
 risk evaluation
 Process of comparing the results of risk analysis with risk criteria to determine whether the risk and/or its magnitude
 is/are acceptable or tolerable. [28]
@@ -2656,9 +2542,7 @@ A device or method for achieving a security-relevant purpose.
 security policy
 A set of rules that governs all aspects of security-relevant system and system element behavior.
 Note 1: System elements include technology, machine, and human elements.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-59
+
 Note 2: Rules can be stated at high levels of abstraction (e.g., an organizational policy that defines the
 acceptable behavior of employees in performing their mission and business functions) or at low levels of
 abstraction (e.g., an operating system policy that defines the acceptable behavior of executing processes
@@ -2701,9 +2585,7 @@ Period within the life cycle of an entity that relates to the state of its descr
 Note 1: As used in this document, stages relate to major progress and achievement milestones of the entity
 throughout its life cycle.
 Note 2: Stages often overlap.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-60
+
 stakeholder
 Individual or organization having a right, share, claim, or interest in a system or in its possession of characteristics
 that meet their needs and expectations. [4]
@@ -2748,9 +2630,7 @@ can accomplish on its own. [88]
 system context
 The specific system elements, boundaries, interconnections, interactions, and operational environment that define a
 system.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-61
+
 system life cycle
 Period that begins when a system is conceived and ends when the system is no longer available for use. [24]
 See life cycle stages.
@@ -2793,9 +2673,7 @@ weakness, defect, fault, and/or failure events and associated conditions.
 traceability
 Discernible association among two or more logical entities, such as requirements, system elements, verifications, or
 tasks. [90]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-62
+
 traceability matrix
 A matrix that records the relationship between two or more products of the development process (e.g., a matrix that
 records the relationship between the requirements and the design of a given software component). [24]
@@ -2839,9 +2717,7 @@ system itself. The system was built correctly.
 view
 Representation of a whole system from the perspective of a related set of concerns. [92]
 Note: A view can cover the entire system being examined or only a part of that system.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-63
+
 viewpoint
 Specification of the conventions for constructing and using a view. [92]
 vulnerability
@@ -2854,9 +2730,7 @@ Defect or characteristic that may lead to undesirable behavior. [93]
 Note: Examples include a missing requirement or specification; architectural or design flaw;
 implementation weakness, including hardware or software defect; or the use of an outdated or deprecated
 function, including outdated cryptographic algorithms.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-64
+
 Appendix C. Security Policy and Requirements
 This appendix discusses security policy and requirements considerations57 in support of
 Appendix D, Appendix E, and Appendix H. Covered topics include the rules and scope of
@@ -2894,9 +2768,7 @@ used for developing processes and procedures.
 the capabilities of the delivered as-is system.
 58 Life cycle concepts include operation, sustainment, evolution, maintenance, training, startup, and shutdown.
 59 The rules may be captured in laws and practices.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-65
+
 • System Security Policy: A policy that specifies the system security capability. It is the set of
 restrictions and properties that specifies how a system enforces or contributes to enforcing
 organizational security policy.
@@ -2918,9 +2790,7 @@ Requirements can be categorized as (1) stakeholder requirements that address the
 satisfied in a design-independent manner and (2) system requirements that express the specific
 60 These expectations often cover personnel actions that may expose them to negative external influences (e.g., social media use).
 61 General requirements and definition processes are described in sources such as [31]and [32].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-66
+
 solution that will be delivered (design-dependent manner). Figure 12 illustrates the two types of
 requirements and their relationship to the verification and validation of the system.
 Fig. 12. Stakeholder and System Requirements
@@ -2935,9 +2805,7 @@ humans, and system assets
 support the mission or business processes
 • The interactions between the security-relevant solution elements
 • The assurance that is to be obtained in the security solution
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-67
+
 Systems security considerations within activities and tasks such as those described in Appendices
 H, I, J, and K provide the security perspective to ensure that stakeholder security requirements
 are included in the stakeholder requirements and that the stakeholder security requirements are
@@ -2954,9 +2822,7 @@ security relevance. These requirements define:
 • Assurance processes, procedures, and techniques
 • Constraints on the system and the processes, methods, and tools used to realize the
 system
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-68
+
 • The evidence required to determine that the system security requirements have been
 satisfied62
 Due to the complexity of system security, system security requirements have several types and
@@ -2994,9 +2860,7 @@ Recovery. For example, requirements capture needs to (1) detect insecure system 
 state; (4) recover to a reconstituted, reconfigured, or alternative secure operational mode;
 and if necessary, (5) continue operating within insecure or indeterminant states when
 other needs override protection needs.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-69
+
 provide. A security policy specifies the aspects that a mechanism must enforce to achieve
 organizational objectives. This means that a secure system cannot be achieved if the security
 requirements do not fully specify the minimal capability necessary to enforce the security policy.
@@ -3020,9 +2884,7 @@ and the security-informed constraints to be enforced by security mechanisms.
 consistent with security policy enforcement rules; the mechanism must satisfy the security
 requirements; and the mechanism must be configured to behave in a manner defined by the
 organizational security policy.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-70
+
 Appendix D. Trustworthy Secure Design
 This appendix discusses the approach and considerations for applying technical63 concepts of a
 trustworthy secure system design. The concepts described provide a balanced and integrated
@@ -3060,9 +2922,7 @@ TRUSTWORTHY SECURE DESIGN
 Trustworthy secure design is a means to provide stakeholders with the
 confidence that their conflicting capability needs, concerns, priorities,
 and constraints are satisfied.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-71
+
 recording) and detect pending and actual failure (e.g., by crossing the threshold of the margins
 that have been established). The design principle of Anomaly Detection embodies this capability.
 The design approach includes the following elements:66
@@ -3085,9 +2945,7 @@ balanced design strategy that includes preemptive and reactive aspects.
 66 These steps are useful in applying a system control concept for any loss-relevant emergent property (e.g., safety, resilience).
 67 This flow iterates through systems engineering as the system is decomposed. Subsequent iterations would apply within the elements that
 comprise the system of interest (i.e., the subsystems, assemblies, and components).
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-72
+
 Fig. 16. Balanced Design Strategy for Achieving Trustworthy Secure Systems
 The preemptive aspect recognizes the conditions under which loss may occur and addresses the
 scenarios before loss occurs (i.e., what can happen). If the loss does occur, the results are limited
@@ -3099,9 +2957,7 @@ despite proactive planning and instituting of means and methods to control loss 
 its consequences. The reactive aspect promotes informed operational decision-making after the
 system is in use and a loss condition occurs, proactively providing an operations capability to
 address the loss condition and handle the loss. The reactive aspect complements the preemptive
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-73
+
 aspect by providing an informed basis and means for an external entity (e.g., a human operator or
 system) to act when failures occur. Essentially, the reactive aspect is a proactive engineering
 activity about providing a reactive capability.
@@ -3134,9 +2990,7 @@ and outcomes. This requires a fundamental understanding of how individual system
 elements are composed into the system as a whole. Systems are designed from that
 basis of understanding to limit emergent behaviors and outcomes that are not specified
 (including desired and undesired unspecified behaviors and outcomes).
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-74
+
 D.3. Security Design Order of Precedence
 The security design order of precedence (SecDOP)69 is a design approach with the objective of
 minimizing the system design basis for loss potential. SecDOP emphasizes the importance of
@@ -3176,9 +3030,7 @@ provide mediated access and trusted communication, as these engineered features 
 devices are necessary for a secure system.
 69 The security design order of precedence is inspired by the System Safety Design Order of Precedence, an optimized design approach for system
 safety described in [34].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-75
+
 • Incorporate engineered features or devices to control the potential for loss
 If preventing, limiting, or reducing the potential for loss through design alteration and
 material selection is not feasible or adequate, employ engineered features and devices to
@@ -3218,9 +3070,7 @@ susceptibility, or vulnerability. Procedures and training include proper warning
 and may prescribe the use of equipment. The use of signage, procedures, training, and
 equipment as the only means to reduce the potential, severity, or extent of loss should be
 avoided.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-76
+
 - Example: Procedures and training address the proper use of the system function of
 interest, the use of mediated access functions, and the relevant warnings, cautions, and
 warning systems.
@@ -3255,9 +3105,7 @@ by overlaying security controls, whereas security controls overlaid on a sound,
 secure design can be quite effective.”
 The Security Design Order of Precedence, as part of a systems engineering practice,
 helps to ensure a proper integration of technical controls and operational controls.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-77
+
 outcomes. For example, a protection control enforcement function enforces a decision to
 grant or deny access to a resource.
 • Protection Control Infrastructure Functions: These functions support and help protection
@@ -3297,9 +3145,7 @@ design criteria.
 71 The argument that any control function should be non-bypassable, evaluatable, always invoked, and tamper-proof follows from an in-depth
 examination of Systems Theoretic Process Analysis (STPA) as described in [36], specifically the discussions on why controls may fail and how
 to address failure.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-78
+
 Table 3. Essential Design Criteria for Mechanisms
 ESSENTIAL DESIGN
 CRITERIA DESCRIPTION
@@ -3339,9 +3185,7 @@ outcomes
 (including applying the essential design criteria)
 72 The reference monitor concept is described in the Trustworthy System Control principle in Appendix E.
 73 Conceptually, the reference monitor concept can be extended to any control function that is to enforce a system constraint [39].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-79
+
 • Be absent of self-induced, emergent, erroneous, unsafe, and non-assured control actions
 The protection characteristics for mechanisms must account for but not depend on having
 detailed knowledge of the capability, means, and methods of an adversary.
@@ -3375,9 +3219,7 @@ is no way to know that the reference validation correctly takes place in all cas
 and therefore there is no basis for certifying a system as secure.”
 -- James P. Anderson
  The Anderson Report [37]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-80
+
 D.4.4. Situational Awareness
 Situational awareness is a foundational security means objective. That is, to achieve other
 security objectives, situational awareness is necessary and must be accounted for in design. For
@@ -3416,9 +3258,7 @@ assurance activities necessary to achieve the trustworthiness objectives. Trustw
 74 Common organizational actions include (1) responses to security-relevant anomalies, such as remedial training for users or replacing the right
 system component responsible for undesired system behaviors, and (2) audits of system activities, including assessing for suspicious patterns of
 access that indicate insider threats and to satisfy accountability regulations, such as those required of financial institutions.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-81
+
 principles such as Commensurate Rigor and Commensurate Trustworthiness inform the trade
 space analysis.
 The benefits of a design option are determined by its effectiveness in providing the required
@@ -3439,9 +3279,7 @@ unexpected place in the system, which could cause the defended system to be
 less secure than the engineering intended.”
 -- O. Sami Saydjari
  Engineering Trustworthy Secure Systems [62]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-82
+
 Appendix E. Principles for Trustworthy Secure Design
 This appendix describes the design principles that serve as the foundation for engineering
 trustworthy secure systems.75 The principles provide a basis for reasoning about a system. They
@@ -3482,9 +3320,7 @@ extent possible. Where elimination cannot occur, their effects should be
 controlled to the extent possible. Applying the design principles for trustworthy
 secure systems is a means of achieving the elimination and control of the hazards,
 susceptibility, and vulnerability that lead to adverse events [39].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-83
+
 Table 4. Principles for Trustworthy Secure Design
 DESIGN PRINCIPLE DESIGN PRINCIPLE
 Anomaly Detection Least Privilege
@@ -3527,9 +3363,7 @@ elements; system configuration; and the abuse or misuse of the system.
 The basis for anomaly detection in the environment differs from that in the system because the
 environment is not under the control of the system. The environment presents a wide range of adversity to
 the system, and the system is designed to achieve its design intent within defined bounds of
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-84
+
 environmental conditions. Those bounds can be treated as the “norm” for anomaly detection, whereby
 environmental conditions that are trending beyond the norm or that reflect conditions outside of the norm
 may result in an adverse effect on the system, thus requiring a planned response to prepare for an
@@ -3574,9 +3408,7 @@ entity.
 anomalies that are detected. When an entity-of-interest relies on another entity for any portion of the
 assessment, that entity must be at least as trustworthy as the entity-of-interest.
 References: [20] [40] [43]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-85
+
 E.2. Clear Abstractions
 Principle: The abstractions used to characterize the system are simple, well-defined, accurate,
 precise, necessary, and sufficient.
@@ -3617,9 +3449,7 @@ effect to the needed immediacy to control the effects of each loss scenario.
 78 The term information hiding, also called representation-independent programming, is a design discipline to ensure that the internal
 representation of information in one system component is not visible to another system component invoking or calling the first component, such
 that the published abstraction is not influenced by how the data may be managed internally.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-86
+
 Note: The selected response to a detected anomaly considers three factors to determine the effect that the
 response has on the loss and the system:
 - The effectiveness and aggressiveness of the engineered response to directly address the anomaly and
@@ -3663,9 +3493,7 @@ decisions is recognized by systems analysis practices [4].
 The principle of commensurate rigor helps to ensure that the concept of rigor is included as an equal
 factor in the trade space of capability, adverse effect, cost, and schedule in the planning and conduct of
 engineering activities, method and tool selection, and personnel selection. An increase in rigor may
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-87
+
 translate into an increase in the cost of personnel, methods, and tools required to complete rigorous
 engineering activities or an increase in schedule to accomplish the activities with the expected rigor. Any
 increased cost that may occur can be justified by acquiring confidence about system performance to limit
@@ -3694,9 +3522,7 @@ during the time that the protection is required.
 Note: The protection capability must be uninterrupted across all relevant system states, modes, and
 transitions for there to be assurance that the system can be effective in delivering the required capability
 while controlling loss. Continuous protection requires adherence to the following principles:
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-88
+
 - Trustworthy System Control: Every controlled action is constrained by the mechanism, and the
 mechanism can protect itself from tampering. Sufficient assurance of the correctness and
 completeness of the mechanism can be ascertained from analysis and testing.
@@ -3741,9 +3567,7 @@ mission function will fail) during battle conditions [51].
 associated analysis for the enforcement of constraints to prevent the inadvertent actuation of the override capability.
 81 While the discussion in this section is limited to the machine, defense in depth may involve a combination of technical, operational, and
 organizational elements. Additional discussion on defense in depth can be found in [52].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-89
+
 may also raise other concerns. A distributed composition of a defense layer may provide additional
 options within the coordination of layers.
 Defense in depth is, in part, a form of the principle of Protective Failure. It helps satisfy the objective that
@@ -3783,9 +3607,7 @@ reside in:
 - Fixed or static characteristics of the system (e.g., multiple instances of a system element, multiple
 communication channels)
 82 Saltzer and Schroeder [46] originally named this the separation of privilege. It is also equivalent to separation of duty.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-90
+
 - Variable or dynamic characteristics of the system (e.g., reconfiguration, relocation, refresh of system
 elements; random routing of data over different communication channels from source to destination;
 the ability to change aspects of the system behavior, structure, data, or configuration in a random but
@@ -3831,9 +3653,7 @@ transport aircraft from the environmental control functions that maintain a safe
 and passengers being transported.
 Historically, domain separation has been used to enforce the separation of roles or privileges. For
 example, a system may separate an “administrative” or “supervisor” domain from “user” domains. The
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-91
+
 administrative domain is accessible only by system administrators with proper privileges, and distinctly
 administrative functions may only be executed by administrators from the administrative domain.
 Similarly, data intended to be accessed only by administrators and administrative functions (e.g., system
@@ -3877,9 +3697,7 @@ susceptibility and vulnerability and reduces the scope of analysis of the system
 and loss potential. The strictest interpretation of least functionality is to prohibit any system element
 functions that are not required. Where that is not possible or practical, the unnecessary functions of the
 system element should be disabled, disarmed, or put into a “safe” mode that prevents the functions from
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-92
+
 being used. In all other cases, mediated access can be used to prevent access to and use of the unneeded
 functions.
 An example of when it may not be possible or practical to avoid unnecessary functions is the use of
@@ -3921,9 +3739,7 @@ erroneous behavior
 Where system elements or resources are removed and then restored as needed, there must be a trusted
 representation of the system element and a trusted ability to instantiate that system element within the
 time constraints for its use.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-93
+
 References: [53]
 E.16. Least Privilege
 Principle: Each system element is allocated privileges that are necessary to accomplish its
@@ -3962,9 +3778,7 @@ criterion is a constraint on the extent of sharing.
 References: [2] [21] [46] [54] [55]
 83 The historically well-known security design principle least common mechanism is an instance of least sharing. The principle of least common
 mechanism is described in [55].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-94
+
 E.18. Loss Margins
 Principle: The system is designed to operate in a state space sufficiently distanced from the
 threshold at which loss occurs.
@@ -4005,9 +3819,7 @@ Note: Mediated access is a foundational principle in the design of secure system
 mediated access is to:
 - Place limits on access to and use of the system
 - Reduce the possibility of loss escalation
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-95
+
 - Reduce the extent to which loss escalates and propagates
 Mediated access is based on the interaction between an entity and a target system element and has two
 aspects:
@@ -4051,9 +3863,7 @@ is one of the most important aspects of the trust-based verification of system s
 these interactions are unnecessarily complex, the security of the system will also be more difficult to
 ascertain than one whose internal trust relationships are simple and elegantly constructed. In general,
 fewer trusted components will result in fewer internal trust relationships and a simpler system.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-96
+
 References: [2] [20] [43] [44]
 E.21. Minimize Detectability
 Principle: The design of the system minimizes the detectability of the system as much as
@@ -4093,9 +3903,7 @@ References: [2] [21] [46]
 E.23. Protective Failure
 Principle: A failure of a system element neither results in an unacceptable loss nor invokes
 another loss scenario.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-97
+
 Note: Protective failure, a generalization of the concepts of fail secure and fail safe, is the aspect of
 continuous protection that ensures that a protection capability is not interrupted during a failure and that
 the effect of the failure is constrained. Two aspects of protective failure must be satisfied to achieve the
@@ -4138,9 +3946,7 @@ interaction of the system with its operational environment. Complexity derives f
 decomposed into its individual and aggregates of constituent elements (e.g., subsystems, assemblies), and
 from how those elements compose through their behaviors and interactions to comprise the functional
 system.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-98
+
 A more complex design increases uncertainty. Such uncertainty leads to errors and hinders acquiring
 confidence in the understanding of the design. A complex design is also more prone to erroneous
 interpretation when conducting the engineering activities of analysis, implementation, and verification
@@ -4181,9 +3987,7 @@ element
 An argument for self-reliant trustworthiness can be applied at the discrete system element level, at the
 level of an aggregate of elements, at the system level, or at the system of systems level. In all cases, the
 distinction between the capability provided and the trustworthiness responsibility for that capability must
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-99
+
 be preserved (e.g., self-reliant trustworthiness cannot be claimed if the protection assertions for trust are
 allocated to and dependent on some other entity). Similarly, when a system capability is distributed across
 multiple system elements, self-reliant trustworthiness requires that the trust expectations for the capability
@@ -4224,9 +4028,7 @@ Trustworthiness to provide a basis to support claims about how the system is com
 application of modularity, layering, and partially ordered dependencies to achieve authorized and
 intended behaviors and outcomes.
 References: [2] [20] [46] [48] [49]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-100
+
 E.29. Substantiated Trustworthiness
 Principle: System trustworthiness judgments are based on evidence that the criteria for
 trustworthiness have been satisfied.
@@ -4268,9 +4070,7 @@ concept to provide a uniform design assurance basis for trustworthy system contr
 constraint-enforcing mechanisms that compose to provide system control functions.
 84 Adapted from a statement made by John Rushby, SRI International, about the need for software to be treated as “guilty until proven innocent”
 at a Layered Assurance Workshop (LAW).
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-101
+
 The reference monitor concept (Section D.4.2) is a foundational access control concept for secure system
 design. It is defined as a trustworthy abstract machine that mediates all accesses to objects by subjects
 [38]. As a concept for an abstract machine, the reference monitor does not address any specific
@@ -4311,9 +4111,7 @@ elements, networks, and systems where intentional and unintentional adversity ca
 achievement of the loss control objectives. The principle also drives the need for rigor in engineering
 activities commensurate to the trust placed in the system elements.
 References: [21] [35] [37] [38]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-102
+
 Appendix F. Trustworthiness and Assurance
 The trustworthiness of a system is based on the concept of assurance. Assurance is the grounds
 for justified confidence that a claim or set of claims has been or will be achieved [61]. Justified
@@ -4349,9 +4147,7 @@ trustworthy and transparent that infrastructure is and to the consequences
 we will incur if that trust is misplaced.”
 -- Executive Order (EO) on Improving the Nation’s Cybersecurity [1]
  May 2021
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-103
+
 meaningful only to the extent to which the trustworthiness-relevant requirements accurately
 reflect the problem, accurately define the solution, and can be verified as being satisfied by the
 solution.
@@ -4386,9 +4182,7 @@ be effective or sufficient. Instead, conclusions about a protection capability
 must have their basis on evidence that the system was properly specified,
 designed, and implemented with the rigor needed to deliver a system-level
 function in a manner deemed to be trustworthy and secure.” [2]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-104
+
 • Failure Propagation
 All systems fail at some point. When a failure occurs, another failure scenario or the creation
 of a new failure scenario should not be triggered or invoked (Protective Failure). Designing
@@ -4427,9 +4221,7 @@ sufficient confidence in the system’s ability to correctly deliver its intende
 presence and absence of adversity and to do so when used in accordance with its design intent.
 88 The term adversity refers to those conditions that can cause a loss of assets (e.g., threats, attacks, vulnerabilities, hazards, disruptions, and
 exposures).
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-105
+
 The needed evidentiary basis for such judgments derives from well-formed and comprehensive
 evidence-producing activities that address the requirements, design, properties, capabilities,
 vulnerabilities, and effectiveness of security functions. These activities include a combination of
@@ -4465,9 +4257,7 @@ Compliance is a form of “veneer security.” While compliance may have an impo
 informing role in judgments of trustworthiness, compliance-based judgments – like
 other forms of veneer security – do not suffice as the sole evidentiary basis for
 assurance and the associated judgments of trustworthiness.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-106
+
 defects, errors, and vulnerabilities.91 Other subclaims may exist involving the ability to exhibit
 predictable behavior while operating in secure states in the presence and absence of adversity
 and the ability to recover from an insecure state. Claims can be expressed in terms of functional
@@ -4506,9 +4296,7 @@ The NASA System Safety Handbook [6] describes the relevant claims to be met in t
 of the top-level claim that the system is adequately safe with subclaims, including that
 the system is designed to be as safe as reasonably practicable, built to be as safe as
 reasonably practicable, and operated as safely as reasonably practicable.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-107
+
 synthesis of the constituent parts). It requires that assurance be a consideration at every step
 of design and implementation, from the smallest components to the final subsystem
 realization.
@@ -4545,9 +4333,7 @@ systems in need of high assurance.
 Many formalizations and tools for building assurance cases have been
 developed in recent years, including the Goal Structuring Notation (GSN) [64]
 and NASA’s AdvoCATE: Assurance Case Automation Toolset [65].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-108
+
 F.2.3. Assurance Needs
 Assurance is a need that is to be engineered and satisfied similar to the need to engineer the
 system capability to satisfy specified capability needs. Assurance needs for trustworthy secure
@@ -4583,9 +4369,7 @@ not supported. In either case, the assurance is negative relative to the goal of
 substantiating the claim. That is, the system or some part of the system is not
 sufficiently trustworthy and should not be trusted relative to its specified
 function without further action.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-109
+
 Requirements analysis across stakeholder and system requirements determines the threshold
 degree of rigor that is required. When a system cannot practicably meet the needed degrees of
 rigor, stakeholders should have a means to determine if they will accept the associated risk.
@@ -4602,9 +4386,7 @@ specification, and verification of security policy and the implementation that e
 (Section D.4.2). In this case, the security policy model is verified as complete for its scope of
 control and as self-consistent. The verified security policy model then serves as a foundation to
 verify the models of the design and implementation of the mechanisms that provide for decisionmaking and the enforcement of those decisions.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-110
+
 Appendix G. System Life Cycle Processes Overview
 This appendix provides an overview of the system life cycle processes in [4], establishes the
 basis for the in-depth coverage of those processes in subsequent appendices, and describes
@@ -4671,9 +4453,7 @@ engineering effort.
 The system life cycles processes, activities, and tasks are to be applied as needed. They are not
 dependent on, oriented to, or presumed to be used or needed in any specific system development
 methodology. By design, the processes and their activities and tasks can be applied concurrently,
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-111
+
 iteratively, or recursively at any level in the structural hierarchy of a system with the appropriate
 fidelity and rigor and at any stage in the system life cycle in accordance with acquisition,
 systems engineering, or other process models. Using their expertise and experience, practitioners
@@ -4712,9 +4492,7 @@ results within the constraints imposed on the engineering team.
 during the engineering effort when situations and circumstances so dictate. Understanding the fundamentals of systems security engineering (i.e.,
 the science underpinning the discipline) helps to inform the tailoring process whenever it occurs during the system life cycle. The INCOSE
 Systems Engineering Handbook provides additional guidance on how to tailor the systems engineering processes [15].
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-112
+
 Each of the system life cycle processes contains a set of activities and tasks that produce
 security-focused outcomes.93 These outcomes combine to deliver a system and corresponding
 body of evidence94 that serve as the basis to:
@@ -4748,17 +4526,13 @@ and certification, authorization, or regulatory processes).
 assurance. The objective is a body of evidence sufficient to convince stakeholders that their assurance needs are satisfied.
 95 The activities and tasks are accomplished cooperatively within and across various roles of the organization, inclusive of systems security
 engineering. While this publication focuses on systems security engineering, it does not fulfill all aspects of every activity and task.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-113
+
 Fig. 18. Types of Personnel and Roles that Support Life Cycle Processes
 G.2. Process Relationships
 Figure 19 illustrates common logical relationships among system life cycle process groups and
 processes that can be used as a framework and altered as necessary as part of tailoring [4].
 Fig. 19. Relationships Among Life Cycle Processes
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-114
+
 Process relationships are further illustrated by the use cases in [94]. Several prominent use cases
 include:
 • Establish a formal agreement
@@ -4777,9 +4551,7 @@ systems are discussed in [86].
 96 The application of technical processes for engineering a system of interest will occur recursively to realize subsystems and system elements.
 See Annex A of [96] for additional details.
 97 This use case often supports satisfying an agreement.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-115
+
 Appendix H. Technical Processes
 This appendix contains the Technical Processes from [4] with security-relevant considerations
 and contributions for the purpose, outcomes, activities, and tasks. As noted in Section G.2, the
@@ -4813,9 +4585,7 @@ BA-1.1 Identify the security aspects for enabling systems or services needed to 
 business or mission analysis.
 BA-1.2 Identify and plan for enabling systems or services needed to support the security
 aspects of business or mission analysis.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-116
+
 BA-1.3 Obtain or acquire access to the security aspects of enabling systems or services to be
 used in business or mission analysis.
 References: [4] [97]
@@ -4852,9 +4622,7 @@ BA-5.1 Maintain traceability of the security aspects of business or mission anal
 Note: Bidirectional traceability is maintained between identified security aspects and supporting
 security data associated with the problems and opportunities, proposed solution class or
 classes, and organizational strategy.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-117
+
 BA-5.2 Provide the security-relevant artifacts that have been selected for baselines.
 References: [4] [71] [96]
 H.2. Stakeholder Needs and Requirements Definition
@@ -4887,9 +4655,7 @@ established.
 H.2.3. Security Activities and Tasks
 SN-1 PREPARE FOR STAKEHOLDER NEEDS AND REQUIREMENTS DEFINITION
 SN-1.1 Identify the stakeholders and their security concerns.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-118
+
 Note 1: All stakeholders have security concerns. Some concerns are explicitly known and can be
 stated; others are initially implicit, not necessarily known, and must be made explicit through
 discourse.
@@ -4928,9 +4694,7 @@ system of interest and any system of systems to which the system of interest bel
 the characterization of the entities with which the system interacts.
 SN-2.4 Identify the security-relevant constraints on a system solution.
 References: [4] [30] [31] [61] [91] [97] [98] [99] [100] [101] [102] [103] [104]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-119
+
 SN-3 DEFINE STAKEHOLDER NEEDS
 SN-3.1 Define the rules capturing authorized and intended interactions, behaviors, and
 outcomes.
@@ -4967,9 +4731,7 @@ technical achievements and reflects stakeholder priorities.
 SN-5.3 Provide feedback to applicable stakeholders from the analyzed requirements to validate
 that their protection needs and expectations have been adequately captured and
 expressed.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-120
+
 SN-5.4 Resolve stakeholder requirements issues related to protection needs.
 Note: Any change to stakeholder requirements signifies a need to reassess protection needs and
 determine whether any subsequent changes are required.
@@ -5001,9 +4763,7 @@ definition are available.
 constraints to stakeholder requirements is established.
 H.3.3. Security Activities and Tasks
 SR-1 PREPARE FOR SYSTEM REQUIREMENTS DEFINITION
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-121
+
 SR-1.1 Define the security aspects of the intended behavior and outcomes at the functional
 boundary of the system.
 Note: The intended behavior and security properties to be realized at the functional boundary
@@ -5041,9 +4801,7 @@ Note: System security requirements include security capability and functional re
 security performance and effectiveness requirements, security assurance requirements, and
 implementation constraints (SR-2.3 and SR-2.4 outcomes expressed as requirements).
 SR-2.6 Apply security metadata to the system security requirements.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-122
+
 Note: Metadata enables identification and traceability to support the analysis of completeness
 and consistency to determine security impact when requirements change.
 References: [4] [30] [31] [61] [86] [97] [98] [99] [100] [105] [106] [107] [108] [109] [111] [112]
@@ -5079,9 +4837,7 @@ The purpose of the System Architecture Definition process is to generate system 
 alternatives, to select one or more alternative(s) that frame stakeholder concerns and meet system
 requirements, and to express this in a set of consistent views and models.
 Reprinted with permission from IEEE, Copyright IEEE 2015, All rights reserved.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-123
+
 H.4.1. Security Purpose
 - Generate the architectural concepts and properties of system architecture alternatives for the
 system protection capability that frame stakeholder protection concerns and meet system
@@ -5117,9 +4873,7 @@ and criteria.
 AR-1.7 Collect and review security evaluation-related information.
 AR-1.8 Identify the security aspects for enabling systems or services needed to support system
 architecture definition.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-124
+
 AR-1.9 Identify and plan for enabling systems or services needed to support the security
 aspects of system architecture definition.
 AR-1.10 Obtain or acquire access to the security aspects of enabling systems or services to be
@@ -5156,9 +4910,7 @@ AR-3.3 Formulate security-relevant evaluation findings and recommendations.
 AR-3.4 Capture and communicate security-relevant evaluation results.
 AR-3.5 Relate the architecture to the other architectures and relevant affected entities to help
 ensure consistency in the trustworthy secure system architecture.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-125
+
 References: [4] [30] [61] [71] [98] [99] [117]
 Related Publications: [100]
 AR-4 MANAGE THE RESULTS OF SYSTEM ARCHITECTURE DEFINITION
@@ -5189,9 +4941,7 @@ system are defined.
 H.5.3. Security Activities and Tasks
 DE-1 PREPARE FOR DESIGN DEFINITION
 DE-1.1 Establish the trustworthy secure aspects of the design definition strategy.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-126
+
 DE-1.2 Determine the security technologies required for each system element composing the
 system.
 DE-1.3 Identify the security concerns associated with each technology required for each system
@@ -5230,9 +4980,7 @@ databases, and documents.
 Note 2: Design artifacts include configuration and procedures to ensure security mechanism
 behavior specified by system-level policy and enforced by configuration and procedures
 (Appendix C.3).
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-127
+
 DE-2.8 Capture the security aspects of the design.
 References: [4] [30] [61] [86] [98] [99] [100] [106] [107] [108] [109]
 DE-3 EVALUTE THE SYSTEM DESIGN
@@ -5266,9 +5014,7 @@ H.6.1. Security Purpose
 aspects to aid decision-making and technical assessments across the life cycle.
 H.6.2. Security Outcomes
 - Security aspects of system analysis needs are identified.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-128
+
 - Security aspects of system analysis assumptions and results are validated.
 - System analysis results provided for all decisions or technical assessment needs include
 security aspects.
@@ -5304,9 +5050,7 @@ Note: The results are coordinated with associated and previously completed secur
 analyses. Trustworthiness of the results is determined with the review.
 SA-2.3 Establish conclusions and recommendations for the security aspects of the system
 analysis.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-129
+
 Note: Subject-matter experts are consulted and participate in the formulation of conclusions
 and recommendations.
 SA-2.4 Record the results of the security aspects of the system analysis.
@@ -5339,9 +5083,7 @@ IP-1 PREPARE FOR IMPLEMENTATION
 IP-1.1 Define the trustworthy secure aspects of the implementation strategy.
 Note 1: These aspects apply to all system elements that are acquired new, built new, or reused
 (with or without modification). If the strategy is reuse, the project determines the extent,
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-130
+
 source, suitability, and trustworthiness of the reused system elements for the new purpose. The
 implementation strategy includes procedures, fabrication processes, tools and equipment,
 tolerances, and verification uncertainties, which may introduce weaknesses and vulnerabilities.
@@ -5383,9 +5125,7 @@ same criteria used to acquire hardware, firmware, and software but must also add
 security considerations associated with utilization and support resources.
 - Utilization and Support Resources: The security considerations of acquired or leased services
 account for the specific roles and responsibilities of individuals of the service/lease provider
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-131
+
 and their ability to account for all of the security requirements and constraints associated
 with the delivery, utilization, and sustainment of the service or capability being leased.
 IP-2.2 Place the system element in a secure state for future use, as needed.
@@ -5419,9 +5159,7 @@ system functions to an initial or established secure state are developed.
 - Security aspects of system external interfaces (system to external environment) and system
 internal interfaces (between implemented system elements) are checked.
 - Security aspects of integration results and anomalies are identified.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-132
+
 - Traceability of the security aspects of the integrated system elements is established.
 H.8.3. Security Activities and Tasks
 IN-1 PREPARE FOR INTEGRATION
@@ -5458,9 +5196,7 @@ of the system and the level of assurance that can be obtained.
 IN-3.2 Maintain traceability of the security aspects of integrated system elements.
 Note: Bidirectional traceability of the security aspects of the integrated system elements to the
 system security requirements, security views of the architecture, security design, and security
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-133
+
 interface requirements is maintained. Traceability provides evidence that supports assurance
 and trustworthiness claims.
 IN-3.3 Provide the security-relevant artifacts that have been selected for baselines.
@@ -5494,9 +5230,7 @@ Note: Scope includes the system, system elements, information items, or artifact
 verified against applicable requirements, security characteristics, or other security properties.
 Each verification action description includes what will be verified (e.g., actual system, model,
 98 Anomalies include behaviors and outcomes that are observed but not specified.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-134
+
 mock-up, prototype, procedure, plan, or other information item), the verification method
 (including any adversity emulation), and the expected result as defined by the success criteria.
 The security criteria may reflect considerations of strength of function/mechanism, resistance to
@@ -5535,9 +5269,7 @@ equipment), and the environmental conditions to perform each verification proced
 resources, qualified personnel, adversity emulations).
 VE-2.2 Perform security verification procedures.
 References: [4] [86] [97] [100] [109]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-135
+
 VE-3 MANAGE RESULTS OF VERIFICATION
 VE-3.1 Record the security aspects of verification results and any anomalies encountered.
 VE-3.2 Obtain agreement from the approval authority that the system, system element, or
@@ -5570,9 +5302,7 @@ trained in the system’s security capabilities, mechanisms, and features.
 - Security-relevant transition results and anomalies are identified.
 - The installed system is activated and ready for trustworthy secure operation.
 - Traceability of the security aspects of the transitioned elements is established.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-136
+
 H.10.3. Security Activities and Tasks
 TR-1 PREPARE FOR TRANSITION
 TR-1.1 Define the security aspects of the transition strategy.
@@ -5610,9 +5340,7 @@ installation strategy, and establish secure interconnections to its environment.
 TR-2.4 Demonstrate trustworthy secure system installation.
 Note: The installation and connection procedures are to be properly verified to provide
 confidence that the intended system configuration across all system modes and states is
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-137
+
 achieved. This includes completing acceptance tests defined in agreements. These tests include
 security aspects associated with physical connections between the system and the environment.
 TR-2.5 Provide security training for the operators, users, and other stakeholders necessary for
@@ -5648,9 +5376,7 @@ The purpose of the Validation process is to provide objective evidence that the 
 use, fulfills its business or mission objectives and stakeholder requirements, achieving its
 intended use in its intended operational environment.
 Reprinted with permission from IEEE, Copyright IEEE 2015, All rights reserved.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-138
+
 H.11.1. Security Purpose
 Provide objective evidence that the system, when in use, fulfills the protection needs
 associated with its business or mission objectives and the stakeholder requirements, thereby
@@ -5687,9 +5413,7 @@ VA-1.3 Select appropriate security validation methods and the associated success
 each security validation action.
 Note: Adversity emulation, including penetration testing and emulating abuse and misuse, is
 included.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-139
+
 VA-1.4 Develop the security aspects of the validation strategy.
 Note: The security aspects of the validation strategy address the approach to incorporate
 security considerations into all validation actions, while considering the trade-offs between
@@ -5728,9 +5452,7 @@ enable corrective or improvement actions. Corrective actions may affect the secu
 the system architecture definition, design definition, system security requirements and
 associated constraints, the level of assurance that can be obtained, and/or the implementation
 strategy, including its security aspects.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-140
+
 VA-3.2 Record the security characteristics of operational incidents and problems, and track
 their resolution.
 Note: Incidents that occur in the operational environment of the system are recorded and
@@ -5762,9 +5484,7 @@ design are identified.
 H.12.3. Security Activities and Tasks
 OP-1 PREPARE FOR OPERATION
 OP-1.1 Define the security aspects of the operation strategy.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-141
+
 Note 1: This includes the approach to enable the continuous secure operation and use of the
 system and its security services, as well as the provision of support to operations elements to
 address anomalies identified during the operation and use of the system. It also includes:
@@ -5806,9 +5526,7 @@ workforce needed for secure system operation.
 Note: Security qualification and training includes role and function-oriented competency,
 proficiency, certification, and other criteria to securely operate and use the system in all of its
 defined modes or states.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-142
+
 OP-1.7 Assign the trained and qualified personnel needed for secure system operation.
 References: [4] [86] [100] [111] [112] [113] [114]
 OP-2 PERFORM OPERATION
@@ -5846,9 +5564,7 @@ OP-3.4 Provide the security-relevant artifacts that have been selected for basel
 References: [4] [30] [61] [98] [99] [100]
 OP-4 SUPPORT STAKEHOLDERS
 OP-4.1 Provide security assistance and consultation to stakeholders as requested.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-143
+
 Note: Assistance and consultation includes the provision or recommendation of sources for
 security-relevant training, security aspects of documentation, vulnerability resolution, security
 reporting, and other security-relevant support services that enable the effective and secure use
@@ -5881,9 +5597,7 @@ Note: The maintenance strategy seeks to preserve the secure capability and perfo
 delivered system. The security aspects of the maintenance strategy generally include:
 - The secure transition of the system and system elements into a secure maintenance mode
 or state, as well as the secure transition back to operation
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-144
+
 - An approach to ensure that sourced materials and system elements that do not meet
 specified quality, origin, and functionality (e.g., counterfeit) are not introduced into the
 system
@@ -5923,9 +5637,7 @@ MA-2 PERFORM MAINTENANCE
 Note: The need to perform maintenance may be driven by the need to address explicit security issues,
 incidents, or failures. All maintenance actions must be accomplished in a secure manner with the
 understanding that some actions may have a direct effect on the security posture of the system.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-145
+
 MA-2.1 Monitor and review stakeholder requirements and incident and problem reports to
 identify security-relevant corrective, preventive, adaptive, additive, or perfective
 maintenance needs.
@@ -5962,9 +5674,7 @@ MA-4.1 Record the security aspects of maintenance and logistics results and any 
 encountered.
 MA-4.2 Record maintenance and logistics security incidents and problems, and track their
 secure resolution.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-146
+
 MA-4.3 Identify and record the security-relevant trends of incidents, problems, and
 maintenance and logistics actions.
 MA-4.4 Maintain traceability of the security aspects of maintenance and logistics.
@@ -5997,9 +5707,7 @@ transforming the system and environment into an acceptable secure state, address
 concerns, and transitioning the system and system elements for future use. The disposal
 strategy determines approaches, schedules, resources, specific considerations of secure
 disposal, and the effectiveness and completeness of secure disposal and disposition actions.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-147
+
 - Permanent termination of system functions and delivery of services: The security aspects
 address the removal, decommissioning, or destruction of the associated system elements
 while preserving the security posture of any remaining functions and services.
@@ -6043,9 +5751,7 @@ References: [4] [86] [100]
 DS-2 PERFORM DISPOSAL
 DS-2.1 Securely deactivate the system or system element to prepare it for secure removal from
 operation.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-148
+
 Note: Deactivation is accomplished to preserve the security posture of the system.
 DS-2.2 Securely remove the system, system element, or waste material from use or production
 for appropriate secure disposition and action.
@@ -6078,9 +5784,7 @@ and the environment and to permit future system creators and users to securely b
 knowledge base from past experiences.
 DS-3.4 Provide security-relevant artifacts that have been selected for baselines.
 References: [4] [100]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-149
+
 Appendix I. Technical Management Processes
 This appendix contains the Technical Management Processes from [4] with security-relevant
 considerations and contributions for the purpose, outcomes, activities, and tasks.
@@ -6113,9 +5817,7 @@ PL-1.4 Establish appropriate security aspects of the work breakdown structure.
 Note: Each security-relevant element of the work breakdown structure is described with a level
 of detail that is consistent with identified security risks and required visibility.
 PL-1.5 Define and maintain the security aspects of processes that will be applied to the project.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-150
+
 Note: Entry criteria, inputs, process sequence constraints, and Measures of Effectiveness and/or
 Measures of Performance attributes may all have security aspects.
 References: [4][30] [61] [86] [96] [98] [99] [100] [111] [112] [113] [123]
@@ -6154,9 +5856,7 @@ plans.
 References: [4] [30] [61] [86] [98] [99] [100] [111] [112] [113]
 PL-3 ACTIVATE THE PROJECT
 PL-3.1 Obtain authorization for the security aspects of the project.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-151
+
 PL-3.2 Submit requests and obtain commitments for the necessary resources to perform the
 security aspects of the project.
 PL-3.3 Implement the security aspects of project plans.
@@ -6189,9 +5889,7 @@ PA-1 PLAN FOR PROJECT ASSESSMENT AND CONTROL
 PA-1.1 Define the security aspects of the project assessment and control strategy.
 Note 1: This includes the planned security assessment methods and time frames, as well as
 necessary security management and technical reviews.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-152
+
 Note 2: Expectations of regulatory, certification, and authorization entities inform the security
 aspects of the project assessment and control strategy.
 References: [4] [30] [61] [98] [99] [100]
@@ -6229,9 +5927,7 @@ undesirable trends from planned values and to make security-relevant recommendat
 corrective, preventive, adaptive, additive, or perfective actions.
 PA-2.10 Record and provide security status and security findings from the assessment tasks.
 PA-2.11 Monitor the security aspects of process execution within the project.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-153
+
 Note: This includes an analysis of process security measures and a review of security-relevant
 trends with respect to project objectives.
 References: [4] [30] [61] [86] [98] [99] [100]
@@ -6263,9 +5959,7 @@ I.3.2. Security Outcomes
 I.3.3. Security Activities and Tasks
 DM-1 PREPARE FOR DECISIONS
 DM-1.1 Define the security aspects of the decision management strategy.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-154
+
 Note: A decision management strategy includes the identification of security-relevant roles,
 responsibilities, accountabilities, and authorities. It also includes the identification of securityspecific decision categories and a prioritization scheme. Security-relevant decisions often arise
 because of a security effectiveness assessment, a technical trade-off, a security-relevant
@@ -6302,9 +5996,7 @@ References: [4] [86] [100]
 I.4. Risk Management
 The purpose of the Risk Management process is to identify, analyze, treat, and monitor the risks
 continually.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-155
+
 Reprinted with permission from IEEE, Copyright IEEE 2015, All rights reserved.
 I.4.1. Security Purpose
 - Continually identify, analyze, treat, and monitor the risks associated with the uncertainty of
@@ -6341,9 +6033,7 @@ constraints.
 Note 2: Security opportunities provide potential benefits for the system or project. Security
 contexts consider the security impact of not pursuing an opportunity and the security risk of not
 achieving the effects provided by the opportunity.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-156
+
 References: [4] [30] [61] [86] [98] [99] [100] [124] [125]
 RM-2 MANAGE THE RISK PROFILE
 RM-2.1 Define and record the security risk thresholds and conditions.
@@ -6379,9 +6069,7 @@ Note: The implemented alternative should be the one for which the security-relev
 stakeholders determine that the actions taken will make a security-relevant risk acceptable.
 RM-4.4 Coordinate management action for selected security risk treatments.
 References: [4] [86] [100] [124] [125]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-157
+
 RM-5 MONITOR RISK
 RM-5.1 Continually monitor all security-relevant risks and the security risk management
 context.
@@ -6413,9 +6101,7 @@ CM-1 PREPARE FOR CONFIGURATION MANAGEMENT
 CM-1.1 Define a secure configuration management strategy.
 Note: These include:
 - Security-relevant roles, responsibilities, accountabilities, and authorities
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-158
+
 - Criteria for the secure management of changes to items under configuration management,
 including dispositions, access, release, and control
 - Security considerations, criteria, and constraints for the locations, conditions, and
@@ -6454,9 +6140,7 @@ CM-3 PERFORM CONFIGURATION CHANGE MANAGEMENT
 CM-3.1 Identify and record the security aspects of requests for change and requests for
 variance.
 Note 1: This includes requests for deviation, waiver, or concession.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-159
+
 Note 2: Change or variance can be based on reasons other than security or without an obvious
 relevance to security.
 CM-3.2 Determine the security aspects of action to coordinate, evaluate, and disposition
@@ -6493,9 +6177,7 @@ that are focused on system conformance to operational and configuration informat
 CM-5.5 Record the security aspects of the configuration management audit and other
 configuration evaluation results and disposition action items.
 References: [4] [86] [100]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-160
+
 I.6. Information Management
 The purpose of the Information Management process is to generate, obtain, confirm, transform,
 retain, retrieve, disseminate, and dispose of information to designated stakeholders.
@@ -6528,9 +6210,7 @@ storage), while in transit between a source/point of origin and destination, and
 transformation.
 Note 2: The security aspects are informed by the criteria in applicable laws, policies, directives,
 regulations, and patents.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-161
+
 IM-1.5 Define the security aspects of information maintenance actions.
 References: [4] [86] [100] [128]
 IM-2 PERFORM INFORMATION MANAGEMENT
@@ -6561,9 +6241,7 @@ I.7.2. Security Outcomes
 - Required data is securely managed.
 - Security-relevant data is analyzed, and the results are interpreted.
 - Measurement results provide objective information that supports security-relevant decisions.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-162
+
 I.7.3. Security Activities and Tasks
 MS-1 PREPARE FOR MEASUREMENT
 MS-1.1 Define the security aspects of the measurement strategy.
@@ -6595,9 +6273,7 @@ Note: Security measurement results are provided to stakeholders and project pers
 support decision-making and risk management and to initiate corrective actions and
 improvements.
 References: [4] [79] [86] [97] [130]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-163
+
 I.8. Quality Assurance
 The purpose of the Quality Assurance process is to help ensure the effective application of the
 organization’s Quality Management process to the project.
@@ -6630,9 +6306,7 @@ and test activities specific to the product or service
 QA-1.2 Establish the independence of security quality assurance from other life cycle processes.
 References: [4] [30] [61] [86] [98] [99] [106] [107] [108] [131]
 QA-2 PERFORM PRODUCT OR SERVICE EVALUATIONS
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-164
+
 QA-2.1 Evaluate products and services for conformance to established security criteria,
 contracts, standards, and regulations.
 QA-2.2 Perform the security aspects of verification and validation on the outputs of the life
@@ -6667,9 +6341,7 @@ QA-5.5 Note and analyze the security aspects of incidents and problems.
 QA-5.6 Inform stakeholders of the status of the security aspects of incidents and problems.
 QA-5.7 Track the security aspects of incidents and problems to closure.
 References: [4] [30] [61] [98] [99] [131]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-165
+
 Appendix J. Organizational Project-Enabling Processes
 This appendix contains the Organizational Project-Enabling Processes from [4] with securityrelevant considerations and contributions for the purpose, outcomes, activities, and tasks.
 J.1. Life Cycle Model Management
@@ -6702,9 +6374,7 @@ LM-1.3 Define the security roles, responsibilities, accountabilities, and author
 implementation of the security aspects of life cycle processes and the strategic
 management of life cycles.
 LM-1.4 Define the security aspects of the criteria that control progression through the life cycle.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-166
+
 Note: This includes security criteria for gates, checkpoints, and entry/exit criteria for milestones
 and decision points.
 LM-1.5 Establish security criteria for the standard life cycle models for the organization,
@@ -6738,9 +6408,7 @@ Reprinted with permission from IEEE, Copyright IEEE 2015, All rights reserved.
 J.2.1. Security Purpose
 - Define the protection needs for the aspects of infrastructure and services that support
 organization and project objectives.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-167
+
 J.2.2. Security Outcomes
 - Protection needs for the infrastructure are defined.
 - Security capabilities and constraints of infrastructure elements are specified.
@@ -6773,9 +6441,7 @@ J.3.1. Security Purpose
 organization.
 J.3.2. Security Outcomes
 - Security aspects of strategic venture opportunities, investments, or necessities are prioritized.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-168
+
 - Security aspects of projects are identified.
 - Resources and budgets for the security aspects of each project are allocated.
 - Project management responsibilities, accountabilities, and authorities for security are defined.
@@ -6811,9 +6477,7 @@ that govern the execution of each project.
 PM-1.9 Authorize each project to commence the execution of project plans, including its
 security aspects.
 References: [4] [30] [61] [86] [98] [99] [100]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-169
+
 PM-2 EVALUATE THE PORTFOLIO OF PROJECTS
 PM-2.1 Evaluate the security aspects of projects to confirm ongoing viability.
 Note: This includes the following:
@@ -6849,9 +6513,7 @@ in a manner consistent with strategic needs.
 J.4.2. Security Outcomes
 - Security-relevant skills required by projects are identified.
 Personnel with necessary security skills are provided to projects.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-170
+
 - Security-relevant skills of personnel are developed, maintained, or enhanced.
 - Security-relevant personnel conflicts are resolved.
 J.4.3. Security Activities and Tasks
@@ -6883,9 +6545,7 @@ The purpose of the Quality Management process is to assure that products, servic
 implementations of the quality management process meet organizational and project quality
 objectives and achieve customer satisfaction.
 Reprinted with permission from IEEE, Copyright IEEE 2015, All rights reserved.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-171
+
 J.5.1. Security Purpose
 - Define organizational and project security quality objectives and the criteria used to
 determine that products, services, and implementations of the Quality Management process
@@ -6919,9 +6579,7 @@ the security quality management policies, standards, and procedures.
 QM-2.4 Monitor the status of security quality improvements on processes, products, and
 services.
 References: [4] [30] [61] [86] [98] [99] [130]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-172
+
 QM-3 PERFORM QUALITY MANAGEMENT CORRECTIVE AND PREVENTIVE ACTIONS
 QM-3.1 Plan corrective actions when security quality management objectives are not
 achieved.
@@ -6955,9 +6613,7 @@ assets for their useful life
 collected and maintained
 - The criteria for accepting, qualifying, and retiring security knowledge, security skills, and
 security knowledge assets
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-173
+
 - The procedures for controlling changes to the security knowledge, security skills, and
 security knowledge assets
 - The plans, mechanisms, and procedures for protection, control, and access to classified or
@@ -6993,15 +6649,11 @@ References: [4] [71] [86] [100]
 KM-4 MANAGE KNOWLEDGE, SKILLS, AND KNOWLEDGE ASSETS
 KM-4.1 Maintain security knowledge, skills, and knowledge assets.
 KM-4.2 Monitor and record the use of security knowledge, skills, and knowledge assets.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-174
+
 KM-4.3 Periodically reassess the currency of the security aspects of technology and market
 needs of the security knowledge assets.
 References: [4] [86] [100]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-175
+
 Appendix K. Agreement Processes
 This appendix contains the Agreement Processes from [4] with security-relevant considerations and contributions for the purpose, outcomes, activities, and tasks.
 K.1. Acquisition
@@ -7032,9 +6684,7 @@ References: [4] [30] [61] [86] [98] [99] [100] [111] [112] [113]
 AQ-2 ADVERTISE THE ACQUISITION AND SELECT THE SUPPLIER
 AQ-2.1 Securely communicate the request for the supply of a product or service to potential
 suppliers.
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-176
+
 AQ-2.2 Select one or more suppliers that meet the security criteria.
 References: [4] [30] [61] [86] [98] [99] [100] [111] [112] [113]
 AQ-3 ESTABLISH AND MAINTAIN AN AGREEMENT
@@ -7067,9 +6717,7 @@ AQ-5.3 Accept the product or service from the supplier or other party, as direct
 security criteria in the agreement.
 AQ-5.4 Close the agreement in accordance with agreement security criteria.
 References: [4] [86] [100] [111] [112] [113] [118]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-177
+
 K.2. Supply
 The purpose of the Supply process is to provide an acquirer with a product or service that meets
 agreed requirements.
@@ -7102,9 +6750,7 @@ SP-3.1 Negotiate and approve an agreement with the acquirer that includes securi
 acceptance criteria.
 Note 1: This includes configuration management, risk reporting, reporting of security measures,
 and security measure analysis; security requirements; secure development; security verification;
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-178
+
 security validation; security acceptance procedures and criteria; regulatory body acceptance,
 authorization, and approval; procedures for transport, handling, delivery, and storage; security
 and privacy protections and restrictions on the use, dissemination, and destruction of data,
@@ -7137,9 +6783,7 @@ Note: This includes the transfer of hardware, software, and sensitive, proprieta
 information.
 SP-5.5 Close the agreement in accordance with the agreement security criteria.
 References: [4] [86] [100] [111] [112] [113] [118]
-NIST SP 800-160v1r1 Engineering Trustworthy Secure Systems
-November 2022
-179
+
 Appendix L. Change Log
 L.1. Changes from NIST SP 800-160 Volume 1
 This publication incorporates the following changes from the original edition (November 2016;
