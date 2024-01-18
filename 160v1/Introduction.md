@@ -33,7 +33,7 @@ Peter Neumann described the concept of trustworthiness in [2] as follows:
 
 Systems security engineering provides complementary engineering capabilities that extend the concept of trustworthiness to deliver trustworthy secure systems. Trustworthiness is not only about demonstrably meeting a set of requirements. The requirements must also be complete, consistent, and correct. From a security perspective, a trustworthy system meets a set of welldefined requirements, including security requirements. Through evidence and expert judgment, trustworthy secure systems can limit and prevent the effects of modern adversities. Such adversities come in malicious and non-malicious forms and can emanate from a variety of sources, including physical and electronic. Adversities can include attacks from determined and capable adversaries, human errors of omission and commission, accidents and incidents, component faults and failures, abuses and misuses, and natural and human-made disasters.
 
-## <a name="Purpose_and_Applicability"></a>Purpose and Applicability / 目的と適用範囲
+## Purpose and Applicability / 目的と適用範囲
 This publication is intended to:
 * Provide a basis for establishing a discipline for systems security engineering as part of systems engineering in terms of its principles, concepts, activities, and tasks
 * Foster a common mindset to deliver security for any system, regardless of its purpose, type, scope, size, complexity, or stage of the system life cycle
@@ -93,7 +93,7 @@ The considerations set forth in this publication are applicable to all federal s
 * システム・オブ・システムズの開発 
   * エンジニアリングの取り組みは、それぞれ独自の利害関係者、主要目的、計画された進化を持つ一連の構成システム間で行われる。構成システムをシステム・オブ・システムズに組み合わせることは、それ以外では困難または非現実的である機能を生み出す。この取り組みは、自発的な参加によって時間をかけて自然に発生する比較的非公式で計画されていないシステム・オブ・システムズの概念と進化から、最も公式なものである中央管理されたエンジニアリングの取り組みを通じて指示され、構造化され、計画され、達成される
 
-## <a name="Target_Audience"></a>Target Audience / 対象読者
+## Target Audience / 対象読者
 > This publication is intended for systems engineers, security engineers, and other engineering professionals. The term systems security engineer is used to include systems engineers and security professionals who apply the concepts and principles and perform the activities and tasks described in this publication.[^8] This publication can also be used by professionals who perform other system life cycle activities or tasks, including:
 
 本書は、システムエンジニア、セキュリティエンジニア、およびその他のエンジニアリング専門家を対象としている。用語「システムセキュリティエンジニア」は、本書に記述されている概念と原則を適用し、活動とタスクを実行するシステムエンジニアおよびセキュリティ専門家を含むために使用される。本書は、他のシステムライフサイクルの活動やタスクを実行する専門家にも使用されることができる。これには以下のようなものが含まれる：
@@ -130,7 +130,7 @@ The considerations set forth in this publication are applicable to all federal s
 
 [^8j]: システムセキュリティエンジニアリングの活動とタスクは、メカニズム、コンポーネント、システム要素、システム、システム・オブ・システムズ、プロセス、または組織に適用することができる。エンティティのサイズや複雑さに関わらず、信用度の高いシステムを提供し、利害関係者の保護ニーズと懸念を満たすためには、学際的なシステムエンジニアリングチームが必要である。プロセスは、効果を促進するためにカスタマイズされることを意図している。
 
-## <a name="How_to_Use_this_Publication"></a>How to Use this Publication / 本書の使い方
+## How to Use this Publication / 本書の使い方
 > This publication is intended to serve as a reference and educational resource for systems engineers, engineering specialties, architects, designers, and any individuals involved in the development of trustworthy secure systems and system components. It is meant to be flexible in its application to meet the diverse needs of organizations. There is no expectation that all of the technical content in this publication will be used as part of a systems engineering effort. Rather, the concepts and principles for trustworthy secure design in Appendices D through F as well as the systems life cycle processes and security-relevant activities and tasks in Appendices G through K can be selectively employed by organizations – relying on the experience and expertise of the engineering teams to determine what is correct for their purposes. Applying the content of this publication enables the achievement of security outcomes that are consistent with the systems engineering perspective on system life cycle processes.
 
 本書は、システムエンジニア、エンジニアリングの専門家、アーキテクト、デザイナー、信用度の高い安全なシステムおよびシステムコンポーネントの開発に関わるすべての個人に対する参考資料および教育資源として機能することを意図している。それは、組織の多様なニーズに応えるためにその応用が柔軟であることを意味している。本書の全ての技術内容がシステムエンジニアリングの努力の一部として使用されるとは期待されていない。むしろ、付録DからFに記載されている信用度の高い安全な設計のための概念と原則、および付録GからKに記載されているシステムライフサイクルプロセスとセキュリティ関連の活動とタスクは、組織によって選択的に採用されることができる。これは、エンジニアリングチームの経験と専門知識に依存し、それらの目的にとって何が正しいかを決定する。本書の内容を適用することにより、システムライフサイクルプロセスに対するシステムエンジニアリングの観点と一致するセキュリティ成果の達成が可能になる。
@@ -139,7 +139,7 @@ The considerations set forth in this publication are applicable to all federal s
 
 この出版物に記述されたシステムライフサイクルプロセスは、どのようなシステムまたはソフトウェア開発方法論を利用することもできる。これらのプロセスは、ウォーターフォール、スパイラル、DevOps、アジャイル、その他のアプローチに等しく適用可能である。プロセスは再帰的に、反復的に、同時に、逐次的に、または並列に適用することができ、そのサイズ、複雑さ、目的、範囲、運用環境、特別な性質に関係なく、どのようなシステムにも適用可能である。この出版物の内容の適用の全範囲は、利害関係者の能力ニーズ、保護ニーズ、特にコスト、スケジュール、性能の考慮事項に特に注意を払いながら、懸念事項によって導かれる。
 
-## <a name="Organization_of_this_Publication"></a>Organization of this Publication / 本書の構成
+## Organization of this Publication / 本書の構成
 > The remainder of this publication is organized as follows:
 
 本書の残りの部分は、以下のように構成されている：

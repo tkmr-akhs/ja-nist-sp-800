@@ -96,10 +96,10 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 
 # Table of Contents / 目次
 * [Introduction / はじめに](Introduction.md)
-  * [Purpose and Applicability / 目的と適用範囲](Introduction.md#Purpose_and_Applicability)
-  * [Target Audience / 対象読者](Introduction.md#Target_Audience)
-  * [How to Use this Publication / 本書の使い方](Introduction.md#How_to_Use_this_Publication)
-  * [Organization of this Publication / 本書の構成](Introduction.md#Organization_of_this_Publication)
+  * [Purpose and Applicability / 目的と適用範囲](Introduction.md#Purpose-and-Applicability--目的と適用範囲)
+  * [Target Audience / 対象読者](Introduction.md#Target-Audience--対象読者)
+  * [How to Use this Publication / 本書の使い方](Introduction.md#How-to-Use-this-Publication--本書の使い方)
+  * [Organization of this Publication / 本書の構成](Introduction.md#Organization-of-this-Publication--本書の構成)
 * [Systems Engineering Overview / システムエンジニアリングの概要](Systems_Engineering_Overview.md)
   * System Concepts / システムの概念
     * Systems and System Structure / システムとシステム構造
