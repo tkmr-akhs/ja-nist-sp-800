@@ -101,11 +101,11 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
   * [How to Use this Publication / 本書の使い方](Introduction.md#How-to-Use-this-Publication--本書の使い方)
   * [Organization of this Publication / 本書の構成](Introduction.md#Organization-of-this-Publication--本書の構成)
 * [Systems Engineering Overview / システムエンジニアリングの概要](Systems_Engineering_Overview.md)
-  * System Concepts / システムの概念
+  * [System Concepts / システムの概念](Systems_Engineering_Overview.md#System-Concepts--システムの概念)
     * Systems and System Structure / システムとシステム構造
     * Interfacing, Enabling, and Interoperating Systems / インターフェイス化、有効化、およびシステム間相互運用
-  * Systems Engineering Foundations / システムエンジニアリングの基礎
-  * Trust and Trustworthiness / 信頼 (trust) と信用度
+  * [Systems Engineering Foundations / システムエンジニアリングの基礎](Systems_Engineering_Overview.md#Systems-Engineering-Foundations--システムエンジニアリングの基礎)
+  * [Trust and Trustworthiness / 信用と信用度](Systems_Engineering_Overview.md#Trust-and-Trustworthiness--信用と信用度)
 * [System Security Concepts / システムセキュリティの概念](System_Security_Concepts.md)
   * The Concept of Security / セキュリティの概念
   * The Concept of an Adequately Secure System / 十分に安全なシステムの概念
@@ -122,7 +122,7 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
   * The Solution Context / 解決策の文脈
   * The Trustworthiness Context / 信用度 の文脈
 
-## References 
+* References 
 * Appendix A. [Acronyms / アクロニム](Acronyms.md)
 * Appendix B. [Glossary / 用語集](Glossary.md)
 * Appendix C. [Security Policy and Requirements / セキュリティポリシーと要件](Security_Policy_and_Requirements.md)
