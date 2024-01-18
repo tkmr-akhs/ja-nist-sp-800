@@ -71,15 +71,15 @@ Ron Ross: 0000-0002-1099-9757
 
 > NOTICE: ITL has requested that holders of patent claims whose use may be required for compliance with the guidance or requirements of this publication disclose such patent claims to ITL. However, holders of patents are not obligated to respond to ITL calls for patents and ITL has not undertaken a patent search in order to identify which, if any, patents may apply to this publication.
 
-注意：ITLは、本出版物のガイダンスまたは要件に準拠するために使用が必要となる特許請求の範囲の保有者に対し、当該特許請求の範囲をITLに開示するよう要請している。ただし、特許権者はITLの特許募集に応じる義務はなく、ITLは、本出版物に該当する特許があるとしても、それを特定するための特許調査を行っていない。
+注意：ITLは、本書のガイダンスまたは要件に準拠するために使用が必要となる特許請求の範囲の保有者に対し、当該特許請求の範囲をITLに開示するよう要請している。ただし、特許権者はITLの特許募集に応じる義務はなく、ITLは、本書に該当する特許があるとしても、それを特定するための特許調査を行っていない。
 
 > As of the date of publication and following call(s) for the identification of patent claims whose use may be required for compliance with the guidance or requirements of this publication, no such patent claims have been identified to ITL.
 
-本出版物の発行日および、本出版物のガイダンスまたは要件に準拠するために使用が必要とされる可能性のある特許請求の範囲の特定を求めた後の時点で、そのような特許請求の範囲はITLに特定されていない。
+本書の発行日および、本書のガイダンスまたは要件に準拠するために使用が必要とされる可能性のある特許請求の範囲の特定を求めた後の時点で、そのような特許請求の範囲はITLに特定されていない。
 
 No representation is made or implied by ITL that licenses are not required to avoid patent infringement in the use of this publication.
 
-ITLは、本出版物の使用において特許侵害を回避するためのライセンスが不要であることを表明するものではなく、また示唆するものでもない。
+ITLは、本書の使用において特許侵害を回避するためのライセンスが不要であることを表明するものではなく、また示唆するものでもない。
 
 # Disclaimer / 免責事項
 > This publication should be used as a supplement to International Standard ISO/IEC/IEEE 15288 and other supporting international standards. It is recommended that organizations using this publication obtain the appropriate international standards to understand the context of the material in Appendices G through K. Content from ISO/IEC/IEEE 15288 referenced in this publication is used with permission from the Institute of Electrical and Electronics Engineers. It is noted as follows:
@@ -129,12 +129,12 @@ ITLは、本出版物の使用において特許侵害を回避するための�
 * C.1. Security Policy / セキュリティポリシー
 * C.2. Security Requirements / セキュリティ要件
 * C.3. Distinguishing Requirements, Policy, and Mechanisms / 要件、ポリシー、メカニズムの区別
-* Appendix D. Trustworthy Secure Design / 信頼性 (trustworthness) の高いセキュアな設計
-* D.1. Design Approach for Trustworthy Systems / 信頼性 (trustworthness) の高いシステムのための設計アプローチ
+* Appendix D. Trustworthy Secure Design / 信用度の高いセキュアな設計
+* D.1. Design Approach for Trustworthy Systems / 信用度の高いシステムのための設計アプローチ
 * D.2. Design Considering Emergence / 創発を考慮した設計
 * D.3. Security Design Order of Precedence / セキュリティ設計の優先順位
 * D.4. Functional Design Considerations / 機能設計の考慮事項
-* Appendix E. Principles for Trustworthy Secure Design / 信頼性 (trustworthness) の高いセキュアな設計のための原則
+* Appendix E. Principles for Trustworthy Secure Design / 信用度の高いセキュアな設計のための原則
 * E.1. Anomaly Detection / アノマリ検知
 * E.2. Clear Abstractions / 明確な抽象化
 * E.3. Commensurate Protection / 相応の保護
@@ -161,13 +161,13 @@ ITLは、本出版物の使用において特許侵害を回避するための�
 * E.24. Protective Recovery / 保護的なリカバリ
 * E.25. Reduced Complexity / 複雑さの軽減
 * E.26. Redundancy / 冗長性
-* E.27. Self-Reliant Trustworthiness / 自立した信頼性 (trustworthness) 
+* E.27. Self-Reliant Trustworthiness / 自立した信用度
 * E.28. Structured Decomposition and Composition / 構造化された分解と合成
-* E.29. Substantiated Trustworthiness / 実証された信頼性 (trustworthness)
-* E.30. Trustworthy System Control / 信頼性 (trustworthness) の高いシステム コントロール
-* Appendix F. Trustworthiness and Assurance / 信頼性 (trustworthness) と保証 (assureance)
-* F.1. Trust and Trustworthiness / 信頼 (trust) と信用度
-* F.2. Assurance / 保証 (assureance)
+* E.29. Substantiated Trustworthiness / 実証された信用度
+* E.30. Trustworthy System Control / 信用度の高いシステム コントロール
+* Appendix F. Trustworthiness and Assurance / 信用度と保証
+* F.1. Trust and Trustworthiness / 信用と信用度
+* F.2. Assurance / 保証
 * Appendix G. System Life Cycle Processes Overview / システムライフサイクルプロセスの概要
 * G.1. Process Overview / プロセスの概要
 * G.2. Process Relationships / プロセスの関係
@@ -267,7 +267,7 @@ ITLは、本出版物の使用において特許侵害を回避するための�
 
 > Building trustworthy, secure systems cannot occur in a vacuum with stovepipes for software, hardware, information technology, and the human element (e.g., designers, operators, users, attackers of these systems). Rather, it requires a transdisciplinary approach to protection, a determination across all assets where loss could occur, and an understanding of adversity, including how adversaries attack and compromise systems. As such, this publication addresses considerations for the engineering-driven actions necessary to develop defensible and survivable systems, including the components that compose and the services that depend on those systems. The objective is to address security issues from the perspective of stakeholder requirements and protection needs and to use established engineering processes to ensure that such requirements and needs are addressed with appropriate fidelity and rigor across the entire life cycle of the system.
 
-信用度が高く、安全なシステムの構築は、ソフトウェア、ハードウェア、情報技術、そして人間要素（例えば、これらのシステムの設計者、運用者、ユーザー、攻撃者）のための孤立した領域で行われることはない。むしろ、それは保護に関して学際的なアプローチを要求し、損失が発生しうるすべての資産にわたる決意と、敵意を含む逆境への理解、特に敵がシステムを攻撃し妥協させる方法を理解することを必要とする。したがって、この出版物は、システムを構成するコンポーネントやそれらのシステムに依存するサービスを含む、防御可能で生存可能なシステムを開発するために必要な工学駆動の行動に関する考慮事項に対処する。目的は、利害関係者の要件と保護ニーズの観点からセキュリティ問題に対処し、確立された工学プロセスを使用して、そのような要件とニーズがシステムの全ライフサイクルにわたって適切な忠実度と厳格さで対処されるようにすることである。
+信用度が高く、安全なシステムの構築は、ソフトウェア、ハードウェア、情報技術、そして人間要素（例えば、これらのシステムの設計者、運用者、ユーザー、攻撃者）のための孤立した領域で行われることはない。むしろ、それは保護に関して学際的なアプローチを要求し、損失が発生しうるすべての資産にわたる決意と、敵意を含む逆境への理解、特に敵がシステムを攻撃し妥協させる方法を理解することを必要とする。したがって、本書は、システムを構成するコンポーネントやそれらのシステムに依存するサービスを含む、防御可能で生存可能なシステムを開発するために必要な工学駆動の行動に関する考慮事項に対処する。目的は、利害関係者の要件と保護ニーズの観点からセキュリティ問題に対処し、確立された工学プロセスを使用して、そのような要件とニーズがシステムの全ライフサイクルにわたって適切な忠実度と厳格さで対処されるようにすることである。
 
 > Engineering trustworthy, secure systems is a significant undertaking that requires a substantial investment in the requirements, architecture, and design of systems, components, applications, and networks. A trustworthy system provides compelling evidence to support claims that it meets its requirements to deliver the protection and performance needed by stakeholders. Introducing a disciplined, structured, and standards-based set of systems security engineering activities and tasks provides an important starting point and forcing function to initiate needed change.
 
