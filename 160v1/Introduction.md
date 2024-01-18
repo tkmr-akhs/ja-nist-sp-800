@@ -7,19 +7,19 @@
 
 本書では、セキュリティという用語は、容認できない結果を伴う資産の損失を引き起こす可能性のある条件から解放されることを意味するために使用されている。[^4j] 利害関係者は、セキュリティが適用される資産とその影響に関してセキュリティの範囲を定義する必要がある。 [^5j] システム エンジニアリングは、確実で信頼できる安全なシステムを構築するための、規律正しく構造化されたアプローチの基礎を提供する。 システム セキュリティ エンジニアリングは、システム エンジニアリングの下位分野として、安全な結果を生み出すことを目的としたセキュリティ関連の考慮事項に取り組みます。 エンジニアリングの取り組みは、信用度と保証 (assurance) の目的を達成するために必要な、適切なレベルの忠実性と厳格さで実行される。
 
-[^1]: A system is an arrangement of parts or elements that exhibit a behavior or meaning that the individual constituents do not [3]. The elements that compose a system include hardware, software, data, humans, processes, procedures, facilities, materials, and naturally occurring entities [4].
+[^1]: > A system is an arrangement of parts or elements that exhibit a behavior or meaning that the individual constituents do not [3]. The elements that compose a system include hardware, software, data, humans, processes, procedures, facilities, materials, and naturally occurring entities [4].
 
 [^1j]: システムとは、個々の構成要素は持たない動作や意味を示す部品や要素の配置である [3]。 システムを構成する要素には、ハードウェア、ソフトウェア、データ、人間、プロセス、手順、設備、材料、自然発生物が含まれる [4]。
 
-[^2]: The term technology is used in the broadest context in this publication to include computing, communications, and information technologies, as well as any mechanical, hydraulic, pneumatic, or structural components in systems that contain or are enabled by such technologies. This view of technology provides an increased recognition of the digital, computational, and electronic machine-based foundation of modern complex systems and the growing importance of an assured trustworthiness of that foundation in providing the system's functional capability and interaction with its physical machine and human system elements.
+[^2]: > The term technology is used in the broadest context in this publication to include computing, communications, and information technologies, as well as any mechanical, hydraulic, pneumatic, or structural components in systems that contain or are enabled by such technologies. This view of technology provides an increased recognition of the digital, computational, and electronic machine-based foundation of modern complex systems and the growing importance of an assured trustworthiness of that foundation in providing the system's functional capability and interaction with its physical machine and human system elements.
 
 [^2j]: 本書では、「技術」という言葉は、コンピューティング、通信、情報技術だけではなく、そのような技術を含む、あるいは、それらによって可能となるシステムの機械的、油圧的、空気圧的、または建造的なコンポーネントまでをも含む、最も広い文脈で使用される。この「技術」の視点は、デジタル、計算的、電子的な機械に基づく、現代の複雑なシステムの基礎に関する、より高められた認識を提供し、また、システムの機能的な能力とそのシステムの物理的機械および人間のシステム要素との相互作用の提供における、そのシステムの基礎の保証された信頼性をより重要なものにする。(なにをいってるかよくわからんうえに、ぶんがながすぎて、ほんやくできない)
 
-[^3]: The term adversity refers to those conditions that can cause asset loss (e.g., threats, attacks, vulnerabilities, hazards, disruptions, and exposures).
+[^3]: > The term adversity refers to those conditions that can cause asset loss (e.g., threats, attacks, vulnerabilities, hazards, disruptions, and exposures).
 
 [^3j]: 「逆境」という言葉は、資産の損失を引き起こす可能性がある状況を指します（例えば、脅威、攻撃、脆弱性、危険、混乱、露出など）。
 
-[^4]: The phrasing used in this definition of security is intentional. Ross Anderson noted in [5] that “now that everything’s acquiring connectivity, you can’t have safety without security, and these ecosystems are emerging.” Reflecting on this observation, the security definition was chosen to achieve alignment with a prevailing safety definition.
+[^4]: > The phrasing used in this definition of security is intentional. Ross Anderson noted in [5] that “now that everything’s acquiring connectivity, you can’t have safety without security, and these ecosystems are emerging.” Reflecting on this observation, the security definition was chosen to achieve alignment with a prevailing safety definition.
 
 [^4j]: このセキュリティの定義で使用されている言い回しは意図的なものである。Ross Anderson は [5] で「今や全てが接続性を獲得しているため、セキュリティなしに安全はあり得ず、これらのエコシステムが出現している」と指摘した。この観察を反映して、セキュリティの定義は一般的な安全の定義との整合性を図るために選ばれた。
 
@@ -43,7 +43,7 @@ This publication is intended to:
 
 The considerations set forth in this publication are applicable to all federal systems other than those systems designated as national security systems as defined in 44 U.S.C., Section 3542.[^6] These considerations have been broadly developed from a technical and technical management perspective to complement similar considerations for national security systems and may be used for such systems with the approval of federal officials who exercise policy authority over such systems. State, local, and tribal governments, as well as private sector entities, are encouraged to consider using the material in this publication, as appropriate.
 
-[^6]: Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.  “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”  -- An Objective of Security in the Future of Systems Engineering [7]
+[^6]: > Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.  “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”  -- An Objective of Security in the Future of Systems Engineering [7]
 
 [^6j]: システムの信用度を高めることは、システム、システムコンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計、開発において相当な投資を必要とする重要な取り組みである。[8]の方針では、連邦機関に対して、本書のシステムセキュリティエンジニアリングの原則、概念、技術、システムライフサイクルプロセスを全ての高価値資産に対して実施することを要求している。  「セキュリティはシステムに組み込まれている。他を守ることを目的とした2つのシステムを設計する2つのエンジニアリンググループではなく、システムエンジニアリングは、システムとそのコンポーネントにセキュリティを組み込んだ単一のシステムを指定し設計する。」  -- An Objective of Security in the Future of Systems Engineering [7]
 
@@ -122,11 +122,11 @@ The considerations set forth in this publication are applicable to all federal s
 
 システムエンジニアリング、コンピュータエンジニアリング、コンピュータサイエンス、ソフトウェアエンジニアリング、コンピュータセキュリティプログラムを提供する学術機関の教育者
 
-[^7]: There is a growing need to reuse or leverage system implementation successes within operational environments that are different from how they were originally designed and developed. This type of reuse or reimplementation of systems within other operational environments is more efficient and represents potential advantages in maximizing interoperability between various system implementations. It should be noted that reuse may violate the assumptions used to determine that a system or system component was trustworthy.
+[^7]: > There is a growing need to reuse or leverage system implementation successes within operational environments that are different from how they were originally designed and developed. This type of reuse or reimplementation of systems within other operational environments is more efficient and represents potential advantages in maximizing interoperability between various system implementations. It should be noted that reuse may violate the assumptions used to determine that a system or system component was trustworthy.
 
 [^7j]: 運用環境が元の設計や開発と異なる場合に、システム実装の成功を再利用または活用する必要性が高まっている。このような再利用または他の運用環境でのシステムの再実装は、効率的であり、さまざまなシステム実装間の相互運用性を最大化する潜在的な利点を表している。ただし、再利用がシステムまたはシステムコンポーネントが信用度のあると判断された前提を破る可能性があることに注意すべきである。
 
-[^8]: Systems security engineering activities and tasks can be applied to a mechanism, component, system element, system, system of systems, processes, or organizations. Regardless of the size or complexity of the entity, a transdisciplinary systems engineering team is needed to deliver systems that are trustworthy and that satisfy the protection needs and concerns of stakeholders. The processes are intended to be tailored to facilitate effectiveness.
+[^8]: > Systems security engineering activities and tasks can be applied to a mechanism, component, system element, system, system of systems, processes, or organizations. Regardless of the size or complexity of the entity, a transdisciplinary systems engineering team is needed to deliver systems that are trustworthy and that satisfy the protection needs and concerns of stakeholders. The processes are intended to be tailored to facilitate effectiveness.
 
 [^8j]: システムセキュリティエンジニアリングの活動とタスクは、メカニズム、コンポーネント、システム要素、システム、システム・オブ・システムズ、プロセス、または組織に適用することができる。エンティティのサイズや複雑さに関わらず、信用度の高いシステムを提供し、利害関係者の保護ニーズと懸念を満たすためには、学際的なシステムエンジニアリングチームが必要である。プロセスは、効果を促進するためにカスタマイズされることを意図している。
 
