@@ -27,21 +27,45 @@
 
 [^5j]: [6] から改変。
 
-Peter Neumann described the concept of trustworthiness in [2] as follows:
+> Peter Neumann described the concept of trustworthiness in [2] as follows:
 
-“By trustworthiness, we mean simply worthy of being trusted to fulfill whatever critical requirements may be needed for a particular component, subsystem, system, network, application, mission, enterprise, or other entity. Trustworthiness requirements might typically involve (for example) attributes of security, reliability, performance, and survivability under a wide range of potential adversities. Measures of trustworthiness are meaningful only to the extent that (a) the requirements are sufficiently complete and well defined, and (b) can be accurately evaluated.”
+Peter Neumann は信用度の概念について[2]で以下のように述べている。
 
-Systems security engineering provides complementary engineering capabilities that extend the concept of trustworthiness to deliver trustworthy secure systems. Trustworthiness is not only about demonstrably meeting a set of requirements. The requirements must also be complete, consistent, and correct. From a security perspective, a trustworthy system meets a set of welldefined requirements, including security requirements. Through evidence and expert judgment, trustworthy secure systems can limit and prevent the effects of modern adversities. Such adversities come in malicious and non-malicious forms and can emanate from a variety of sources, including physical and electronic. Adversities can include attacks from determined and capable adversaries, human errors of omission and commission, accidents and incidents, component faults and failures, abuses and misuses, and natural and human-made disasters.
+> “By trustworthiness, we mean simply worthy of being trusted to fulfill whatever critical requirements may be needed for a particular component, subsystem, system, network, application, mission, enterprise, or other entity. Trustworthiness requirements might typically involve (for example) attributes of security, reliability, performance, and survivability under a wide range of potential adversities. Measures of trustworthiness are meaningful only to the extent that (a) the requirements are sufficiently complete and well defined, and (b) can be accurately evaluated.”
+
+「信用度とは、特定のコンポーネント、サブシステム、システム、ネットワーク、アプリケーション、ミッション、企業、あるいは他のエンティティに対して、必要とされる重要な要件を満たすことに信頼できるということを単純に意味する。信用度の要件は、一般に、さまざまな潜在的な逆境の下でのセキュリティ、信頼性、性能、生存性などの属性を含むことが多い。信用度の尺度は、（a）要件が十分に完全で明確に定義され、（b）正確に評価できる範囲でのみ意味を持つ。」
+
+> Systems security engineering provides complementary engineering capabilities that extend the concept of trustworthiness to deliver trustworthy secure systems. Trustworthiness is not only about demonstrably meeting a set of requirements. The requirements must also be complete, consistent, and correct. From a security perspective, a trustworthy system meets a set of welldefined requirements, including security requirements. Through evidence and expert judgment, trustworthy secure systems can limit and prevent the effects of modern adversities. Such adversities come in malicious and non-malicious forms and can emanate from a variety of sources, including physical and electronic. Adversities can include attacks from determined and capable adversaries, human errors of omission and commission, accidents and incidents, component faults and failures, abuses and misuses, and natural and human-made disasters.
+
+システムセキュリティエンジニアリングは、信用度の概念を拡張して、信頼できるセキュアなシステムを提供する補完的なエンジニアリング能力を提供する。信用度とは、一連の要件を明示的に満たすことだけではない。要件は、完全で、一貫性があり、正確でなければならない。セキュリティの観点から、信頼できるシステムは、セキュリティ要件を含む一連の明確に定義された要件を満たす。証拠と専門家の判断により、信頼できるセキュアなシステムは、現代の逆境の影響を限定し、防ぐことができる。そのような逆境は、悪意のあるものとないものの形を取り、物理的なものや電子的なものを含む様々な源から発生することがある。逆境には、決意があり能力がある敵からの攻撃、省略と委任の人間の誤り、事故やインシデント、コンポーネントの欠陥や故障、乱用と誤用、自然災害や人為的災害が含まれることがある。
 
 ## Purpose and Applicability / 目的と適用範囲
-This publication is intended to:
-* Provide a basis for establishing a discipline for systems security engineering as part of systems engineering in terms of its principles, concepts, activities, and tasks
-* Foster a common mindset to deliver security for any system, regardless of its purpose, type, scope, size, complexity, or stage of the system life cycle
-* Demonstrate how selected systems security engineering principles, concepts, activities, and tasks can be effectively applied to systems engineering activities
-* Advance the field of systems security engineering as a discipline that can be applied and studied
-* Serve as a basis for the development of educational and training programs, including individual certifications and other professional assessment criteria
+> This publication is intended to:
 
-The considerations set forth in this publication are applicable to all federal systems other than those systems designated as national security systems as defined in 44 U.S.C., Section 3542.[^6] These considerations have been broadly developed from a technical and technical management perspective to complement similar considerations for national security systems and may be used for such systems with the approval of federal officials who exercise policy authority over such systems. State, local, and tribal governments, as well as private sector entities, are encouraged to consider using the material in this publication, as appropriate.
+本書の目的は以下の通りである：
+
+> * Provide a basis for establishing a discipline for systems security engineering as part of systems engineering in terms of its principles, concepts, activities, and tasks
+
+* システムエンジニアリングの一部として、その原則、概念、活動、およびタスクの観点からシステムセキュリティエンジニアリングのための規律を確立するための基礎を提供する
+
+> * Foster a common mindset to deliver security for any system, regardless of its purpose, type, scope, size, complexity, or stage of the system life cycle
+
+* システムの目的、タイプ、範囲、サイズ、複雑さ、またはシステムライフサイクルの段階に関係なく、あらゆるシステムのセキュリティを提供するための共通のマインドセットを促進する
+
+> * Demonstrate how selected systems security engineering principles, concepts, activities, and tasks can be effectively applied to systems engineering activities
+
+> * Advance the field of systems security engineering as a discipline that can be applied and studied
+
+* 選択されたシステムセキュリティエンジニアリングの原則、概念、活動、およびタスクがシステムエンジニアリング活動に効果的に適用される方法を示す
+適用され、研究される規律としてシステムセキュリティエンジニアリングの分野を進展させる
+
+> * Serve as a basis for the development of educational and training programs, including individual certifications and other professional assessment criteria
+
+* 教育およびトレーニングプログラムの開発の基礎として、個々の認証およびその他の専門家評価基準を含む
+
+> The considerations set forth in this publication are applicable to all federal systems other than those systems designated as national security systems as defined in 44 U.S.C., Section 3542.[^6] These considerations have been broadly developed from a technical and technical management perspective to complement similar considerations for national security systems and may be used for such systems with the approval of federal officials who exercise policy authority over such systems. State, local, and tribal governments, as well as private sector entities, are encouraged to consider using the material in this publication, as appropriate.
+
+本書に記載されている考慮事項は、44 U.S.C., Section 3542.　に定義されている国家安全保障システムとして指定されたシステムを除く、すべての連邦システムに適用される。[^6j] これらの考慮事項は、国家安全保障システムのための類似の考慮事項を補完するために、技術的および技術管理の観点から広く開発されており、そのようなシステムに対して連邦当局者が政策権限を行使する承認を得た場合に使用される可能性がある。州、地方、部族政府、および民間部門の実体も、適切であればこの出版物の内容の使用を検討することが奨励される。
 
 [^6]: > Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.  “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”  -- An Objective of Security in the Future of Systems Engineering [7]
 
@@ -96,7 +120,7 @@ The considerations set forth in this publication are applicable to all federal s
 ## Target Audience / 対象読者
 > This publication is intended for systems engineers, security engineers, and other engineering professionals. The term systems security engineer is used to include systems engineers and security professionals who apply the concepts and principles and perform the activities and tasks described in this publication.[^8] This publication can also be used by professionals who perform other system life cycle activities or tasks, including:
 
-本書は、システムエンジニア、セキュリティエンジニア、およびその他のエンジニアリング専門家を対象としている。用語「システムセキュリティエンジニア」は、本書に記述されている概念と原則を適用し、活動とタスクを実行するシステムエンジニアおよびセキュリティ専門家を含むために使用される。本書は、他のシステムライフサイクルの活動やタスクを実行する専門家にも使用されることができる。これには以下のようなものが含まれる：
+本書は、システムエンジニア、セキュリティエンジニア、およびその他のエンジニアリング専門家を対象としている。用語「システムセキュリティエンジニア」は、本書に記述されている概念と原則を適用し、活動とタスクを実行するシステムエンジニアおよびセキュリティ専門家を含むために使用される。[^8j] 本書は、他のシステムライフサイクルの活動やタスクを実行する専門家にも使用されることができる。これには以下のようなものが含まれる：
 
 > * Individuals with security governance, risk management, and oversight responsibilities
 
@@ -181,4 +205,4 @@ The considerations set forth in this publication are applicable to all federal s
 
 > In the context of systems security engineering, the term protection has a broad scope and is primarily focused on the concept of assets and asset loss resulting in unacceptable consequences. The protection capability provided by a system goes beyond prevention and aims to control the events, conditions, and consequences that constitute asset loss. It is achieved in the form of the specific capability and constraints on system architecture, design, function, implementation, construction, selection of technology, methods, and tools and must be “engineered in” as part of the system life cycle process.
 
-Understanding stakeholder asset protection needs (including assets that they own and assets that they do not own but must protect) and expressing those needs through a set of well-defined security requirements is an investment in the organization’s mission and business success in the modern age of global commerce, powerful computing systems, and network connectivity.
+> Understanding stakeholder asset protection needs (including assets that they own and assets that they do not own but must protect) and expressing those needs through a set of well-defined security requirements is an investment in the organization’s mission and business success in the modern age of global commerce, powerful computing systems, and network connectivity.
