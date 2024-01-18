@@ -1,25 +1,31 @@
 ﻿# Introduction / はじめに
 > Today's systems[^1] are inherently complex. The growth in the size, number, and types of components and technologies[^2] that compose those systems as well as the system dependencies result in a range of consequences from inconvenience to catastrophic loss due to adversity[^3] within the operating environment. Managing the complexity of trustworthy secure systems requires achieving the appropriate level of confidence in the feasibility, correctness-in-concept, philosophy, and design of a system to produce only the intended behaviors and outcomes. This provides the foundation to address stakeholder protection needs and security concerns with sufficient confidence that the system functions only as intended while subjected to different types of adversity and to realistically bound those expectations with respect to constraints and uncertainty. The failure to address complexity and security will leave the Nation susceptible to potentially serious, severe, or catastrophic consequences.
 
-今日のシステム[^1]は本質的に複雑である。 これらのシステムを構成するコンポーネントやテクノロジー[^2]のサイズ、数、種類の増大とシステムの依存関係は、動作環境内での不便から逆境による壊滅的な損失に至るまで、さまざまな影響を及ぼす[^3]。 。 信頼できる安全なシステムの複雑さを管理するには、意図した動作と結果のみを生み出すシステムの実現可能性、コンセプトの正しさ、哲学、設計において適切なレベルの信頼を達成する必要がある。 これにより、さまざまな種類の逆境にさらされている間でもシステムが意図したとおりにのみ機能し、制約や不確実性に関してそれらの期待を現実的に拘束できるという十分な自信を持って、ステークホルダーの保護のニーズとセキュリティ上の懸念に対処するための基盤が提供される。 複雑さと安全性に対処できなければ、この国は潜在的に深刻な、重大な、または破滅的な結果にさらされることになる。
+今日のシステム[^1j]は本質的に複雑である。 これらのシステムを構成するコンポーネントやテクノロジー[^2j]のサイズ、数、種類の増大とシステムの依存関係は、動作環境内での不便から逆境による壊滅的な損失に至るまで、さまざまな影響を及ぼす[^3j]。 。 信頼できる安全なシステムの複雑さを管理するには、意図した動作と結果のみを生み出すシステムの実現可能性、コンセプトの正しさ、哲学、設計において適切なレベルの信頼を達成する必要がある。 これにより、さまざまな種類の逆境にさらされている間でもシステムが意図したとおりにのみ機能し、制約や不確実性に関してそれらの期待を現実的に拘束できるという十分な自信を持って、ステークホルダーの保護のニーズとセキュリティ上の懸念に対処するための基盤が提供される。 複雑さと安全性に対処できなければ、この国は潜在的に深刻な、重大な、または破滅的な結果にさらされることになる。
 
 > The term security is used in this publication to mean freedom from the conditions that can cause a loss of assets with unacceptable consequences.[^4] Stakeholders must define the scope of security in terms of the assets to which security applies and the consequences against which security is assessed.[^5] Systems engineering provides a foundation for a disciplined and structured approach to building assured, trustworthy secure systems. As a systems engineering subdiscipline, systems security engineering addresses security-relevant considerations intended to produce secure outcomes. The engineering efforts are conducted at the appropriate level of fidelity and rigor needed to achieve trustworthiness and assurance objectives.
 
-この文書では、セキュリティという用語は、容認できない結果を伴う資産の損失を引き起こす可能性のある条件から解放されることを意味するために使用されている。[^4] 利害関係者は、セキュリティが適用される資産とその影響に関してセキュリティの範囲を定義する必要がある。 [^5] システム エンジニアリングは、確実で信頼できる安全なシステムを構築するための、規律正しく構造化されたアプローチの基礎を提供する。 システム セキュリティ エンジニアリングは、システム エンジニアリングの下位分野として、安全な結果を生み出すことを目的としたセキュリティ関連の考慮事項に取り組みます。 エンジニアリングの取り組みは、信用度と保証 (assurance) の目的を達成するために必要な、適切なレベルの忠実性と厳格さで実行される。
+この文書では、セキュリティという用語は、容認できない結果を伴う資産の損失を引き起こす可能性のある条件から解放されることを意味するために使用されている。[^4j] 利害関係者は、セキュリティが適用される資産とその影響に関してセキュリティの範囲を定義する必要がある。 [^5j] システム エンジニアリングは、確実で信頼できる安全なシステムを構築するための、規律正しく構造化されたアプローチの基礎を提供する。 システム セキュリティ エンジニアリングは、システム エンジニアリングの下位分野として、安全な結果を生み出すことを目的としたセキュリティ関連の考慮事項に取り組みます。 エンジニアリングの取り組みは、信用度と保証 (assurance) の目的を達成するために必要な、適切なレベルの忠実性と厳格さで実行される。
 
-[^1]: > A system is an arrangement of parts or elements that exhibit a behavior or meaning that the individual constituents do not [3]. The elements that compose a system include hardware, software, data, humans, processes, procedures, facilities, materials, and naturally occurring entities [4].
-  
-  システムとは、個々の構成要素は持たない動作や意味を示す部品や要素の配置である [3]。 システムを構成する要素には、ハードウェア、ソフトウェア、データ、人間、プロセス、手順、設備、材料、自然発生物が含まれる [4]。
+[^1]: A system is an arrangement of parts or elements that exhibit a behavior or meaning that the individual constituents do not [3]. The elements that compose a system include hardware, software, data, humans, processes, procedures, facilities, materials, and naturally occurring entities [4].
 
-[^2]: > The term technology is used in the broadest context in this publication to include computing, communications, and information technologies, as well as any mechanical, hydraulic, pneumatic, or structural components in systems that contain or are enabled by such technologies. This view of technology provides an increased recognition of the digital, computational, and electronic machine-based foundation of modern complex systems and the growing importance of an assured trustworthiness of that foundation in providing the system's functional capability and interaction with its physical machine and human system elements.
-  
-  この文書では、「技術」という言葉は、コンピューティング、通信、情報技術だけではなく、そのような技術を含む、あるいは、それらによって可能となるシステムの機械的、油圧的、空気圧的、または建造的なコンポーネントまでをも含む、最も広い文脈で使用される。この「技術」の視点は、デジタル、計算的、電子的な機械に基づく、現代の複雑なシステムの基礎に関する、より高められた認識を提供し、また、システムの機能的な能力とそのシステムの物理的機械および人間のシステム要素との相互作用の提供における、そのシステムの基礎の保証された信頼性をより重要なものにする。(なにをいってるかよくわからんうえに、ぶんがながすぎて、ほんやくできない)
+[^1j]: システムとは、個々の構成要素は持たない動作や意味を示す部品や要素の配置である [3]。 システムを構成する要素には、ハードウェア、ソフトウェア、データ、人間、プロセス、手順、設備、材料、自然発生物が含まれる [4]。
 
-[^3]: > The term adversity refers to those conditions that can cause asset loss (e.g., threats, attacks, vulnerabilities, hazards, disruptions, and exposures).  「逆境」という言葉は、資産の損失を引き起こす可能性がある状況を指します（例えば、脅威、攻撃、脆弱性、危険、混乱、露出など）。
+[^2]: The term technology is used in the broadest context in this publication to include computing, communications, and information technologies, as well as any mechanical, hydraulic, pneumatic, or structural components in systems that contain or are enabled by such technologies. This view of technology provides an increased recognition of the digital, computational, and electronic machine-based foundation of modern complex systems and the growing importance of an assured trustworthiness of that foundation in providing the system's functional capability and interaction with its physical machine and human system elements.
 
-[^4]: > The phrasing used in this definition of security is intentional. Ross Anderson noted in [5] that “now that everything’s acquiring connectivity, you can’t have safety without security, and these ecosystems are emerging.” Reflecting on this observation, the security definition was chosen to achieve alignment with a prevailing safety definition.  このセキュリティの定義で使用されている言い回しは意図的なものである。Ross Anderson は [5] で「今や全てが接続性を獲得しているため、セキュリティなしに安全はあり得ず、これらのエコシステムが出現している」と指摘した。この観察を反映して、セキュリティの定義は一般的な安全の定義との整合性を図るために選ばれた。
+[^2j]: この文書では、「技術」という言葉は、コンピューティング、通信、情報技術だけではなく、そのような技術を含む、あるいは、それらによって可能となるシステムの機械的、油圧的、空気圧的、または建造的なコンポーネントまでをも含む、最も広い文脈で使用される。この「技術」の視点は、デジタル、計算的、電子的な機械に基づく、現代の複雑なシステムの基礎に関する、より高められた認識を提供し、また、システムの機能的な能力とそのシステムの物理的機械および人間のシステム要素との相互作用の提供における、そのシステムの基礎の保証された信頼性をより重要なものにする。(なにをいってるかよくわからんうえに、ぶんがながすぎて、ほんやくできない)
 
-[^5]: > Adapted from [6].  [6] から改変。
+[^3]: The term adversity refers to those conditions that can cause asset loss (e.g., threats, attacks, vulnerabilities, hazards, disruptions, and exposures).
+
+[^3j]: 「逆境」という言葉は、資産の損失を引き起こす可能性がある状況を指します（例えば、脅威、攻撃、脆弱性、危険、混乱、露出など）。
+
+[^4]: The phrasing used in this definition of security is intentional. Ross Anderson noted in [5] that “now that everything’s acquiring connectivity, you can’t have safety without security, and these ecosystems are emerging.” Reflecting on this observation, the security definition was chosen to achieve alignment with a prevailing safety definition.
+
+[^4j]: このセキュリティの定義で使用されている言い回しは意図的なものである。Ross Anderson は [5] で「今や全てが接続性を獲得しているため、セキュリティなしに安全はあり得ず、これらのエコシステムが出現している」と指摘した。この観察を反映して、セキュリティの定義は一般的な安全の定義との整合性を図るために選ばれた。
+
+[^5]: > Adapted from [6].
+
+[^5j]: [6] から改変。
 
 Peter Neumann described the concept of trustworthiness in [2] as follows:
 
