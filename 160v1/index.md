@@ -105,7 +105,7 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
     * Systems and System Structure / システムとシステム構造
     * Interfacing, Enabling, and Interoperating Systems / インターフェイス化、有効化、およびシステム間相互運用
   * [Systems Engineering Foundations / システムエンジニアリングの基礎](Systems-Engineering-Overview.md#Systems-Engineering-Foundations--システムエンジニアリングの基礎)
-  * [Trust and Trustworthiness / 信用と信用度](Systems-Engineering-Overview.md#Trust-and-Trustworthiness--信用と信用度)
+  * [Trust and Trustworthiness / 信用と信用性](Systems-Engineering-Overview.md#Trust-and-Trustworthiness--信用と信用性)
 * [System Security Concepts / システムセキュリティの概念](System-Security-Concepts.md)
   * The Concept of Security / セキュリティの概念
   * The Concept of an Adequately Secure System / 十分に安全なシステムの概念
@@ -120,7 +120,7 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * [Systems Security Engineering Framework / システムセキュリティエンジニアリングの枠組み](Systems-Security-Engineering-Framework.md)
   * The Problem Context / 問題の文脈
   * The Solution Context / 解決策の文脈
-  * The Trustworthiness Context / 信用度 の文脈
+  * The Trustworthiness Context / 信用性 の文脈
 
 * References 
 * Appendix A. [Acronyms / アクロニム](Acronyms.md)
@@ -129,12 +129,12 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * C.1. Security Policy / セキュリティポリシー
 * C.2. Security Requirements / セキュリティ要件
 * C.3. Distinguishing Requirements, Policy, and Mechanisms / 要件、ポリシー、メカニズムの区別
-* Appendix D. [Trustworthy Secure Design / 信用度の高いセキュアな設計](Trustworthy-Secure-Design.md)
-* D.1. Design Approach for Trustworthy Systems / 信用度の高いシステムのための設計アプローチ
+* Appendix D. [Trustworthy Secure Design / 信用性の高いセキュアな設計](Trustworthy-Secure-Design.md)
+* D.1. Design Approach for Trustworthy Systems / 信用性の高いシステムのための設計アプローチ
 * D.2. Design Considering Emergence / 創発を考慮した設計
 * D.3. Security Design Order of Precedence / セキュリティ設計の優先順位
 * D.4. Functional Design Considerations / 機能設計の考慮事項
-* Appendix E. [Principles for Trustworthy Secure Design / 信用度の高いセキュアな設計のための原則](Principles-for-Trustworthy-Secure-Design.md)
+* Appendix E. [Principles for Trustworthy Secure Design / 信用性の高いセキュアな設計のための原則](Principles-for-Trustworthy-Secure-Design.md)
 * E.1. Anomaly Detection / アノマリ検知
 * E.2. Clear Abstractions / 明確な抽象化
 * E.3. Commensurate Protection / 相応の保護
@@ -161,12 +161,12 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * E.24. Protective Recovery / 保護的なリカバリ
 * E.25. Reduced Complexity / 複雑さの軽減
 * E.26. Redundancy / 冗長性
-* E.27. Self-Reliant Trustworthiness / 自立した信用度
+* E.27. Self-Reliant Trustworthiness / 自立した信用性
 * E.28. Structured Decomposition and Composition / 構造化された分解と合成
-* E.29. Substantiated Trustworthiness / 実証された信用度
-* E.30. Trustworthy System Control / 信用度の高いシステム コントロール
-* Appendix F. [Trustworthiness and Assurance / 信用度と保証](Trustworthiness-and-Assurance.md)
-* F.1. Trust and Trustworthiness / 信用と信用度
+* E.29. Substantiated Trustworthiness / 実証された信用性
+* E.30. Trustworthy System Control / 信用性の高いシステム コントロール
+* Appendix F. [Trustworthiness and Assurance / 信用性と保証](Trustworthiness-and-Assurance.md)
+* F.1. Trust and Trustworthiness / 信用と信用性
 * F.2. Assurance / 保証
 * Appendix G. [System Life Cycle Processes Overview / システムライフサイクルプロセスの概要](System-Life-Cycle-Processes-Overview.md)
 * G.1. Process Overview / プロセスの概要
@@ -263,15 +263,15 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 
 > * Adopt an engineering-based approach that addresses the principles of trustworthy secure design and apply those principles throughout the system life cycle
 
-* 信用度のある安全な設計の原則に対応する工学ベースのアプローチを採用し、システムのライフサイクル全体にわたって信頼性の原則を適用する。
+* 信用性のある安全な設計の原則に対応する工学ベースのアプローチを採用し、システムのライフサイクル全体にわたって信頼性の原則を適用する。
 
 > Building trustworthy, secure systems cannot occur in a vacuum with stovepipes for software, hardware, information technology, and the human element (e.g., designers, operators, users, attackers of these systems). Rather, it requires a transdisciplinary approach to protection, a determination across all assets where loss could occur, and an understanding of adversity, including how adversaries attack and compromise systems. As such, this publication addresses considerations for the engineering-driven actions necessary to develop defensible and survivable systems, including the components that compose and the services that depend on those systems. The objective is to address security issues from the perspective of stakeholder requirements and protection needs and to use established engineering processes to ensure that such requirements and needs are addressed with appropriate fidelity and rigor across the entire life cycle of the system.
 
-信用度が高く、安全なシステムの構築は、ソフトウェア、ハードウェア、情報技術、そして人間要素（例えば、これらのシステムの設計者、運用者、ユーザー、攻撃者）のための孤立した領域で行われることはない。むしろ、それは保護に関して学際的なアプローチを要求し、損失が発生しうるすべての資産にわたる決意と、敵意を含む逆境への理解、特に敵がシステムを攻撃し妥協させる方法を理解することを必要とする。したがって、本書は、システムを構成するコンポーネントやそれらのシステムに依存するサービスを含む、防御可能で生存可能なシステムを開発するために必要な工学駆動の行動に関する考慮事項に対処する。目的は、利害関係者の要件と保護ニーズの観点からセキュリティ問題に対処し、確立された工学プロセスを使用して、そのような要件とニーズがシステムの全ライフサイクルにわたって適切な忠実度と厳格さで対処されるようにすることである。
+信用性が高く、安全なシステムの構築は、ソフトウェア、ハードウェア、情報技術、そして人間要素（例えば、これらのシステムの設計者、運用者、ユーザー、攻撃者）のための孤立した領域で行われることはない。むしろ、それは保護に関して学際的なアプローチを要求し、損失が発生しうるすべての資産にわたる決意と、敵意を含む逆境への理解、特に敵がシステムを攻撃し妥協させる方法を理解することを必要とする。したがって、本書は、システムを構成するコンポーネントやそれらのシステムに依存するサービスを含む、防御可能で生存可能なシステムを開発するために必要な工学駆動の行動に関する考慮事項に対処する。目的は、利害関係者の要件と保護ニーズの観点からセキュリティ問題に対処し、確立された工学プロセスを使用して、そのような要件とニーズがシステムの全ライフサイクルにわたって適切な忠実度と厳格さで対処されるようにすることである。
 
 > Engineering trustworthy, secure systems is a significant undertaking that requires a substantial investment in the requirements, architecture, and design of systems, components, applications, and networks. A trustworthy system provides compelling evidence to support claims that it meets its requirements to deliver the protection and performance needed by stakeholders. Introducing a disciplined, structured, and standards-based set of systems security engineering activities and tasks provides an important starting point and forcing function to initiate needed change.
 
-信用度が高く、安全なシステムを工学的に構築することは、システム、コンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計への相当な投資を必要とする重要な取り組みである。信用度の高いシステムは、利害関係者に必要とされる保護と性能を提供するための要件を満たしているという主張を支持する説得力のある証拠を提供する。規律ある、構造化された、標準に基づく一連のシステムセキュリティエンジニアリング活動とタスクを導入することは、必要な変化を開始するための重要な出発点および強制機能を提供する。
+信用性が高く、安全なシステムを工学的に構築することは、システム、コンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計への相当な投資を必要とする重要な取り組みである。信用性の高いシステムは、利害関係者に必要とされる保護と性能を提供するための要件を満たしているという主張を支持する説得力のある証拠を提供する。規律ある、構造化された、標準に基づく一連のシステムセキュリティエンジニアリング活動とタスクを導入することは、必要な変化を開始するための重要な出発点および強制機能を提供する。
 
 > “Providing satisfactory security controls in a computer system is in itself a system design problem. A combination of hardware, software, communications, physical, personnel and administrativeprocedural safeguards is required for comprehensive security. In particular, software safeguards alone are not sufficient.”
 > 
@@ -347,11 +347,11 @@ Finally, the authors respectfully acknowledge the seminal work in computer secur
 
 > For system developers, there are also fundamental principles and concepts that can be found in mathematics, computer science, computer and electrical engineering, systems engineering, and software engineering that when properly employed, provide the necessary trustworthiness to engender that same level of confidence.
 
-システム開発者にとっても、数学、コンピュータサイエンス、コンピュータおよび電気工学、システムエンジニアリング、ソフトウェアエンジニアリングにおいて見出される基本的な原理と概念があり、これらが適切に用いられることで、必要な信用度を提供し、同じレベルの信頼感を生み出す。
+システム開発者にとっても、数学、コンピュータサイエンス、コンピュータおよび電気工学、システムエンジニアリング、ソフトウェアエンジニアリングにおいて見出される基本的な原理と概念があり、これらが適切に用いられることで、必要な信用性を提供し、同じレベルの信頼感を生み出す。
 
 > Trustworthy secure systems are achieved by making a significant and substantial investment in strengthening the underlying systems and system components by employing transdisciplinary systems engineering efforts guided and informed by welldefined security requirements and secure architectures and designs. Such efforts have been proven over time to produce sound engineering-based solutions to complex and challenging systems security problems. Only under those circumstances can we build systems that are adequately secure and exhibit a level of trustworthiness that is sufficient for the purpose for which the system was built.
 
-信用度の高い安全なシステムは、よく定義されたセキュリティ要件と安全なアーキテクチャおよび設計によって導かれ、情報提供される学際的なシステムエンジニアリングの努力を用いて、基礎となるシステムおよびシステムコンポーネントを強化するための重要かつ実質的な投資によって達成される。このような努力は、時間をかけて複雑で難しいシステムセキュリティの問題に対する健全な工学ベースの解決策を生み出すことが証明されている。これらの状況の下でのみ、私たちは適切に安全で、システムが構築された目的に十分な信用度を示すシステムを構築することができる。
+信用性の高い安全なシステムは、よく定義されたセキュリティ要件と安全なアーキテクチャおよび設計によって導かれ、情報提供される学際的なシステムエンジニアリングの努力を用いて、基礎となるシステムおよびシステムコンポーネントを強化するための重要かつ実質的な投資によって達成される。このような努力は、時間をかけて複雑で難しいシステムセキュリティの問題に対する健全な工学ベースの解決策を生み出すことが証明されている。これらの状況の下でのみ、私たちは適切に安全で、システムが構築された目的に十分な信用性を示すシステムを構築することができる。
 
 > “Scientists study the world as it is, engineers create the world that never has been.”
 > 

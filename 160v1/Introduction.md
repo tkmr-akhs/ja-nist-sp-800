@@ -5,7 +5,7 @@
 
 > The term security is used in this publication to mean freedom from the conditions that can cause a loss of assets with unacceptable consequences.[^4] Stakeholders must define the scope of security in terms of the assets to which security applies and the consequences against which security is assessed.[^5] Systems engineering provides a foundation for a disciplined and structured approach to building assured, trustworthy secure systems. As a systems engineering subdiscipline, systems security engineering addresses security-relevant considerations intended to produce secure outcomes. The engineering efforts are conducted at the appropriate level of fidelity and rigor needed to achieve trustworthiness and assurance objectives.
 
-本書では、セキュリティという用語は、容認できない結果を伴う資産の損失を引き起こす可能性のある条件から解放されることを意味するために使用されている。[^4j] 利害関係者は、セキュリティが適用される資産とその影響に関してセキュリティの範囲を定義する必要がある。 [^5j] システム エンジニアリングは、確実で信頼できる安全なシステムを構築するための、規律正しく構造化されたアプローチの基礎を提供する。 システム セキュリティ エンジニアリングは、システム エンジニアリングの下位分野として、安全な結果を生み出すことを目的としたセキュリティ関連の考慮事項に取り組みます。 エンジニアリングの取り組みは、信用度と保証 (assurance) の目的を達成するために必要な、適切なレベルの忠実性と厳格さで実行される。
+本書では、セキュリティという用語は、容認できない結果を伴う資産の損失を引き起こす可能性のある条件から解放されることを意味するために使用されている。[^4j] 利害関係者は、セキュリティが適用される資産とその影響に関してセキュリティの範囲を定義する必要がある。 [^5j] システム エンジニアリングは、確実で信頼できる安全なシステムを構築するための、規律正しく構造化されたアプローチの基礎を提供する。 システム セキュリティ エンジニアリングは、システム エンジニアリングの下位分野として、安全な結果を生み出すことを目的としたセキュリティ関連の考慮事項に取り組みます。 エンジニアリングの取り組みは、信用性と保証 (assurance) の目的を達成するために必要な、適切なレベルの忠実性と厳格さで実行される。
 
 [^1]: > A system is an arrangement of parts or elements that exhibit a behavior or meaning that the individual constituents do not [3]. The elements that compose a system include hardware, software, data, humans, processes, procedures, facilities, materials, and naturally occurring entities [4].
 
@@ -29,15 +29,15 @@
 
 > Peter Neumann described the concept of trustworthiness in [2] as follows:
 
-Peter Neumann は信用度の概念について[2]で以下のように述べている。
+Peter Neumann は信用性の概念について[2]で以下のように述べている。
 
 > “By trustworthiness, we mean simply worthy of being trusted to fulfill whatever critical requirements may be needed for a particular component, subsystem, system, network, application, mission, enterprise, or other entity. Trustworthiness requirements might typically involve (for example) attributes of security, reliability, performance, and survivability under a wide range of potential adversities. Measures of trustworthiness are meaningful only to the extent that (a) the requirements are sufficiently complete and well defined, and (b) can be accurately evaluated.”
 
-「信用度とは、特定のコンポーネント、サブシステム、システム、ネットワーク、アプリケーション、ミッション、企業、あるいは他のエンティティに対して、必要とされる重要な要件を満たすことに信頼できるということを単純に意味する。信用度の要件は、一般に、さまざまな潜在的な逆境の下でのセキュリティ、信頼性、性能、生存性などの属性を含むことが多い。信用度の尺度は、（a）要件が十分に完全で明確に定義され、（b）正確に評価できる範囲でのみ意味を持つ。」
+「信用性とは、特定のコンポーネント、サブシステム、システム、ネットワーク、アプリケーション、ミッション、企業、あるいは他のエンティティに対して、必要とされる重要な要件を満たすことに信頼できるということを単純に意味する。信用性の要件は、一般に、さまざまな潜在的な逆境の下でのセキュリティ、信頼性、性能、生存性などの属性を含むことが多い。信用性の尺度は、（a）要件が十分に完全で明確に定義され、（b）正確に評価できる範囲でのみ意味を持つ。」
 
 > Systems security engineering provides complementary engineering capabilities that extend the concept of trustworthiness to deliver trustworthy secure systems. Trustworthiness is not only about demonstrably meeting a set of requirements. The requirements must also be complete, consistent, and correct. From a security perspective, a trustworthy system meets a set of welldefined requirements, including security requirements. Through evidence and expert judgment, trustworthy secure systems can limit and prevent the effects of modern adversities. Such adversities come in malicious and non-malicious forms and can emanate from a variety of sources, including physical and electronic. Adversities can include attacks from determined and capable adversaries, human errors of omission and commission, accidents and incidents, component faults and failures, abuses and misuses, and natural and human-made disasters.
 
-システムセキュリティエンジニアリングは、信用度の概念を拡張して、信頼できるセキュアなシステムを提供する補完的なエンジニアリング能力を提供する。信用度とは、一連の要件を明示的に満たすことだけではない。要件は、完全で、一貫性があり、正確でなければならない。セキュリティの観点から、信頼できるシステムは、セキュリティ要件を含む一連の明確に定義された要件を満たす。証拠と専門家の判断により、信頼できるセキュアなシステムは、現代の逆境の影響を限定し、防ぐことができる。そのような逆境は、悪意のあるものとないものの形を取り、物理的なものや電子的なものを含む様々な源から発生することがある。逆境には、決意があり能力がある敵からの攻撃、省略と委任の人間の誤り、事故やインシデント、コンポーネントの欠陥や故障、乱用と誤用、自然災害や人為的災害が含まれることがある。
+システムセキュリティエンジニアリングは、信用性の概念を拡張して、信頼できるセキュアなシステムを提供する補完的なエンジニアリング能力を提供する。信用性とは、一連の要件を明示的に満たすことだけではない。要件は、完全で、一貫性があり、正確でなければならない。セキュリティの観点から、信頼できるシステムは、セキュリティ要件を含む一連の明確に定義された要件を満たす。証拠と専門家の判断により、信頼できるセキュアなシステムは、現代の逆境の影響を限定し、防ぐことができる。そのような逆境は、悪意のあるものとないものの形を取り、物理的なものや電子的なものを含む様々な源から発生することがある。逆境には、決意があり能力がある敵からの攻撃、省略と委任の人間の誤り、事故やインシデント、コンポーネントの欠陥や故障、乱用と誤用、自然災害や人為的災害が含まれることがある。
 
 ## Purpose and Applicability / 目的と適用範囲
 > This publication is intended to:
@@ -69,11 +69,11 @@ Peter Neumann は信用度の概念について[2]で以下のように述べて
 
 [^6]: > Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.  “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”  -- An Objective of Security in the Future of Systems Engineering [7]
 
-[^6j]: システムの信用度を高めることは、システム、システムコンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計、開発において相当な投資を必要とする重要な取り組みである。[8]の方針では、連邦機関に対して、本書のシステムセキュリティエンジニアリングの原則、概念、技術、システムライフサイクルプロセスを全ての高価値資産に対して実施することを要求している。  「セキュリティはシステムに組み込まれている。他を守ることを目的とした2つのシステムを設計する2つのエンジニアリンググループではなく、システムエンジニアリングは、システムとそのコンポーネントにセキュリティを組み込んだ単一のシステムを指定し設計する。」  -- An Objective of Security in the Future of Systems Engineering [7]
+[^6j]: システムの信用性を高めることは、システム、システムコンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計、開発において相当な投資を必要とする重要な取り組みである。[8]の方針では、連邦機関に対して、本書のシステムセキュリティエンジニアリングの原則、概念、技術、システムライフサイクルプロセスを全ての高価値資産に対して実施することを要求している。  「セキュリティはシステムに組み込まれている。他を守ることを目的とした2つのシステムを設計する2つのエンジニアリンググループではなく、システムエンジニアリングは、システムとそのコンポーネントにセキュリティを組み込んだ単一のシステムを指定し設計する。」  -- An Objective of Security in the Future of Systems Engineering [7]
 
 > The applicability statement is not meant to limit the technical and management application of these considerations. That is, the security design principles, concepts, and techniques described in this publication are part of a trustworthy secure design approach as described in Appendix D and can be applied in any of the following cases:
 
-適用性の声明は、これらの考慮事項の技術的および管理的応用を制限するものではない。つまり、本書に記述されているセキュリティ設計の原則、概念、および技術は、付録Dに記述されているような信用度の高い安全な設計アプローチの一部であり、次のいずれかの場合に適用可能である：
+適用性の声明は、これらの考慮事項の技術的および管理的応用を制限するものではない。つまり、本書に記述されているセキュリティ設計の原則、概念、および技術は、付録Dに記述されているような信用性の高い安全な設計アプローチの一部であり、次のいずれかの場合に適用可能である：
 
 > * Development of a new capability or system
 >   * The engineering effort includes such activities as concept exploration, preliminary or applied research to refine the concepts and/or feasibility of technologies employed in a new system, and an assessment of alternative solutions. This effort is initiated during the concept and development stages of the system life cycle.
@@ -148,16 +148,16 @@ Peter Neumann は信用度の概念について[2]で以下のように述べて
 
 [^7]: > There is a growing need to reuse or leverage system implementation successes within operational environments that are different from how they were originally designed and developed. This type of reuse or reimplementation of systems within other operational environments is more efficient and represents potential advantages in maximizing interoperability between various system implementations. It should be noted that reuse may violate the assumptions used to determine that a system or system component was trustworthy.
 
-[^7j]: 運用環境が元の設計や開発と異なる場合に、システム実装の成功を再利用または活用する必要性が高まっている。このような再利用または他の運用環境でのシステムの再実装は、効率的であり、さまざまなシステム実装間の相互運用性を最大化する潜在的な利点を表している。ただし、再利用がシステムまたはシステムコンポーネントが信用度のあると判断された前提を破る可能性があることに注意すべきである。
+[^7j]: 運用環境が元の設計や開発と異なる場合に、システム実装の成功を再利用または活用する必要性が高まっている。このような再利用または他の運用環境でのシステムの再実装は、効率的であり、さまざまなシステム実装間の相互運用性を最大化する潜在的な利点を表している。ただし、再利用がシステムまたはシステムコンポーネントが信用性のあると判断された前提を破る可能性があることに注意すべきである。
 
 [^8]: > Systems security engineering activities and tasks can be applied to a mechanism, component, system element, system, system of systems, processes, or organizations. Regardless of the size or complexity of the entity, a transdisciplinary systems engineering team is needed to deliver systems that are trustworthy and that satisfy the protection needs and concerns of stakeholders. The processes are intended to be tailored to facilitate effectiveness.
 
-[^8j]: システムセキュリティエンジニアリングの活動とタスクは、メカニズム、コンポーネント、システム要素、システム、システム・オブ・システムズ、プロセス、または組織に適用することができる。エンティティのサイズや複雑さに関わらず、信用度の高いシステムを提供し、利害関係者の保護ニーズと懸念を満たすためには、学際的なシステムエンジニアリングチームが必要である。プロセスは、効果を促進するためにカスタマイズされることを意図している。
+[^8j]: システムセキュリティエンジニアリングの活動とタスクは、メカニズム、コンポーネント、システム要素、システム、システム・オブ・システムズ、プロセス、または組織に適用することができる。エンティティのサイズや複雑さに関わらず、信用性の高いシステムを提供し、利害関係者の保護ニーズと懸念を満たすためには、学際的なシステムエンジニアリングチームが必要である。プロセスは、効果を促進するためにカスタマイズされることを意図している。
 
 ## How to Use this Publication / 本書の使い方
 > This publication is intended to serve as a reference and educational resource for systems engineers, engineering specialties, architects, designers, and any individuals involved in the development of trustworthy secure systems and system components. It is meant to be flexible in its application to meet the diverse needs of organizations. There is no expectation that all of the technical content in this publication will be used as part of a systems engineering effort. Rather, the concepts and principles for trustworthy secure design in Appendices D through F as well as the systems life cycle processes and security-relevant activities and tasks in Appendices G through K can be selectively employed by organizations – relying on the experience and expertise of the engineering teams to determine what is correct for their purposes. Applying the content of this publication enables the achievement of security outcomes that are consistent with the systems engineering perspective on system life cycle processes.
 
-本書は、システムエンジニア、エンジニアリングの専門家、アーキテクト、デザイナー、信用度の高い安全なシステムおよびシステムコンポーネントの開発に関わるすべての個人に対する参考資料および教育資源として機能することを意図している。それは、組織の多様なニーズに応えるためにその応用が柔軟であることを意味している。本書の全ての技術内容がシステムエンジニアリングの努力の一部として使用されるとは期待されていない。むしろ、付録DからFに記載されている信用度の高い安全な設計のための概念と原則、および付録GからKに記載されているシステムライフサイクルプロセスとセキュリティ関連の活動とタスクは、組織によって選択的に採用されることができる。これは、エンジニアリングチームの経験と専門知識に依存し、それらの目的にとって何が正しいかを決定する。本書の内容を適用することにより、システムライフサイクルプロセスに対するシステムエンジニアリングの観点と一致するセキュリティ成果の達成が可能になる。
+本書は、システムエンジニア、エンジニアリングの専門家、アーキテクト、デザイナー、信用性の高い安全なシステムおよびシステムコンポーネントの開発に関わるすべての個人に対する参考資料および教育資源として機能することを意図している。それは、組織の多様なニーズに応えるためにその応用が柔軟であることを意味している。本書の全ての技術内容がシステムエンジニアリングの努力の一部として使用されるとは期待されていない。むしろ、付録DからFに記載されている信用性の高い安全な設計のための概念と原則、および付録GからKに記載されているシステムライフサイクルプロセスとセキュリティ関連の活動とタスクは、組織によって選択的に採用されることができる。これは、エンジニアリングチームの経験と専門知識に依存し、それらの目的にとって何が正しいかを決定する。本書の内容を適用することにより、システムライフサイクルプロセスに対するシステムエンジニアリングの観点と一致するセキュリティ成果の達成が可能になる。
 
 > The system life cycle processes described in this publication can take advantage of any system or software development methodology. The processes are equally applicable to waterfall, spiral, DevOps, agile, and other approaches. The processes can be applied recursively, iteratively, concurrently, sequentially, or in parallel and to any system regardless of its size, complexity, purpose, scope, operational environment, or special nature. The full extent of the application of the content in this publication is guided by stakeholder capability needs, protection needs, and concerns with particular attention paid to considerations of cost, schedule, and performance.
 
@@ -170,27 +170,27 @@ Peter Neumann は信用度の概念について[2]で以下のように述べて
 
 > * Chapter 2 presents an overview of systems engineering and the fundamental concepts associated with engineering trustworthy secure systems. This includes basic concepts that address the structure and types of systems, systems engineering foundations, and the concepts of trust and trustworthiness of systems and system components.
 
-* 第2章では、システムエンジニアリングと、信用度の高いセキュアなシステムをエンジニアリングする際の基本概念についての概要を提示する。これには、システムの構造とタイプ、システムエンジニアリングの基礎、そしてシステム及びシステムコンポーネントの信用度と信頼性に関する基本概念が含まれる。
+* 第2章では、システムエンジニアリングと、信用性の高いセキュアなシステムをエンジニアリングする際の基本概念についての概要を提示する。これには、システムの構造とタイプ、システムエンジニアリングの基礎、そしてシステム及びシステムコンポーネントの信用性と信頼性に関する基本概念が含まれる。
 
 > * Chapter 3 describes foundational system security concepts and an engineering perspective to building trustworthy secure systems. This includes the concepts of security and system security, the nature and character of systems, the concepts of assets and asset loss, reasoning about asset loss, defining protection needs, system security viewpoints, demonstrating system security, and an introduction to systems security engineering.
 
-* 第3章では、基本的なシステムセキュリティ概念と、信用度の高いセキュアなシステムを構築するためのエンジニアリングの視点を説明する。これには、セキュリティとシステムセキュリティの概念、システムの性質と特性、資産と資産損失の概念、資産損失に関する推論、保護ニーズの定義、システムセキュリティの視点、システムセキュリティの実証、およびシステムセキュリティエンジニアリングへの導入が含まれる。
+* 第3章では、基本的なシステムセキュリティ概念と、信用性の高いセキュアなシステムを構築するためのエンジニアリングの視点を説明する。これには、セキュリティとシステムセキュリティの概念、システムの性質と特性、資産と資産損失の概念、資産損失に関する推論、保護ニーズの定義、システムセキュリティの視点、システムセキュリティの実証、およびシステムセキュリティエンジニアリングへの導入が含まれる。
 
 > * Chapter 4 provides a systems security engineering framework that includes a problem context, solution context, and trustworthiness context.
 
-* 第4章では、問題の文脈、解決策の文脈、及び信用度の文脈を含むシステムセキュリティエンジニアリングフレームワークを提供する。
+* 第4章では、問題の文脈、解決策の文脈、及び信用性の文脈を含むシステムセキュリティエンジニアリングフレームワークを提供する。
 
 > The following sections provide additional information to support the engineering of trustworthy secure systems:
 
-以下のセクションでは、信用度の高い安全なシステムのエンジニアリングをサポートするための追加情報を提供する：
+以下のセクションでは、信用性の高い安全なシステムのエンジニアリングをサポートするための追加情報を提供する：
 
 > * References
 >   * Appendix A: Acronyms / アクロニム
 >   * Appendix B: Glossary / 用語集
 >   * Appendix C: Security Policy and Requirements / セキュリティ ポリシーと要件
->   * Appendix D: Trustworthy Secure Design / 信用度の高いセキュアな設計
->   * Appendix E: Principles for Trustworthy Secure Design / 信用度の高いシステムのための設計アプローチ
->   * Appendix F: Trustworthiness and Assurance / 信用度と保証
+>   * Appendix D: Trustworthy Secure Design / 信用性の高いセキュアな設計
+>   * Appendix E: Principles for Trustworthy Secure Design / 信用性の高いシステムのための設計アプローチ
+>   * Appendix F: Trustworthiness and Assurance / 信用性と保証
 >   * Appendix G: System Life Cycle Processes Overview / システムライフサイクルプロセスの概要
 >   * Appendix H: Technical Processes / 技術的プロセス
 >   * Appendix I: Technical Management Processes / 技術的マネジメントプロセス
