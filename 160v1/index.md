@@ -60,7 +60,7 @@ Ron Ross: 0000-0002-1099-9757
 # Keywords / キーワード
 > assurance; developmental engineering; engineering trades; field engineering; implementation; information security; information security policy; inspection; integration; penetration testing; protection needs; requirements analysis; resilience; review; risk assessment; risk management; risk treatment; security architecture; security design; security requirements; specifications; stakeholders; system of systems; system component; system element; system life cycle; systems; systems engineering; systems security engineering; trustworthiness; validation; verification
 
-保証;開発エンジニアリング;エンジニアリング業務;フィールドエンジニアリング;実装; 情報セキュリティ; 情報セキュリティ方針; 検査; 統合; 侵入テスト; 保護ニーズ; 要求分析; 回復力; レビュー; リスク評価; リスク管理; リスク処理; セキュリティ・アーキテクチャ; セキュリティ設計; セキュリティ要件; 仕様; 利害関係者; システム・オブ・システム; システム・コンポーネント; システム要素; システム・ライフサイクル; システム; システムエンジニアリング; システムセキュリティエンジニアリング; 信頼性; 妥当性確認; 検証
+保証;開発エンジニアリング;エンジニアリング業務;フィールドエンジニアリング;実装; 情報セキュリティ; 情報セキュリティ方針; 検査; 統合; 侵入テスト; 保護ニーズ; 要求分析; 回復力; レビュー; リスク評価; リスク管理; リスク処理; セキュリティ・アーキテクチャ; セキュリティ設計; セキュリティ要件; 仕様; 利害関係者; システム・オブ・システム; システム・コンポーネント; システム要素; システム・ライフサイクル; システム; システムズ エンジニアリング; システムセキュリティエンジニアリング; 信頼性; 妥当性確認; 検証
 
 # Reports on Computer Systems Technology / コンピュータ システム技術に関するレポート
 > The Information Technology Laboratory (ITL) at the National Institute of Standards and Technology (NIST) promotes the U.S. economy and public welfare by providing technical leadership for the Nation’s measurement and standards infrastructure. ITL develops tests, test methods, reference data, proof of concept implementations, and technical analyses to advance the development and productive use of information technology. ITL’s responsibilities include the development of management, administrative, technical, and physical standards and guidelines for the cost-effective security and privacy of other than national security-related information in federal information systems. The Special Publication 800-series reports on ITL’s research, guidelines, and outreach efforts in information system security, and its collaborative activities with industry, government, and academic organizations.
@@ -100,11 +100,11 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
   * [Target Audience / 対象読者](Introduction.md#Target-Audience--対象読者)
   * [How to Use this Publication / 本書の使い方](Introduction.md#How-to-Use-this-Publication--本書の使い方)
   * [Organization of this Publication / 本書の構成](Introduction.md#Organization-of-this-Publication--本書の構成)
-* [Systems Engineering Overview / システムエンジニアリングの概要](Systems-Engineering-Overview.md)
+* [Systems Engineering Overview / システムズ エンジニアリングの概要](Systems-Engineering-Overview.md)
   * [System Concepts / システムの概念](Systems-Engineering-Overview.md#System-Concepts--システムの概念)
-    * Systems and System Structure / システムとシステム構造
+    * Systems and System Structure / システムズとシステム構造
     * Interfacing, Enabling, and Interoperating Systems / インターフェイス化、有効化、およびシステム間相互運用
-  * [Systems Engineering Foundations / システムエンジニアリングの基礎](Systems-Engineering-Overview.md#Systems-Engineering-Foundations--システムエンジニアリングの基礎)
+  * [Systems Engineering Foundations / システムズ エンジニアリングの基礎](Systems-Engineering-Overview.md#Systems-Engineering-Foundations--システムズ-エンジニアリングの基礎)
   * [Trust and Trustworthiness / 信用と信用性](Systems-Engineering-Overview.md#Trust-and-Trustworthiness--信用と信用性)
 * [System Security Concepts / システムセキュリティの概念](System-Security-Concepts.md)
   * The Concept of Security / セキュリティの概念
@@ -313,7 +313,7 @@ October 2009
 > Security in the Future of Systems Engineering (FuSE), a Roadmap of Foundational Concepts, INCOSE
 > International Symposium, July 2021
 
-「システムセキュリティエンジニアリングは、単なる専門分野ではなく、システムエンジニアリングの基本でなければならない。セキュリティの概念は、エンジニアリング教育の基本でなければならず、開発チームにおけるセキュリティの熟練度も基本でなければならない。セキュリティの基本は、利害関係者によって明確に理解され、セキュリティ機能と結果を考慮した方法で効果的に評価されなければならない。」
+「システムセキュリティエンジニアリングは、単なる専門分野ではなく、システムズ エンジニアリングの基本でなければならない。セキュリティの概念は、エンジニアリング教育の基本でなければならず、開発チームにおけるセキュリティの熟練度も基本でなければならない。セキュリティの基本は、利害関係者によって明確に理解され、セキュリティ機能と結果を考慮した方法で効果的に評価されなければならない。」
 
 # Acknowledgments / 謝辞
 The authors gratefully acknowledge and appreciate the significant contributions from individuals and organizations in the public and private sectors whose constructive comments improved the overall quality, thoroughness, and usefulness of this publication. In particular, we wish to thank Jeff Brewer, Ken Cureton, Jordan Denmark, Rick Dove, Holly Dunlap, Jim Foti, Michael Hankins, Daryl Hild, M. Lee, Tom Llanso, Jimmie McEver, Perri Nejib, Cory Ocker, Daniel Patrick Pereira, Victoria Pillitteri, Greg Ritter, Thom Schoeffling, Theresa Soloway, Nick Stegman, Gary Stoneburner, Gregory Touhill, Isabel Van Wyk, Adam Williams, Drew Wilson, Carol Woody, William Young, and Michael Zisa. The authors also wish to acknowledge members of the International Council for Systems Engineering (INCOSE), including members of the Systems Security Engineering and the Resilient Systems Working Groups, for numerous discussions on the content of the document. Finally, the authors wish to thank the students participating in INCOSE tutorials and MITRE Systems Security Engineering courses whose comments and valuable insights helped to guide and inform many of the proposed changes in this publication.
@@ -347,11 +347,11 @@ Finally, the authors respectfully acknowledge the seminal work in computer secur
 
 > For system developers, there are also fundamental principles and concepts that can be found in mathematics, computer science, computer and electrical engineering, systems engineering, and software engineering that when properly employed, provide the necessary trustworthiness to engender that same level of confidence.
 
-システム開発者にとっても、数学、コンピュータサイエンス、コンピュータおよび電気工学、システムエンジニアリング、ソフトウェアエンジニアリングにおいて見出される基本的な原理と概念があり、これらが適切に用いられることで、必要な信用性を提供し、同じレベルの信頼感を生み出す。
+システム開発者にとっても、数学、コンピュータサイエンス、コンピュータおよび電気工学、システムズ エンジニアリング、ソフトウェアエンジニアリングにおいて見出される基本的な原理と概念があり、これらが適切に用いられることで、必要な信用性を提供し、同じレベルの信頼感を生み出す。
 
 > Trustworthy secure systems are achieved by making a significant and substantial investment in strengthening the underlying systems and system components by employing transdisciplinary systems engineering efforts guided and informed by welldefined security requirements and secure architectures and designs. Such efforts have been proven over time to produce sound engineering-based solutions to complex and challenging systems security problems. Only under those circumstances can we build systems that are adequately secure and exhibit a level of trustworthiness that is sufficient for the purpose for which the system was built.
 
-信用性の高い安全なシステムは、よく定義されたセキュリティ要件と安全なアーキテクチャおよび設計によって導かれ、情報提供される学際的なシステムエンジニアリングの努力を用いて、基礎となるシステムおよびシステムコンポーネントを強化するための重要かつ実質的な投資によって達成される。このような努力は、時間をかけて複雑で難しいシステムセキュリティの問題に対する健全な工学ベースの解決策を生み出すことが証明されている。これらの状況の下でのみ、私たちは適切に安全で、システムが構築された目的に十分な信用性を示すシステムを構築することができる。
+信用性の高い安全なシステムは、よく定義されたセキュリティ要件と安全なアーキテクチャおよび設計によって導かれ、情報提供される学際的なシステムズ エンジニアリングの努力を用いて、基礎となるシステムおよびシステムコンポーネントを強化するための重要かつ実質的な投資によって達成される。このような努力は、時間をかけて複雑で難しいシステムセキュリティの問題に対する健全な工学ベースの解決策を生み出すことが証明されている。これらの状況の下でのみ、私たちは適切に安全で、システムが構築された目的に十分な信用性を示すシステムを構築することができる。
 
 > “Scientists study the world as it is, engineers create the world that never has been.”
 > 
@@ -371,4 +371,4 @@ Finally, the authors respectfully acknowledge the seminal work in computer secur
 
 「システムの振る舞いを実現するために、システムエンジニアは一群のサブシステムを定義し、それらのサブシステムが互いにどのように相互作用するかを正確に決めなければならない。システムレベルの振る舞いを生み出すのは、これらのサブシステムとその相互作用である。多くの人々は、60度のカーブを時速200マイルで曲がることができる車両を、価値あるシステムの振る舞いを持つものと認識する。しかし、安全で、プライベートで、信頼され、利用可能なものをシステムの振る舞いとしてすぐに認識するだろうか？これらの振る舞いは、私が上述した性能システムの振る舞いと同様に、最適な解決策を達成するための慎重なシステムレベルの設計とトレードオフを必要とする。そして、明らかなニーズがある―投資家たちは、システムがデータをプライベートに保ち、安全で、信頼できること、つまりサイバー脅威によってコントロールが妥協されないこと、そして高い可用性を持つことを望んでいる。
 
-もし私たちシステムエンジニアがこれらの振る舞いをシステムの振る舞いとして認識する意志があるなら、私たちはそれらを私たちの仕事の一部として提供する責任がある。これらの振る舞いをシステムの一部としてではなく、システム全体として見ることを選ぶなら、私たちはそれらを「専門のエンジニア」の仕事と考える可能性が高い。私は私たちのシステムエンジニアリングコミュニティの過去の振る舞いを振り返ってみた。そこで見つけたのは、システムエンジニアが要件割り当てプロセスを通じて「専門エンジニアリング」の同僚にこれらの課題を与えている例である。これを行うことは間違っていたと思う。私たちの「専門」の同僚は、これらの割り当てられた要件を受け取り、安全で、プライベートで、信頼され、利用可能なシステムの部分を構築することに焦点を当てることが多い―安全で、プライベートで、信頼され、利用可能なシステムの振る舞いを提供するというよりも。安全な部品を構築することでより安全なシステムを構築することは可能であるが、安全な部品が互いに安全な方法で相互作用することなく、本当に安全なシステムを構築することはできない。これは他のシステムの振る舞い（プライベート、信頼、利用可能など）についても同様である。」
+もし私たちシステムエンジニアがこれらの振る舞いをシステムの振る舞いとして認識する意志があるなら、私たちはそれらを私たちの仕事の一部として提供する責任がある。これらの振る舞いをシステムの一部としてではなく、システム全体として見ることを選ぶなら、私たちはそれらを「専門のエンジニア」の仕事と考える可能性が高い。私は私たちのシステムズ エンジニアリングコミュニティの過去の振る舞いを振り返ってみた。そこで見つけたのは、システムエンジニアが要件割り当てプロセスを通じて「専門エンジニアリング」の同僚にこれらの課題を与えている例である。これを行うことは間違っていたと思う。私たちの「専門」の同僚は、これらの割り当てられた要件を受け取り、安全で、プライベートで、信頼され、利用可能なシステムの部分を構築することに焦点を当てることが多い―安全で、プライベートで、信頼され、利用可能なシステムの振る舞いを提供するというよりも。安全な部品を構築することでより安全なシステムを構築することは可能であるが、安全な部品が互いに安全な方法で相互作用することなく、本当に安全なシステムを構築することはできない。これは他のシステムの振る舞い（プライベート、信頼、利用可能など）についても同様である。」
