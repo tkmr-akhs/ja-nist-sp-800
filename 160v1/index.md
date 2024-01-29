@@ -103,7 +103,7 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * [Systems Engineering Overview / システムズ エンジニアリングの概要](Systems-Engineering-Overview.md)
   * [System Concepts / システムの概念](Systems-Engineering-Overview.md#System-Concepts--システムの概念)
     * Systems and System Structure / システムズとシステム構造
-    * Interfacing, Enabling, and Interoperating Systems / インターフェイス化、有効化、およびシステム間相互運用
+    * Interfacing, Enabling, and Interoperating Systems / インターフェイシング、イネーブリング、インターオペレーティング システム
   * [Systems Engineering Foundations / システムズ エンジニアリングの基礎](Systems-Engineering-Overview.md#Systems-Engineering-Foundations--システムズ-エンジニアリングの基礎)
   * [Trust and Trustworthiness / 信用と信用性](Systems-Engineering-Overview.md#Trust-and-Trustworthiness--信用と信用性)
 * [System Security Concepts / システムセキュリティの概念](System-Security-Concepts.md)
