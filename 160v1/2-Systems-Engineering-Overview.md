@@ -1,7 +1,7 @@
 ﻿# Systems Engineering Overview / システムズ エンジニアリングの概要
 > This chapter presents system, systems engineering, trust, and trustworthiness concepts that provide the foundation for engineering trustworthy secure systems.
 
-本章では、信用できる安全なシステムを設計するための基盤となる、システム、システムズ エンジニアリング、信頼、および信頼性の概念を示す。
+この章では、信用と信用性の概念に加え、システム、システムズ エンジニアリングについて述べ、信用に値する安全なシステムを工学的に構築するための基礎を提供する。
 
 ## System Concepts / システムの概念
 > Many system concepts are important to inform engineering trustworthy secure systems. This includes what constitutes a system, the structure of a system, categories of systems, and the concept of a system of systems.
@@ -119,8 +119,8 @@ Fig. 3. System of Interest and Interfacing Systems
 ## ENGINEERING FOR TRUST / 信用に対するエンジニアリング
 > In January 2022, INCOSE released the Systems Engineering Vision 2035 [16]. It is intended to inspire, guide, and inform the strategic direction for the global systems engineering community. A core element identified for the future state of systems engineering is increased confidence in systems to improve the practice of engineering trusted systems.
 
-2022年1月、INCOSEは「システムエンジニアリング・ビジョン2035」[16]を発表した。これは、グローバルなシステムエンジニアリング・コミュニティの戦略的方向性を鼓舞し、導き、情報提供することを目的としている。システムエンジニアリングの将来のあり方について特定された中核的な要素は、信頼されるシステムエンジニアリングの実践を改善するために、システムに対する信頼性を高めることである。
+2022年1月、INCOSEは「システムエンジニアリング・ビジョン2035」[16]を発表した。これは、グローバルなシステムエンジニアリング・コミュニティの戦略的方向性を鼓舞し、導き、情報提供することを目的としている。システムエンジニアリングの将来のあり方について特定された中核的な要素は、信用されるシステムのエンジニアリングの実践を改善するために、システムに対する確信を高めることである。
 
 > As noted in [7], a key problem to address in realizing Vision 2035 is that “systems security has moved from its traditional focus on trust to a more singular focus on risk.” The need is to prove a level of system security through evidence-based assurance.
 
-[7]に記されているように、ビジョン2035を実現する上での主要な問題の一つは、「システムのセキュリティが従来の信用に関する焦点から、より単一のリスクに関する焦点へと移行している」ということである。必要なのは、証拠に基づく保証を通じてシステムのセキュリティレベルを実証することである。
+[7]に記されているように、ビジョン2035を実現するために取り組むべき主要な問題は、「システムのセキュリティは従来の信用に焦点を当てたアプローチから、より単一的なリスクへの焦点に移行している」ということである。必要なのは、証拠に基づく保証を通じて、一定レベルのシステムセキュリティを実証することである。

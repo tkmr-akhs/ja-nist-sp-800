@@ -1,78 +1,131 @@
 # Appendix F. Trustworthiness and Assurance / 信用性と保証
-The trustworthiness of a system is based on the concept of assurance. Assurance is the grounds for justified confidence that a claim or set of claims has been or will be achieved [61]. Justified confidence is derived from objective evidence that reduces uncertainty to an acceptable level and, in doing so, reduces the associated risk (Section F.2).[^85] Evidence is produced by engineering verification and validation methods.[^86] The evidence must be relevant, accurate, credible, and of sufficient quantity to enable reasoned conclusions and consensus among subjectmatter experts that the claims are satisfied. The relationship between evidence and claims can be represented in many ways. Section F.2 discusses these approaches.
+> The trustworthiness of a system is based on the concept of assurance. Assurance is the grounds for justified confidence that a claim or set of claims has been or will be achieved [61]. Justified confidence is derived from objective evidence that reduces uncertainty to an acceptable level and, in doing so, reduces the associated risk (Section F.2).[^85] Evidence is produced by engineering verification and validation methods.[^86] The evidence must be relevant, accurate, credible, and of sufficient quantity to enable reasoned conclusions and consensus among subjectmatter experts that the claims are satisfied. The relationship between evidence and claims can be represented in many ways. Section F.2 discusses these approaches.
 
-“The trust we place in our digital infrastructure should be proportional to how trustworthy and transparent that infrastructure is and to the consequences we will incur if that trust is misplaced.”
+システムの信用性は、保証という概念に基づいている。保証とは、ある主張または一連の主張が達成された、あるいは達成されるという正当な確信の根拠である[61]。正当な確信は、不確実性を受け入れられるレベルまで減少させ、それによって関連するリスクを減少させる客観的証拠から導かれる（セクションF.2）[^85j]。証拠は、エンジニアリングの検証と妥当性確認の方法によって生成される[^86j]。証拠は、関連性があり、正確で、信頼できるものでなければならず、また、主張が満たされているという合理的な結論に至り、専門家間でのコンセンサスを可能にするための十分な量でなければならない。証拠と主張との関係は、多くの方法で表現されることがある。セクションF.2では、これらのアプローチについて議論している。
 
--- Executive Order (EO) on Improving the Nation’s Cybersecurity [1]  May 2021 
+> “The trust we place in our digital infrastructure should be proportional to how trustworthy and transparent that infrastructure is and to the consequences we will incur if that trust is misplaced.”
+> 
+> -- Executive Order (EO) on Improving the Nation’s Cybersecurity [1]  May 2021 
+
+「私たちがデジタルインフラに置く信用は、そのインフラがどれだけ信用できるか、そして透明であるか、またその信用が誤っていた場合に私たちが負うであろう結果に比例すべきである。」
+
+[^85]: > This includes risks attributed to poor, incorrect, and unjustified decisions.
+
+[^85j]: これには、不十分な、誤った、そして根拠のない決定に起因するリスクが含まれる。
+
+[^86]: > These methods include combinations of demonstration, inspection, analysis, and testing.
+
+[^86j]: これらの方法には、実証、検査、分析、およびテストの組み合わせが含まれる。
 
 ## F.1. Trust and Trustworthiness / 信用と信用性
-As discussed in Section 2.3, trust and trustworthiness are foundational concepts to engineering trustworthy secure systems, to the decisions made to grant trust, and to the extent to which trust is granted based on demonstrated trustworthiness. Trust is a belief that an entity meets certain expectations and can, therefore, be relied upon. A trustworthy entity requires sufficient evidence to support its trustworthiness claims. Trustworthiness is demonstrated based on evidence that supports a stated claim or judgment of being worthy to be trusted [2] [20] [21].
+> As discussed in Section 2.3, trust and trustworthiness are foundational concepts to engineering trustworthy secure systems, to the decisions made to grant trust, and to the extent to which trust is granted based on demonstrated trustworthiness. Trust is a belief that an entity meets certain expectations and can, therefore, be relied upon. A trustworthy entity requires sufficient evidence to support its trustworthiness claims. Trustworthiness is demonstrated based on evidence that supports a stated claim or judgment of being worthy to be trusted [2] [20] [21].
 
-Trust in an entity can occur without a basis for or knowledge of the entity’s trustworthiness. This may occur because (1) there is no alternative (e.g., an individual trusts the components involved in an Internet transaction without knowing anything about the components), (2) the need for trustworthiness is not realized and occurs de facto, or (3) other reasons (e.g., miscommunication or misrepresentation of evidence) [58]. Since the decision to trust an entity is not necessarily based on a judgment of trustworthiness, the decision to trust an entity should consider the significance (i.e., consequences, effects, and impacts) of trust expectations not being fulfilled.
-The criteria to grant trust are used to determine the trustworthiness of an entity. Trust granted without establishing the required trustworthiness is a significant contributor to risk.
+セクション2.3で議論されているように、信用と信用性は、信用に値する安全なシステムをエンジニアリングするための基本的な概念であり、信用を与えるための決定、および実証された信用性に基づいて信用がどの程度与えられるかに関連している。信用とは、あるエンティティが特定の期待を満たすという信念であり、したがって、信頼することができる。信用に値するエンティティは、その信用性の主張を支持する十分な証拠を必要とする。信用性は、信用するに値するという主張や判断を支持する証拠に基づいて実証される[2] [20] [21]。
 
-### F.1.1. Roles of Requirements in Trustworthiness
-Trustworthiness judgments are based on expectations to be fulfilled by the entity to be trusted.
-The expectations of trustworthiness of the system, inclusive of its elements, are found in the system capability, performance, security, and other requirements. These judgments are
+> Trust in an entity can occur without a basis for or knowledge of the entity’s trustworthiness. This may occur because (1) there is no alternative (e.g., an individual trusts the components involved in an Internet transaction without knowing anything about the components), (2) the need for trustworthiness is not realized and occurs de facto, or (3) other reasons (e.g., miscommunication or misrepresentation of evidence) [58]. Since the decision to trust an entity is not necessarily based on a judgment of trustworthiness, the decision to trust an entity should consider the significance (i.e., consequences, effects, and impacts) of trust expectations not being fulfilled.
 
-[^85]: This includes risks attributed to poor, incorrect, and unjustified decisions.
+エンティティに対する信用は、そのエンティティの信用性の根拠や知識がなくても生じることがある。これは、（1）代替がない場合（例えば、個人がインターネット取引に関わるコンポーネントを、そのコンポーネントについて何も知らないまま信用する）、（2）信用性が必要であると認識されず、事実上信用される場合、または（3）その他の理由（例えば、証拠の誤伝達や誤表現）によって生じることがある[58]。エンティティを信用するという決定は必ずしも信用性の判断に基づいているわけではないため、エンティティを信用する決定は、信用の期待が満たされないことの重要性（つまり、結果、影響、及びインパクト）を考慮すべきである。
 
-[^86]: These methods include combinations of demonstration, inspection, analysis, and testing.
+> The criteria to grant trust are used to determine the trustworthiness of an entity. Trust granted without establishing the required trustworthiness is a significant contributor to risk.
 
+信用を与えるための規準は、エンティティの信用性を決定するために使用される。必要な信用性を確立せずに与えられた信用は、リスクの重要な要因である。
 
-meaningful only to the extent to which the trustworthiness-relevant requirements accurately reflect the problem, accurately define the solution, and can be verified as being satisfied by the solution.
+### F.1.1. Roles of Requirements in Trustworthiness / 信用性における要件の役割
+> Trustworthiness judgments are based on expectations to be fulfilled by the entity to be trusted.
+The expectations of trustworthiness of the system, inclusive of its elements, are found in the system capability, performance, security, and other requirements. These judgments are meaningful only to the extent to which the trustworthiness-relevant requirements accurately reflect the problem, accurately define the solution, and can be verified as being satisfied by the solution.
 
-The trustworthiness requirements about security derive from the protection needs, priorities, constraints, and concerns associated with the system’s ability to achieve authorized and intended behaviors and outcomes, deal with adversity, and control loss. The requirements also address the measures used to assess trustworthiness and the evidentiary data and information required to substantiate trustworthiness conclusions and grant trust. The requirements engineering discipline provides the methods, processes, techniques, and tools for this to occur.
+信用性の判断は、信用されるべきエンティティによって満たされるべき期待に基づいている。システムの信用性の期待、その要素を含め、システムの能力、性能、セキュリティ、その他の要件に見出される。これらの判断は、信用性に関連する要件が問題を正確に反映し、解決策を正確に定義し、かつ解決策によって満たされていることが検証可能である範囲でのみ意味がある。
 
-“A meaningful claim of trustworthiness cannot be based on an isolated demonstration that the system contains a protection capability assumed to be effective or sufficient. Instead, conclusions about a protection capability must have their basis on evidence that the system was properly specified, designed, and implemented with the rigor needed to deliver a system-level function in a manner deemed to be trustworthy and secure.” [2] 
+> The trustworthiness requirements about security derive from the protection needs, priorities, constraints, and concerns associated with the system’s ability to achieve authorized and intended behaviors and outcomes, deal with adversity, and control loss. The requirements also address the measures used to assess trustworthiness and the evidentiary data and information required to substantiate trustworthiness conclusions and grant trust. The requirements engineering discipline provides the methods, processes, techniques, and tools for this to occur.
 
-### F.1.2. Design Considerations
-The design for a trustworthy secure system requires the application of principled engineering concepts and methods supported by evidence that provides assurance that all security-relevant claims about the system are satisfied (Section F.2).[^87] Some considerations that apply to achieving trustworthiness in system design are:
+セキュリティに関する信用性の要件は、システムが承認された意図された行動や結果を達成し、逆境に対処し、損失をコントロールする能力に関連する保護の必要性、優先順位、制約、懸念から派生している。要件はまた、信用性を評価するために使用される手段、信用性の結論を裏付け、信用を与えるために必要な証拠データと情報にも対処している。要件工学の規律は、これが発生するための方法、プロセス、技術、ツールを提供する。
 
-* **Composition**<br />
+> “A meaningful claim of trustworthiness cannot be based on an isolated demonstration that the system contains a protection capability assumed to be effective or sufficient. Instead, conclusions about a protection capability must have their basis on evidence that the system was properly specified, designed, and implemented with the rigor needed to deliver a system-level function in a manner deemed to be trustworthy and secure.” [2] 
+
+「信用に値するという意味のある主張は、システムに有効または十分と仮定される保護能力が含まれているという孤立した実証に基づいてはならない。代わりに、保護能力に関する結論は、システムが信用に値すると考えられる方法でシステムレベルの機能を提供するために必要な厳格さをもって適切に指定され、設計され、実装されたことを示す証拠に基づいてなければならない。」
+
+### F.1.2. Design Considerations / 設計上の考慮事項
+> The design for a trustworthy secure system requires the application of principled engineering concepts and methods supported by evidence that provides assurance that all security-relevant claims about the system are satisfied (Section F.2).[^87] Some considerations that apply to achieving trustworthiness in system design are:
+
+信用に値する安全なシステムの設計は、システムに関するすべてのセキュリティ関連の主張が満たされていることを保証する証拠に支えられた原則的なエンジニアリングの概念と方法の適用を要求する（セクションF.2）[^87j]。システム設計において信用性を達成するために適用されるいくつかの考慮事項は以下の通りである：
+
+> * **Composition**<br />
   Trustworthiness judgments are compositional. They must align with how the set of composed elements provides a system capability. The way that the system is composed from its system elements must include the design principles of Compositional Trustworthiness and, to the extent practical, Structured Decomposition and Composition.
 
-* **States, Modes, and Transitions**<br />
-  Ideally, the implemented system design will result in a system that continually remains in secure states and modes with secure transitions between states and modes (Section 3.2).
+* **構成**<br />
+  信用性の判断は構成的である。これらは、構成された要素の集合がシステムの能力を提供する方法と整合する必要がある。システムがそのシステム要素から構成される方法には、実用的な範囲で、構成的信用性の設計原則と、構造化された分解と構成を含める必要がある。
 
+> * **States, Modes, and Transitions**<br />
+  Ideally, the implemented system design will result in a system that continually remains in secure states and modes with secure transitions between states and modes (Section 3.2).<br />
   Realistically, the system will have insecure and indeterminant (i.e., unknown if secure or insecure) systems states and modes. The design must account for these cases and provide the capability to transition from insecure and indeterminant states and modes to secure states and modes (Protective Recovery).
 
+* **状態、モード、および遷移**<br />
+  理想的には、実装されたシステムデザインにより、システムは常に安全な状態とモードに留まり、状態とモードの間の安全な遷移が行われる（セクション3.2）。<br />
+  現実的には、システムには安全でない、または不確定（つまり、安全か不安全かが不明）なシステムの状態とモードが存在する。デザインはこれらのケースを考慮し、安全でない、または不確定な状態とモードから安全な状態とモードへの遷移機能を提供する必要がある（保護的回復）。
 
-* **Failure Propagation**<br />
+> * **Failure Propagation**<br />
   All systems fail at some point. When a failure occurs, another failure scenario or the creation of a new failure scenario should not be triggered or invoked (Protective Failure). Designing without single points of failure (Redundancy) – including not having common mode failures (Diversity) – can help isolate system element failures while providing the required system capabilities. Additionally, the response to failure should not lead to loss or other failures (Protective Recovery).
 
-* **Anomaly Detection**<br />
+* **故障伝播**<br />
+  すべてのシステムはいずれかの時点で故障する。故障が発生した場合、他の故障シナリオの引き金となったり、新しい故障シナリオを作り出したりしてはならない（保護的故障）。単一障害点（冗長性）を持たない設計 - 共通モード故障（多様性）を含まないことも - は、必要なシステム能力を提供しながらシステム要素の故障を隔離するのに役立つ。さらに、故障への対応が損失や他の故障につながらないようにする必要がある（保護的回復）。
+
+> * **Anomaly Detection**<br />
   Anomaly Detection provides situational awareness that allows the system to decide and recommend corrective actions to account for actual and potential deviations from accepted norms.
 
-* **Trades**<br />
-  Not every system element has trustworthiness that is sufficient for its intended purpose. A deficiency in trustworthiness can result from:
+* **異常検出**<br />
+  異常検出は、システムが実際および潜在的な受け入れられた規範からの逸脱を考慮に入れて、修正行動を決定し推奨することを可能にする状況認識を提供する。
 
-  * Technical feasibility and practicality issues
-  * Cost and schedule issues of what is feasible and practical
-  * The limits of certainty (i.e., what is not known, what cannot be known, and what is underappreciated [known or could be known but dismissed prematurely])
-
+> * **Trades**<br />
+  Not every system element has trustworthiness that is sufficient for its intended purpose. A deficiency in trustworthiness can result from:<br />
+  • Technical feasibility and practicality issues<br />
+  • Cost and schedule issues of what is feasible and practical<br />
+  • The limits of certainty (i.e., what is not known, what cannot be known, and what is underappreciated [known or could be known but dismissed prematurely])<br />
   The trade space is the rigorous application of the design principles that provide a basis for the necessary design decisions to maximize the trustworthiness of individual system elements and aggregates of elements. For example, in addressing the feasibility and practicality of cost and schedule issues, the design principle of minimizing the number of system elements that must be trusted (Minimal Trusted Elements) is applied. This reduces the size and scope of the effort and potentially reduces the expense of generating evidence of trustworthiness.
 
-[^87]: Constraints and claims are expressed in terms of functional correctness, strength of function, concerns for asset loss and consequences, and the protection capability derived from adherence to standards or from the use of specific processes, procedures, or methods.
+* **トレード**<br />
+  すべてのシステム要素がその意図された目的に対して十分な信用性を持つわけではない。信用性の不足は次の原因で生じる可能性がある：<br />
+  • 技術的実現可能性および実用性の問題<br />
+  • 実現可能で実用的なもののコストおよびスケジュールの問題<br />
+  • 確実性の限界（つまり、知られていないこと、知ることができないこと、及び過小評価されていること（知られているかもしれないが早計に却下されたこと））<br />
+  トレード空間は、個々のシステム要素および要素の集合体の信用性を最大化するために必要な設計決定の基盤を提供する設計原則を厳格に適用することである。例えば、コストおよびスケジュールの問題の実現可能性と実用性に対処する際、信用する必要があるシステム要素の数を最小限にする（最小限の信用された要素）という設計原則が適用される。これにより、努力の規模と範囲が減少し、信用性の証拠を生成する費用が潜在的に削減される。
+
+[^87]: > Constraints and claims are expressed in terms of functional correctness, strength of function, concerns for asset loss and consequences, and the protection capability derived from adherence to standards or from the use of specific processes, procedures, or methods.
+
+[^87j]: 制約と主張は、機能的正確性、機能の強度、資産損失および結果に対する懸念、および基準への遵守または特定のプロセス、手順、または方法の使用から派生する保護能力の観点から表現される。
 
 ## F.2. Assurance / 保証
-Assurance is the grounds for justified confidence that a claim or set of claims has been or will be achieved [61]. Assurance is a complex and multi-dimensional property of the system that builds over time. Assurance must be planned, established, and maintained in alignment with the system throughout the system life cycle.
+> Assurance is the grounds for justified confidence that a claim or set of claims has been or will be achieved [61]. Assurance is a complex and multi-dimensional property of the system that builds over time. Assurance must be planned, established, and maintained in alignment with the system throughout the system life cycle.
 
-Adequate security judgments should be based on the level of confidence in the ability of the system to protect itself against asset loss and the associated consequences across all forms of adversity.[^88] It cannot be based solely on individual efforts, such as demonstrating compliance, functional testing, or adversarial penetration tests. Judgments include what the system cannot do, will not do, or cannot be forced to do. These judgments of non-behavior must be grounded in sufficient confidence in the system’s ability to correctly deliver its intended function in the presence and absence of adversity and to do so when used in accordance with its design intent.
+保証とは、ある主張または一連の主張が達成された、または達成されるという正当な確信の根拠である[61]。保証は、時間をかけて構築されるシステムの複雑で多次元的な特性である。保証は、システムのライフサイクルを通じてシステムと一致して計画され、確立され、維持されなければならない。
 
-The needed evidentiary basis for such judgments derives from well-formed and comprehensive evidence-producing activities that address the requirements, design, properties, capabilities, vulnerabilities, and effectiveness of security functions. These activities include a combination of demonstration, inspection, analysis, testing, and other methods required to produce the needed evidence. The evidence acquired from these activities informs reasoning by qualified subjectmatter experts to interpret the evidence to substantiate the assurance claims made while considering other emergent properties that the system may possess.
+> Adequate security judgments should be based on the level of confidence in the ability of the system to protect itself against asset loss and the associated consequences across all forms of adversity.[^88] It cannot be based solely on individual efforts, such as demonstrating compliance, functional testing, or adversarial penetration tests. Judgments include what the system cannot do, will not do, or cannot be forced to do. These judgments of non-behavior must be grounded in sufficient confidence in the system’s ability to correctly deliver its intended function in the presence and absence of adversity and to do so when used in accordance with its design intent.
 
-[^88]: The term adversity refers to those conditions that can cause a loss of assets (e.g., threats, attacks, vulnerabilities, hazards, disruptions, and exposures).
+十分なセキュリティ判断は、システムがあらゆる形態の逆境に対して資産損失および関連する結果から自身を保護する能力に対する確信のレベルに基づくべきである[^88j]。それは、コンプライアンスの実証、機能テスト、または敵対的な侵入テストなどの個別の努力だけに基づくことはできない。判断には、システムが行えないこと、行わないであろうこと、または強制的に行えないことが含まれる。これらの非行動の判断は、逆境の有無にかかわらず、システムがその設計意図に従って使用された場合に、意図された機能を正確に提供する能力に十分な確信に基づいていなければならない。
 
-### VENEER SECURITY
-Assurance is difficult but necessary.
+> The needed evidentiary basis for such judgments derives from well-formed and comprehensive evidence-producing activities that address the requirements, design, properties, capabilities, vulnerabilities, and effectiveness of security functions. These activities include a combination of demonstration, inspection, analysis, testing, and other methods required to produce the needed evidence. The evidence acquired from these activities informs reasoning by qualified subjectmatter experts to interpret the evidence to substantiate the assurance claims made while considering other emergent properties that the system may possess.
 
-“I’ve covered a lot of material in this book, some of it quite tricky. But I’ve left the hardest parts to the last. First, there’s the question of assurance …“ [5].
+そのような判断に必要な証拠の基盤は、要件、設計、特性、能力、脆弱性、およびセキュリティ機能の有効性に対処する、整形された包括的な証拠生成活動から派生する。これらの活動には、必要な証拠を生成するために必要な実証、検査、分析、テスト、その他の方法の組み合わせが含まれる。これらの活動から得られる証拠は、資格を持つ専門家による推論に情報を提供し、システムが持つ可能性のある他の新規特性を考慮しながら、保証の主張を裏付けるための証拠の解釈に役立つ。
 
-Veneer security is security functionality provided without corresponding assurance so that the functionality only appears to protect resources when it does not. Veneer security results in a false sense of security and, in fact, increases risk due to the uncertainty about the behavior and outcomes produced by the security functionality in the presence and absence of adversity. Veneer security must be avoided [62].
+[^88]: > The term adversity refers to those conditions that can cause a loss of assets (e.g., threats, attacks, vulnerabilities, hazards, disruptions, and exposures).
 
-Compliance is a form of “veneer security.” While compliance may have an important informing role in judgments of trustworthiness, compliance-based judgments – like other forms of veneer security – do not suffice as the sole evidentiary basis for assurance and the associated judgments of trustworthiness.
+[-88j]: 「逆境」という用語は、資産の損失を引き起こす可能性のある条件を指す（例えば、脅威、攻撃、脆弱性、危険、中断、および露出）。
 
+### VENEER SECURITY / ベニヤセキュリティ
+> Assurance is difficult but necessary.
+
+保証は困難だが必要である。
+
+> “I’ve covered a lot of material in this book, some of it quite tricky. But I’ve left the hardest parts to the last. First, there’s the question of assurance …“ [5].
+
+「この本では多くの内容を扱ったが、中にはかなり厄介なものもある。しかし、最も難しい部分は最後に残した。まず、保証の問題だ…。」
+
+> Veneer security is security functionality provided without corresponding assurance so that the functionality only appears to protect resources when it does not. Veneer security results in a false sense of security and, in fact, increases risk due to the uncertainty about the behavior and outcomes produced by the security functionality in the presence and absence of adversity. Veneer security must be avoided [62].
+
+ベニヤセキュリティとは、対応する保証なしに提供されるセキュリティ機能のことで、その機能がリソースを保護しているように見えるだけで、実際には保護していないものである。ベニヤのセキュリティは、誤った安心感をもたらし、実際、逆境があるときとないときのセキュリティ機能によって生じる振る舞いや結果が不確実であるために、リスクを増大させる。うわべだけのセキュリティは避けなければならない。
+
+> Compliance is a form of “veneer security.” While compliance may have an important informing role in judgments of trustworthiness, compliance-based judgments – like other forms of veneer security – do not suffice as the sole evidentiary basis for assurance and the associated judgments of trustworthiness.
+
+コンプライアンスは、「ベニヤセキュリティ」の一形態である。コンプライアンスは、信頼性の判断において重要な情報提供の役割を果たすかもしれないが、コンプライアンスに基づく判断は、他のベニヤのセキュリティの形態と同様、保証とそれに関連する信頼性の判断の唯一の証拠能力として十分ではない。
 
 ### F.2.1. Security Assurance Claims
 From a security perspective, a top-level claim addresses freedom from the conditions that cause asset loss and the associated consequences. Specifically, this means the system will adequately contribute to freedom from the conditions that cause asset loss and the associated consequences.
