@@ -45,8 +45,7 @@ Fig. 2. Model for a System and its Elements
 
 システム・オブ・システムズは、相互作用するシステム要素自体がシステムであるシステムである。これは、構成システム単独では提供できない独自の能力を提供する。システム・オブ・システムズには、構成システムが統合または相互運用するために必要な、システム間のインフラストラクチャー、施設、プロセスが含まれることがある[10]。
 
-### Interfacing, Enabling, and Interoperating Systems / インターフェイスしている、有効化、およびシステム間相互運用
-
+### Interfacing, Enabling, and Interoperating Systems / インターフェイシング、イネーブリング、インターオペレーティング システム
 > Interfacing systems are systems that interact with the system of interest. Interfacing systems have an interface for exchanging data, energy, or other resources with the system of interest. An interfacing system exchanges resources with the system of interest during one or more system life cycle stages, such as a system that interfaces for maintenance purposes or a system used to develop the system of interest. The relationships with interfacing systems can be either bidirectional or one way. Interfacing systems have two specific subsets: enabling systems and interoperating systems.
 
 インターフェイシング システムは、関心のあるシステムと相互作用するシステムである。インターフェイシング システムは、関心のあるシステムとデータ、エネルギー、または他のリソースを交換するためのインターフェイスを持っている。インターフェイシング システムは、メンテナンス目的でインターフェースを行うシステムや、関心のあるシステムを開発するために使用されるシステムなど、一つ以上のシステムライフサイクルステージ中に関心のあるシステムとリソースを交換する。インターフェイシング システムとの関係は、双方向または一方向のいずれかである。インターフェイシング システムには、イネーブリング システムとインターオペレーティング システムという二つの具体的なサブセットがある。
@@ -70,40 +69,58 @@ Fig. 3. System of Interest and Interfacing Systems
 ## Systems Engineering Foundations / システムズ エンジニアリングの基礎
 > Systems engineering is a transdisciplinary[^12] and integrative approach to enabling the successful realization, use, and retirement of engineered systems. It employs systems principles and concepts, as well as scientific, technological, and management methods to achieve such systems [12]. Systems engineering is system-holistic in nature, whereby the contributions across multiple engineering and specialty disciplines are evaluated and balanced to produce a coherent system capability. Systems engineering applies systems science and systems thinking[^13] to satisfy the often-conflicting needs and priorities of stakeholders within the constraints of cost, schedule, performance, and effectiveness. The objective is to limit uncertainty and thereby manage risk.
 
+システムズ エンジニアリングは、エンジニアリングされたシステムの成功した実現、使用、および廃止を可能にするための、学際的[^12j]で統合的なアプローチである。それはシステムの原則や概念、そして科学的、技術的、管理的な方法を使用して、そのようなシステムを実現する[12]。システムズ エンジニアリングはシステム全体を考慮する性質を持ち、複数のエンジニアリングおよび専門分野を横断する貢献を評価し、バランスを取ることで、一貫したシステム能力を生み出す。システムズ エンジニアリングは、コスト、スケジュール、パフォーマンス、および効果の制約内で、しばしば相反する利害関係者のニーズと優先順位を満たすために、システム科学とシステム思考[^13j]を適用する。目的は不確実性を制限し、それによってリスクを管理することである。
+
 [^12]: > As noted in [11], transdisciplinary approaches reach “beyond disciplines to find and exploit connections to solve complex problems. Transdisciplinary thinking encourages thinking in terms of new relationships among traditionally distinct disciplines and focusing on new concepts that might arise from such thinking.” 
 
-[^12j]: 
+[^12j]: [11]で指摘されているように、学際的アプローチは「複雑な問題を解決するために、分野を超えて接続を見つけ、利用する。学際的思考は、伝統的に異なる分野間の新しい関係について考え、そのような思考から生じるかもしれない新しい概念に焦点を当てることを奨励する」。
 
 [^13]: > Systems science is an interdisciplinary field that studies complex systems in nature, society, and science. It aims to develop interdisciplinary foundations that are applicable in a variety of areas, such as social sciences, engineering, biology, and medicine. Systems thinking is a discipline of examining wholes, interrelationships, and patterns [13].
 
-[^13j]: 
+[^13j]: システム科学は、自然界、社会、科学における複雑なシステムを研究する学際的な分野である。これは、社会科学、エンジニアリング、生物学、医学など、様々な分野で適用可能な学際的な基礎を開発することを目指している。システム思考は、全体、相互関係、パターンを検討する規律である[13]。
 
 > Systems engineering is outcome-oriented and leverages engineering processes to realize a system while effectively managing complexity and serving as the principal integrating mechanism for the technical, management, and support activities related to the engineering effort. Finally, systems engineering is data- and analytics-driven to ensure that all decisions and trades are guided and informed by data produced by analyses conducted with an appropriate level of fidelity and rigor.
 
+システムズ エンジニアリングは成果指向であり、システムを実現するためにエンジニアリングプロセスを活用し、複雑性を効果的に管理し、エンジニアリングの取り組みに関連する技術、管理、サポート活動の主要な統合メカニズムとして機能する。最終的に、システムズ エンジニアリングはデータと分析に基づいており、すべての決定やトレードオフが、適切な精度と厳密さで実施された分析によって生成されたデータによって導かれ、情報に基づいていることを保証する。
+
 > Systems engineering efforts are complex, system-specific, and context-dependent,[^14] requiring close coordination between the engineering team and stakeholders throughout the system life cycle stages.[^15] While systems engineering is typically considered in terms of its developmental role as part of capability acquisition, systems engineering efforts and responsibilities do not end once a system completes development and is transitioned to the operational environment for dayto-day use. Stakeholders responsible for the system’s utilization, support, and retirement provide data to the systems engineering team on an ongoing basis. This data captures the experiences, problems, and issues associated with the operation, maintenance, and sustainment of the system.
+
+システムズ エンジニアリングの取り組みは複雑で、システム固有であり、文脈依存的である[^14j]。これは、システムのライフサイクルステージを通じて、エンジニアリングチームと利害関係者との間の緊密な調整を必要とする[^15j]。システムズ エンジニアリングは通常、能力取得の一部としての開発的な役割の観点から考えられるが、システムズ エンジニアリングの取り組みと責任は、システムが開発を完了し、日常使用のために運用環境に移行された後に終了するわけではない。システムの利用、サポート、退役を担当するステークホルダーは、継続的にシステムズ エンジニアリングチームにデータを提供する。このデータは、システムの運用、保守、維持に関連する経験、問題、および課題を捉える。
 
 > Stakeholders also advise the engineering team on system enhancements and improvements made or desired. In addition, field engineering provides on-site, full-system life cycle engineering support for operations, maintenance, and sustainment organizations.
 
+ステークホルダーはまた、エンジニアリングチームに、実施されたり望まれたりするシステムの強化と改善に関して助言を行う。さらに、現場エンジニアリングは、運用、保守、維持組織のための現場における、全システムライフサイクルにわたるエンジニアリングサポートを提供する。
+
 > There are many additional resources available that provide more in-depth examinations of systems engineering.[^16] Such discussions are beyond the scope of this publication.
+
+システムズ エンジニアリングに関するより詳細な検討を提供する多くの追加リソースが利用可能である[^16j]。しかし、そのような議論は、この出版物の範囲を超えている。
 
 ## Trust and Trustworthiness / 信用と信用性
 > The concepts of trust and trustworthiness are foundational to engineering trustworthy secure systems, to the decisions made to grant trust, and to the extent that trust is granted based on demonstrated trustworthiness. Trust is a belief that an entity meets certain expectations and can be relied upon. The terms belief and can imply that trust may be granted to an entity whether the entity is trustworthy or not. A trustworthy entity is one for which sufficient evidence exists to support its claimed trustworthiness. Thus, trustworthiness is the demonstrated ability and, therefore, the worthiness of an entity to be trusted to satisfy expectations, including satisfying expectations in the face of adversity. Since trustworthiness is something demonstrated, it is based on evidence that supports a claim or judgment of an entity being worthy of trust [2] [20] [21].
 
+信用と信用性の概念は、信用に値する安全なシステムをエンジニアリングすることの、信用を与えるために行われる決定の、および、実証された信用性に基づいて信用が与えられる範囲の、基礎をなす。信用は、あるエンティティが特定の期待を満たし、信頼できるという信念である。「信念」と「できる」という用語は、エンティティが信用に値するかどうかにかかわらず、エンティティに信用が与えられる可能性があることを示唆している。信用に値するエンティティとは、その主張された信用性を支持する十分な証拠が存在するエンティティである。すなわち、信用性とは、逆境に直面した場合も含めて常に期待に応えてくれるという信用を与えられるエンティティの、実証された能力であり、つまり価値である。信用性は実証されるものであり、それは信用に値するという主張や判断を支持する証拠に基づいている。[2] [20] [21]。
+
 > Since trust is not necessarily based on a judgment of trustworthiness, the decision to trust an entity should consider the significance (i.e., consequences, effects, and impacts) of expectations not being fulfilled because of non-performance – whether due to incompetence, deficiency, or failure. Trust that is granted without establishing the required trustworthiness is a significant contributor to risk. The concepts of trust and trustworthiness are discussed in Appendix F.
+
+信用は必ずしも信用性の判断に基づいているわけではないため、実体を信用する決定は、非遂行による期待が果たされないことの重要性（つまり、結果、効果、及び影響）を考慮すべきである。無能、不足、または失敗によるものかに関わらずである。必要な信用性を確立せずに与えられる信用は、リスクの重要な要因である。信用と信用性の概念については、付録Fで議論されている。
 
 [^14]: > The International Council on Systems Engineering (INCOSE) notes in [14] that “systems engineering in application is specific to stakeholder needs, solution space, resulting system solution(s), and context throughout the system life cycle” and "systems engineering influences and is influenced by internal and external resource, political, economic, social, technological, environmental, and legal factors.” 
 
-[^14j]: 
+[^14j]: 国際システムズエンジニアリング協議会（INCOSE）は[14]において、「システムズエンジニアリングの応用は、ステークホルダーのニーズ、ソリューションスペース、結果としてのシステムソリューション、そしてシステムライフサイクルを通じての文脈に特有である」とし、「システムズエンジニアリングは内部及び外部の資源、政治、経済、社会、技術、環境、法的要因によって影響を受け、また影響を与える」と述べている。
 
 [^15]: > Nomenclature for stages of the system life cycle varies but often includes concept analysis; solution analysis; technology maturation; system design and development; engineering and manufacturing development; production and deployment; training, operations, and support; and retirement and disposal.
 
-[^15j]: 
+[^15j]: システムライフサイクルの段階の名称は異なることが多いが、一般的には概念分析、解決策分析、技術成熟、システム設計と開発、エンジニアリング及び製造開発、生産と展開、訓練、運用、サポート、そして退役と廃棄を含むことが多い。
 
 [^16]: > INCOSE offers a systems engineering handbook [15] and Systems Engineering Book of Knowledge [13] as general resources. The National Aeronautical and Space Administration (NASA) also offers systems engineering material as it is applied within the NASA community.  Publications include the NASA Systems Engineering Handbook [17] and two volumes of expanded systems engineering guidance [18] [19].
 
-[^16j]: 
+[^16j]: INCOSEは、一般的なリソースとしてシステムズエンジニアリングハンドブック[15]とシステムズエンジニアリングナレッジブック[13]を提供している。国立航空宇宙局（NASA）も、NASAコミュニティ内で適用されるシステムズエンジニアリングの資料を提供している。出版物には、NASAシステムズエンジニアリングハンドブック[17]と拡張されたシステムズエンジニアリングガイダンスの2巻[18][19]が含まれる。
 
-## ENGINEERING FOR TRUST
+## ENGINEERING FOR TRUST / 信用に対するエンジニアリング
 > In January 2022, INCOSE released the Systems Engineering Vision 2035 [16]. It is intended to inspire, guide, and inform the strategic direction for the global systems engineering community. A core element identified for the future state of systems engineering is increased confidence in systems to improve the practice of engineering trusted systems.
 
+2022年1月、INCOSEは「システムエンジニアリング・ビジョン2035」[16]を発表した。これは、グローバルなシステムエンジニアリング・コミュニティの戦略的方向性を鼓舞し、導き、情報提供することを目的としている。システムエンジニアリングの将来のあり方について特定された中核的な要素は、信頼されるシステムエンジニアリングの実践を改善するために、システムに対する信頼性を高めることである。
+
 > As noted in [7], a key problem to address in realizing Vision 2035 is that “systems security has moved from its traditional focus on trust to a more singular focus on risk.” The need is to prove a level of system security through evidence-based assurance.
+
+[7]に記されているように、ビジョン2035を実現する上での主要な問題の一つは、「システムのセキュリティが従来の信用に関する焦点から、より単一のリスクに関する焦点へと移行している」ということである。必要なのは、証拠に基づく保証を通じてシステムのセキュリティレベルを実証することである。

@@ -125,16 +125,16 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * References 
 * Appendix A. [Acronyms / アクロニム](Acronyms.md)
 * Appendix B. [Glossary / 用語集](Glossary.md)
-* Appendix C. [Security Policy and Requirements / セキュリティポリシーと要件](Security-Policy-and-Requirements.md)
+* Appendix C. [Security Policy and Requirements / セキュリティポリシーと要件](Appendix-C.md)
 * C.1. Security Policy / セキュリティポリシー
 * C.2. Security Requirements / セキュリティ要件
 * C.3. Distinguishing Requirements, Policy, and Mechanisms / 要件、ポリシー、メカニズムの区別
-* Appendix D. [Trustworthy Secure Design / 信用性の高いセキュアな設計](Trustworthy-Secure-Design.md)
+* Appendix D. [Trustworthy Secure Design / 信用性の高いセキュアな設計](Appendix-D.md)
 * D.1. Design Approach for Trustworthy Systems / 信用性の高いシステムのための設計アプローチ
 * D.2. Design Considering Emergence / 創発を考慮した設計
 * D.3. Security Design Order of Precedence / セキュリティ設計の優先順位
 * D.4. Functional Design Considerations / 機能設計の考慮事項
-* Appendix E. [Principles for Trustworthy Secure Design / 信用性の高いセキュアな設計のための原則](Principles-for-Trustworthy-Secure-Design.md)
+* Appendix E. [Principles for Trustworthy Secure Design / 信用性の高いセキュアな設計のための原則](Appendix-E.md)
 * E.1. Anomaly Detection / アノマリ検知
 * E.2. Clear Abstractions / 明確な抽象化
 * E.3. Commensurate Protection / 相応の保護
@@ -165,13 +165,13 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * E.28. Structured Decomposition and Composition / 構造化された分解と合成
 * E.29. Substantiated Trustworthiness / 実証された信用性
 * E.30. Trustworthy System Control / 信用性の高いシステム コントロール
-* Appendix F. [Trustworthiness and Assurance / 信用性と保証](Trustworthiness-and-Assurance.md)
+* Appendix F. [Trustworthiness and Assurance / 信用性と保証](Appendix-F.md)
 * F.1. Trust and Trustworthiness / 信用と信用性
 * F.2. Assurance / 保証
-* Appendix G. [System Life Cycle Processes Overview / システムライフサイクルプロセスの概要](System-Life-Cycle-Processes-Overview.md)
+* Appendix G. [System Life Cycle Processes Overview / システムライフサイクルプロセスの概要](Appendix-G.md)
 * G.1. Process Overview / プロセスの概要
 * G.2. Process Relationships / プロセスの関係
-* Appendix H. [Technical Processes / 技術的プロセス](Technical-Processes.md)
+* Appendix H. [Technical Processes / 技術的プロセス](Appendix-H.md)
 * H.1. Business or Mission Analysis / ビジネスまたはミッションの分析
 * H.2. Stakeholder Needs and Requirements Definition / 利害関係者のニーズと要件の定義
 * H.3. System Requirements Definition / システム要件の定義
@@ -186,7 +186,7 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * H.12. Operation / 運用
 * H.13. Maintenance / メンテナンス
 * H.14. Disposal / 廃棄
-* Appendix I. [Technical Management Processes / 技術的マネジメントプロセス](Technical-Management-Processes.md)
+* Appendix I. [Technical Management Processes / 技術的マネジメントプロセス](Appendix-I.md)
 * I.1. Project Planning / プロジェクトの計画
 * I.2. Project Assessment and Control / プロジェクトのアセスメントとコントロール
 * I.3. Decision Management / 意思決定マネジメント
@@ -195,14 +195,14 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 * I.6. Information Management / 情報マネジメント
 * I.7. Measurement / 測定
 * I.8. Quality Assurance / 品質保証
-* Appendix J. [Organizational Project-Enabling Processes / 組織的なプロジェクト実現プロセス](Organizational-Project-Enabling-Processes.md)
+* Appendix J. [Organizational Project-Enabling Processes / 組織的なプロジェクト実現プロセス](Appendix-J.md)
 * J.1. Life Cycle Model Management / ライフサイクルモデル マネジメント
 * J.2. Infrastructure Management / インフラストラクチャ マネジメント
 * J.3. Portfolio Management / ポートフォリオ マネジメント
 * J.4. Human Resource Management / 人的リソース マネジメント
 * J.5. Quality Management / 品質マネジメント
 * J.6. Knowledge Management / 知識マネジメント
-* Appendix K. [Agreement Processes / 契約プロセス](Agreement-Processes.md)
+* Appendix K. [Agreement Processes / 契約プロセス](Appendix-K.md)
 * K.1. Acquisition / 取得
 * K.2. Supply / 供給
 * Appendix L. Change Log / 更新履歴
