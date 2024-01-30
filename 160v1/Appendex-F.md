@@ -110,7 +110,7 @@ The expectations of trustworthiness of the system, inclusive of its elements, ar
 
 [-88j]: 「逆境」という用語は、資産の損失を引き起こす可能性のある条件を指す（例えば、脅威、攻撃、脆弱性、危険、中断、および露出）。
 
-### VENEER SECURITY / ベニヤセキュリティ
+### VENEER SECURITY / うわべのセキュリティ
 > Assurance is difficult but necessary.
 
 保証は困難だが必要である。
@@ -121,27 +121,37 @@ The expectations of trustworthiness of the system, inclusive of its elements, ar
 
 > Veneer security is security functionality provided without corresponding assurance so that the functionality only appears to protect resources when it does not. Veneer security results in a false sense of security and, in fact, increases risk due to the uncertainty about the behavior and outcomes produced by the security functionality in the presence and absence of adversity. Veneer security must be avoided [62].
 
-ベニヤセキュリティとは、対応する保証なしに提供されるセキュリティ機能のことで、その機能がリソースを保護しているように見えるだけで、実際には保護していないものである。ベニヤのセキュリティは、誤った安心感をもたらし、実際、逆境があるときとないときのセキュリティ機能によって生じる振る舞いや結果が不確実であるために、リスクを増大させる。うわべだけのセキュリティは避けなければならない。
+うわべのセキュリティとは、対応する保証なしに提供されるセキュリティ機能のことで、その機能がリソースを保護しているように見えるだけで、実際には保護していないものである。うわべのセキュリティは、誤った安心感をもたらし、実際、逆境があるときとないときのセキュリティ機能によって生じる振る舞いや結果が不確実であるために、リスクを増大させる。うわべだけのセキュリティは避けなければならない。
 
 > Compliance is a form of “veneer security.” While compliance may have an important informing role in judgments of trustworthiness, compliance-based judgments – like other forms of veneer security – do not suffice as the sole evidentiary basis for assurance and the associated judgments of trustworthiness.
 
-コンプライアンスは、「ベニヤセキュリティ」の一形態である。コンプライアンスは、信頼性の判断において重要な情報提供の役割を果たすかもしれないが、コンプライアンスに基づく判断は、他のベニヤのセキュリティの形態と同様、保証とそれに関連する信頼性の判断の唯一の証拠能力として十分ではない。
+コンプライアンスは、「うわべのセキュリティ」の一形態である。コンプライアンスは、信頼性の判断において重要な情報提供の役割を果たすかもしれないが、コンプライアンスに基づく判断は、他のうわべのセキュリティの形態と同様、保証とそれに関連する信頼性の判断の唯一の証拠能力として十分ではない。
 
-### F.2.1. Security Assurance Claims
-From a security perspective, a top-level claim addresses freedom from the conditions that cause asset loss and the associated consequences. Specifically, this means the system will adequately contribute to freedom from the conditions that cause asset loss and the associated consequences.
+### F.2.1. Security Assurance Claims / セキュリティ保証の主張
+> From a security perspective, a top-level claim addresses freedom from the conditions that cause asset loss and the associated consequences. Specifically, this means the system will adequately contribute to freedom from the conditions that cause asset loss and the associated consequences.
 
-Top-level claims decompose in a structured manner into subclaims about the desired attributes of a trustworthy secure system. Subclaims address the requirements, design, implementation, methods, and adversities that demonstrate that the system adequately contributes to ensuring only authorized and intended system behaviors and outcomes. These subclaims are derived from concerns about the completeness and accuracy of stakeholder and system requirements,[^89] enforcement of the security policy, proper implementation of the design, proper maintenance of the system, the usability of the system,[^90] and the avoidance, minimization, and mitigation of defects, errors, and vulnerabilities.[^91] Other subclaims may exist involving the ability to exhibit predictable behavior while operating in secure states in the presence and absence of adversity and the ability to recover from an insecure state. Claims can be expressed in terms of functional correctness, strength of function, and the protection capability derived from adherence to standards and/or from the use of specific processes, procedures, and methods.
+セキュリティの観点から、トップレベルの主張は、資産損失を引き起こす制約からの解放とそれに伴う結果からの解放に対応する。具体的には、このシステムは資産損失を引き起こす制約からの解放と、それに伴う結果からの解放に十分に貢献するであろう。
 
-#### LEARNING FROM SAFETY
-The NASA System Safety Handbook [6] describes the relevant claims to be met in terms of the top-level claim that the system is adequately safe with subclaims, including that the system is designed to be as safe as reasonably practicable, built to be as safe as reasonably practicable, and operated as safely as reasonably practicable.
+> Top-level claims decompose in a structured manner into subclaims about the desired attributes of a trustworthy secure system. Subclaims address the requirements, design, implementation, methods, and adversities that demonstrate that the system adequately contributes to ensuring only authorized and intended system behaviors and outcomes. These subclaims are derived from concerns about the completeness and accuracy of stakeholder and system requirements,[^89] enforcement of the security policy, proper implementation of the design, proper maintenance of the system, the usability of the system,[^90] and the avoidance, minimization, and mitigation of defects, errors, and vulnerabilities.[^91] Other subclaims may exist involving the ability to exhibit predictable behavior while operating in secure states in the presence and absence of adversity and the ability to recover from an insecure state. Claims can be expressed in terms of functional correctness, strength of function, and the protection capability derived from adherence to standards and/or from the use of specific processes, procedures, and methods.
 
-[^89]: Claims are not expressed solely as a restatement of the security functional and performance requirements. Doing so only provides assurance that the security requirements are satisfied with the implicit assumption that the requirements are correct, provide adequate coverage, and accurately reflect stakeholder needs and concerns.
+トップレベルの主張は、信用に値する安全なシステムの望ましい属性に関する下位の主張へと、構造的に分解される。下位の主張は、システムが認可された意図されたシステムの振る舞いと結果を保証するために十分に貢献することを実証する要件、設計、実装、方法、および逆境に対処する。これらの下位の主張は、利害関係者およびシステム要件の完全性と正確さに関する懸念[^89]、セキュリティポリシーの適用、設計の適切な実装、システムの適切な維持、システムの使用可能性[^90]、欠陥、エラー、脆弱性の回避、最小化、および緩和[^91]から導かれる。その他の下位の主張には、逆境の存在および不在で安全な状態で動作しながら予測可能な振る舞いを示す能力や、不安全な状態から回復する能力に関与するものが存在するかもしれない。主張は、機能の正確性、機能の強度、および基準への遵守や特定のプロセス、手順、方法の使用から導かれる保護能力の観点から表現できる。
 
-[^90]: Most system failures have a human component. Thus, assurance must consider human frailty [5]. Operator behavior is a product of the environment (including its systems) in which it occurs [36].
+#### LEARNING FROM SAFETY / 安全からの学び
+> The NASA System Safety Handbook [6] describes the relevant claims to be met in terms of the top-level claim that the system is adequately safe with subclaims, including that the system is designed to be as safe as reasonably practicable, built to be as safe as reasonably practicable, and operated as safely as reasonably practicable.
 
-[^91]: Not all vulnerabilities can be mitigated to an acceptable level. There are three classes of vulnerabilities in systems: (1) vulnerabilities whose existence is known and either eliminated or made to be inconsequential, (2) vulnerabilities whose existence is known but that are not sufficiently mitigated, and (3) unknown vulnerabilities that constitute an element of uncertainty. That is, the fact that the vulnerability has not been identified should not give increased confidence that the vulnerability does not exist. Determining the effect of vulnerabilities that are in the delivered system and the risk posed by those vulnerabilities and accepting uncertainty about the existence of a vulnerability that will only become known over time are important aspects that are addressed by assurance.
+NASAのシステム安全ハンドブック[6]では、システムが十分に安全であるというトップレベルの主張に関連する主張を述べている。これには、システムが合理的に実現可能な限り安全に設計され、合理的に実現可能な限り安全に構築され、合理的に実現可能な限り安全に運用されるというサブクレームが含まれる。
 
+[^89]: > Claims are not expressed solely as a restatement of the security functional and performance requirements. Doing so only provides assurance that the security requirements are satisfied with the implicit assumption that the requirements are correct, provide adequate coverage, and accurately reflect stakeholder needs and concerns.
 
+[^89j]: 主張は、セキュリティ機能および性能要件の単なる再述としてのみ表現されるわけではない。そのような方法では、要件が正しいこと、十分な範囲をカバーしていること、および利害関係者のニーズと懸念を正確に反映しているという暗黙の仮定のもとで、セキュリティ要件が満たされていることの保証が提供されるだけである。
+
+[^90]: > Most system failures have a human component. Thus, assurance must consider human frailty [5]. Operator behavior is a product of the environment (including its systems) in which it occurs [36].
+
+[^90j]: ほとんどのシステムの失敗には人間の要素が関与している。したがって、保証は人間の弱さを考慮しなければならない[5]。オペレーターの行動は、それが発生する環境（システムを含む）の産物である[36]。
+
+[^91]: > Not all vulnerabilities can be mitigated to an acceptable level. There are three classes of vulnerabilities in systems: (1) vulnerabilities whose existence is known and either eliminated or made to be inconsequential, (2) vulnerabilities whose existence is known but that are not sufficiently mitigated, and (3) unknown vulnerabilities that constitute an element of uncertainty. That is, the fact that the vulnerability has not been identified should not give increased confidence that the vulnerability does not exist. Determining the effect of vulnerabilities that are in the delivered system and the risk posed by those vulnerabilities and accepting uncertainty about the existence of a vulnerability that will only become known over time are important aspects that are addressed by assurance.
+
+[^90j]: 全ての脆弱性を許容可能なレベルまで緩和することはできない。システムには三つの脆弱性のクラスがある：(1) 存在が知られており、排除されたか、無意味にされた脆弱性、(2) 存在が知られているが十分に緩和されていない脆弱性、そして (3) 不明な脆弱性で、これは不確実性の要素を構成する。つまり、脆弱性が特定されていないという事実は、その脆弱性が存在しないという確信を高めるものではない。配信されたシステム内の脆弱性の影響を判断し、それらの脆弱性によってもたらされるリスクと、時間が経つにつれてのみ知られるようになる脆弱性の存在に関する不確実性を受け入れることは、保証によって対処される重要な側面である。
 
 ### F.2.2. Approaches to Assurance
 There are three general approaches to assurance. These assurance approaches can vary based on the type of evidence, how the evidence is acquired, the strength of the judgments made based on the acquired evidence, and the extent to which the assurance matches decision-making needs.
