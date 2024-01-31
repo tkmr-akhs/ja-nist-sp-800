@@ -19,6 +19,7 @@ Please translate terms as following:
 - "assurance" to "保証"
 - "assertion" to "言明"
 - "claim" to "主張"
+- "address"(verb.) to "対応する"
 - "synthetic assurance" to "統合的保証"
 - "systems engineering" to "システムズ エンジニアリング"
 - "interfacing system" to "インターフェイシング システム"
