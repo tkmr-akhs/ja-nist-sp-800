@@ -6,6 +6,9 @@
 ```
 Please translate the following sentences into Japanese using the "だ・である" style. Do not omit footnote calls.
 Please translate terms as following:
+- "secure" to "セキュア"
+- "adequately secure" to "適切にセキュア"
+- "adequate security" to "適切なセキュリティ"
 - "trust" to "信用" or "信用する"
 - "trusted" to "信用した" or "信用された"
 - "trustworthy" to "信用に値する"
@@ -19,6 +22,7 @@ Please translate terms as following:
 - "assurance" to "保証"
 - "assertion" to "言明"
 - "claim" to "主張"
+- "freedom from conditions" to "制約からの解放"
 - "address"(verb.) to "対応する"
 - "synthetic assurance" to "統合的保証"
 - "systems engineering" to "システムズ エンジニアリング"

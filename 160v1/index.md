@@ -108,7 +108,7 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
   * [Trust and Trustworthiness / 信用と信用性](2-Systems-Engineering-Overview.md#Trust-and-Trustworthiness--信用と信用性)
 * [System Security Concepts / システムセキュリティの概念](3-System-Security-Concepts.md)
   * The Concept of Security / セキュリティの概念
-  * The Concept of an Adequately Secure System / 十分に安全なシステムの概念
+  * The Concept of an Adequately Secure System / 適切にセキュアなシステムの概念
   * Characteristics of Systems / システムの特徴
   * The Concept of Assets / 資産の概念
   * The Concepts of Loss and Loss Control / 損失と損失コントロールの概念

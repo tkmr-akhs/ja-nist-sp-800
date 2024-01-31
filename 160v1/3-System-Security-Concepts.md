@@ -1,60 +1,131 @@
 # System Security Concepts / システムセキュリティの概念
-This chapter describes the aspects necessary for a systems engineering perspective on security. A systems engineering perspective on security requires an understanding of the concept of security (Section 3.1), the concept of an adequately secure system (Section 3.2), and the characteristics of systems (Section 3.3). It also requires an understanding of the concept of assets (Section 3.4), the concepts of loss and loss control (Section 3.5), how to reason about asset loss (Section 3.6), and how to determine protection needs (Section 3.7). In satisfying such needs, specific viewpoints (Section 3.8) and how security is demonstrated are considered, including what is adequate (Section 3.9). The systems engineering subdiscipline that encompasses these considerations is referred to as systems security engineering (Section 3.10).
+> This chapter describes the aspects necessary for a systems engineering perspective on security. A systems engineering perspective on security requires an understanding of the concept of security (Section 3.1), the concept of an adequately secure system (Section 3.2), and the characteristics of systems (Section 3.3). It also requires an understanding of the concept of assets (Section 3.4), the concepts of loss and loss control (Section 3.5), how to reason about asset loss (Section 3.6), and how to determine protection needs (Section 3.7). In satisfying such needs, specific viewpoints (Section 3.8) and how security is demonstrated are considered, including what is adequate (Section 3.9). The systems engineering subdiscipline that encompasses these considerations is referred to as systems security engineering (Section 3.10).
+
+本章では、セキュリティに関するシステムズ エンジニアリングの観点から必要な側面について説明している。セキュリティに関するシステムズ エンジニアリングの観点は、セキュリティの概念（セクション3.1）、適切にセキュアなシステムの概念（セクション3.2）、およびシステムの特性（セクション3.3）についての理解を必要とする。また、資産の概念（セクション3.4）、損失と損失制御の概念（セクション3.5）、資産損失についての推論方法（セクション3.6）、および保護ニーズの決定方法（セクション3.7）についての理解も必要である。そのようなニーズを満たす際には、特定の視点（セクション3.8）と、何が十分か（セクション3.9）を含むセキュリティの実証方法が考慮される。これらの考慮事項を包含するシステムズ エンジニアリングのサブディシプリンは、システムズ セキュリティ エンジニアリング（セクション3.10）として参照される。
 
 ## The Concept of Security / セキュリティの概念
-A system with freedom from those conditions that can cause a loss of assets with unacceptable consequences must provide the intended behaviors and outcomes and also avoid any unintended behaviors and outcomes that constitute a loss. The term intended is reflected in two cases, both of which must be satisfied:
-* *User intent*: The system behaviors and outcomes expected by the user
-* *Design intent*: The system behaviors and outcomes to be achieved by the design
+> A system with freedom from those conditions that can cause a loss of assets with unacceptable consequences must provide the intended behaviors and outcomes and also avoid any unintended behaviors and outcomes that constitute a loss. The term intended is reflected in two cases, both of which must be satisfied:
 
-A system that delivers a capability per the design intent but inconsistent with the user intent constitutes a loss. For example, vehicle control loss might result from a failure in the vehicle’s steering control function (i.e., failure to meet the design intent) or through an attack that takes control away from the driver (i.e., failure to meet the user intent).
+資産の損失を引き起こし、受け入れがたい結果に繋がる制約から解放されたシステムは、意図された行動と結果を提供するとともに、損失を構成する意図しない行動と結果を避けなければならない。用語「意図された」は、満たされなければならない二つのケースに反映されている：
 
-The primary security objective is to ensure that only the intended behaviors and outcomes occur, both with the system and within the system.[^17] Every security need and concern derive from this objective, which is based on the concept of authorization for what is and is not allowed.[^18] As such, the primary security control objective is enforcing constraints in the form of rules for allowed and disallowed behaviors and outcomes. This control objective – and a foundational principle of trustworthy secure design – is Mediated Access. If access is not mediated (i.e., controlled though enforcing constraints) following a set of non-conflicting rules, then no basis exists upon which to claim that security is achieved.
+> * *User intent*: The system behaviors and outcomes expected by the user
 
-The rules for mediated access are stated in a set of security policies[^19] that reflect or are derived from laws, directives, regulations, life cycle concepts,[^20] requirements, or other specifically stated stakeholder objectives. A security policy includes a scope of control that establishes bounds within which the policy applies. Security policy rules are stated in terms of subjects (active entities), objects (passive entities), and the operations that the subject can perform or invoke on the object.[^21] The rules govern subject-to-object and subject-to-subject behaviors and outcomes.
+* *ユーザーの意図*：ユーザーが期待するシステムの振る舞いと結果
 
-Each security policy rule must be accurate, consistent, compatible, and complete with respect to stakeholder objectives for the defined scope of control.[^22] Inconsistency, incompatibility, inaccuracy, or incompleteness in the security policy rules lead to protection gaps. It is equally important that the security protection capabilities of the system are aligned with and can achieve the expectations of the policy.
+> * *Design intent*: The system behaviors and outcomes to be achieved by the design
 
-Privileges[^23] define the set of allowed and disallowed behavior and outcomes granted to a subject.
+* *設計の意図*：設計によって達成されるべきシステムの振る舞いと結果
 
-Privileges are the basis for making mediated access decisions. A restrictive default practice for security policy enforcement is to design the enforcement mechanism to allow only what the policy explicitly allows and to deny everything else. For a system to be deemed trustworthy secure, there must be sufficient confidence that the system is capable of enforcing the security policy on a continuous basis for the duration of the time that the policy is in effect (Appendix F).
+> A system that delivers a capability per the design intent but inconsistent with the user intent constitutes a loss. For example, vehicle control loss might result from a failure in the vehicle’s steering control function (i.e., failure to meet the design intent) or through an attack that takes control away from the driver (i.e., failure to meet the user intent).
 
-[^17]: Intended behaviors include interactions. Relevant interactions include human-to-machine and machine-to-machine interactions. Human-tomachine interactions are transformed into machine-to-machine interactions, whereby a machine element operates on behalf of the human.
+設計の意図に従って能力を提供するが、ユーザーの意図と矛盾するシステムは損失を構成する。例えば、車両の制御損失は、車両のステアリング制御機能の故障（つまり、設計の意図を満たせない場合）から生じるか、またはドライバーから制御を奪う攻撃（つまり、ユーザーの意図を満たせない場合）によって生じるかもしれない。
 
-[^18]: An attacker seeks to produce unauthorized behaviors or outcomes. Attackers attempt to accomplish something that they are not authorized to accomplish, even if that behavior or outcome is authorized for some other entity.
+> The primary security objective is to ensure that only the intended behaviors and outcomes occur, both with the system and within the system.[^17] Every security need and concern derive from this objective, which is based on the concept of authorization for what is and is not allowed.[^18] As such, the primary security control objective is enforcing constraints in the form of rules for allowed and disallowed behaviors and outcomes. This control objective – and a foundational principle of trustworthy secure design – is Mediated Access. If access is not mediated (i.e., controlled though enforcing constraints) following a set of non-conflicting rules, then no basis exists upon which to claim that security is achieved.
 
-[^19]: A security policy is a set of rules that govern security-relevant system and system element behavior (Appendix C).
+主要なセキュリティの目的は、システムとシステム内で意図された振る舞いと結果のみが発生することを保証することである。[^17j] すべてのセキュリティニーズと懸念は、許可されていることと許可されていないことの認可の概念に基づいてこの目的から派生する。[^18j] そのため、主要なセキュリティ制御の目的は、許可された行動と結果に対するルールの形での制約を強制することである。この制御の目的 - そして信用に値するセキュアな設計の基本原則 - は仲介されたアクセスである。アクセスが仲介されていない（つまり、矛盾しないルールのセットに従って制約を強制することを通じて制御されていない）場合、セキュリティが達成されていると主張する根拠は存在しない。
 
-[^20]: Life cycle concepts include operation, sustainment, evolution, maintenance, training, startup, and shutdown.
+> The rules for mediated access are stated in a set of security policies[^19] that reflect or are derived from laws, directives, regulations, life cycle concepts,[^20] requirements, or other specifically stated stakeholder objectives. A security policy includes a scope of control that establishes bounds within which the policy applies. Security policy rules are stated in terms of subjects (active entities), objects (passive entities), and the operations that the subject can perform or invoke on the object.[^21] The rules govern subject-to-object and subject-to-subject behaviors and outcomes.
 
-[^21]: Active entities exhibit behavior (e.g., a process in execution) while passive entities do not (e.g., data, file).
+仲介されたアクセスのルールは、法律、指令、規制、ライフサイクルの概念、[^20j] 要件、または他の特定の利害関係者の目的から反映されるか派生する一連のセキュリティポリシー[^19j]に記載されている。セキュリティポリシーには、ポリシーが適用される範囲を確立する制御の範囲が含まれる。セキュリティポリシーのルールは、主体（能動的な実体）、対象（受動的な実体）、および主体が対象に対して行うまたは呼び出すことができる操作の観点で記述される。[^21j] これらのルールは、主体から対象へ、および主体から主体への振る舞いと結果を規制する。
 
-[^22]: At the highest level of assurance, security policies are formally specified and verified.
+> Each security policy rule must be accurate, consistent, compatible, and complete with respect to stakeholder objectives for the defined scope of control.[^22] Inconsistency, incompatibility, inaccuracy, or incompleteness in the security policy rules lead to protection gaps. It is equally important that the security protection capabilities of the system are aligned with and can achieve the expectations of the policy.
 
-[^23]: Privileges are also referred to as authorizations or rights.
+各セキュリティポリシーのルールは、定義された制御の範囲に関して利害関係者の目的と正確に、一貫して、互換性を持ち、完全でなければならない。[^22j] セキュリティポリシーのルールにおける不一致、非互換性、不正確さ、または不完全さは、保護のギャップにつながる。同様に重要なのは、システムのセキュリティ保護能力がポリシーの期待と整合しており、それを達成できることである。
 
-## The Concept of an Adequately Secure System / 十分に安全なシステムの概念
-Adequate security is a concept that enables meaningful judgments about the idealistic nature of security objectives. The definition of security expresses an ideal that encapsulates three essential characteristics of a secure system:
-* It enables the delivery of the required system capability despite intentional and unintentional forms of adversity.
-* It enforces constraints to ensure that only the desired behaviors and outcomes associated with the required system capability are realized while satisfying the first characteristic.
-* It enforces constraints based on a set of rules to ensure that only authorized human-tomachine and machine-to-machine interactions and operations are allowed to occur while satisfying the second characteristic.
+> Privileges[^23] define the set of allowed and disallowed behavior and outcomes granted to a subject.
 
-These characteristics are to be achieved to the extent practicable, resulting in a gap between the ideal secure system and the security performance that the system can dependably achieve.[^24] The judgment that a system is adequately secure[^25] requires an evidence-based determination that security performance is optimized against all other performance objectives and constraints. The scope of conditions relevant to security and the acceptable level of security are specific to stakeholder needs. To be adequately secure, the system:
-* Meets minimum tolerable levels[^26] of security, as determined by experience, analysis, or a combination of both
-* Is as secure as reasonably practicable (ASARP)
+権限[^23j]は、主体に付与される許可された行動と結果、または許可されない行動と結果のセットを定義する。
 
-[^24]: Because system security is asymmetric – that is, things can be observed to be insecure, but no observation allows one to declare an arbitrary system secure [22] – the ideal cannot be achieved without some uncertainty.
+> Privileges are the basis for making mediated access decisions. A restrictive default practice for security policy enforcement is to design the enforcement mechanism to allow only what the policy explicitly allows and to deny everything else. For a system to be deemed trustworthy secure, there must be sufficient confidence that the system is capable of enforcing the security policy on a continuous basis for the duration of the time that the policy is in effect (Appendix F).
 
-[^25]: The concept of adequately secure is an adaptation of the concept of adequately safe from [23].
+権限は仲介されたアクセス決定を行うための基盤である。セキュリティポリシーの強制に関する制限的なデフォルトの実践は、ポリシーが明示的に許可するもののみを許可し、それ以外はすべて拒否するように強制メカニズムを設計することである。システムが信用に値するセキュアと見なされるためには、システムがセキュリティポリシーをポリシーが効力を持つ時間の間、継続的に強制する能力があることに十分な確信が必要である（付録F）。
 
-[^26]: Below such levels, the system is considered insecure.
+[^17]: > Intended behaviors include interactions. Relevant interactions include human-to-machine and machine-to-machine interactions. Human-tomachine interactions are transformed into machine-to-machine interactions, whereby a machine element operates on behalf of the human.
 
-As secure as reasonably practicable means that an incremental improvement in security would require a disproportionate deterioration of meeting other system cost, schedule, or performance objectives; would violate system constraints; or would require unacceptable concessions such as an unacceptable change in the way operations are performed.
+[^17j]: 意図された行動には相互作用が含まれる。関連する相互作用には、人間と機械の相互作用、および機械同士の相互作用がある。人間と機械の相互作用は、機械同士の相互作用に変換される。この場合、機械の要素が人間の代わりに操作する。
 
-An adequately secure system does not necessarily preclude all of the conditions that can lead to or result in undesirable consequences. The minimum tolerable levels of security performance and interpretations of as secure as reasonably practicable may not be fixed for the life of a system.
+[^18]: > An attacker seeks to produce unauthorized behaviors or outcomes. Attackers attempt to accomplish something that they are not authorized to accomplish, even if that behavior or outcome is authorized for some other entity.
 
-The information gathered while the system is in use and the lessons learned may guide and inform modifications that raise the bar on either or both (tolerability and practicability).
+[^18j]: 攻撃者は、許可されていない行動や結果を引き起こそうとする。攻撃者は、たとえその行動や結果が他のエンティティに対して許可されているとしても、彼らが達成することが許可されていない何かを成し遂げようと試みる。
 
-The concept of adequately secure is, therefore, inherently context-dependent, and subjective in nature. It is based on assertions and expectations about the system security objectives and determining how well those objectives have been achieved. Figure 4 illustrates the trade-offs between system security and the cost, schedule, and technical performance of the system.
+[^19]: > A security policy is a set of rules that govern security-relevant system and system element behavior (Appendix C).
+
+[^19j]: セキュリティポリシーは、セキュリティに関連するシステムおよびシステム要素の行動を規制するルールのセットである（付録C）。
+
+[^20]: > Life cycle concepts include operation, sustainment, evolution, maintenance, training, startup, and shutdown.
+
+[^20j]: ライフサイクルの概念には、運用、維持、進化、メンテナンス、トレーニング、起動、およびシャットダウンが含まれる。
+
+[^21]: > Active entities exhibit behavior (e.g., a process in execution) while passive entities do not (e.g., data, file).
+
+[^21j]: 能動的な実体は行動を示す（例：実行中のプロセス）が、受動的な実体は示さない（例：データ、ファイル）。
+
+[^22]: > At the highest level of assurance, security policies are formally specified and verified.
+
+[^22j]: 最高レベルの保証では、セキュリティポリシーは形式的に指定され、検証される。
+
+[^23]: > Privileges are also referred to as authorizations or rights.
+
+[^23j]: 権限は、認可または権利としても言及される。
+
+## The Concept of an Adequately Secure System / 適切にセキュアなシステムの概念
+> Adequate security is a concept that enables meaningful judgments about the idealistic nature of security objectives. The definition of security expresses an ideal that encapsulates three essential characteristics of a secure system:
+
+適切なセキュリティは、セキュリティ目標の理想的な性質に関する意味のある判断を可能にする概念である。セキュリティの定義は、セキュアなシステムの三つの本質的な特徴を包括する理想を表現している：
+
+> * It enables the delivery of the required system capability despite intentional and unintentional forms of adversity.
+
+* 意図的および非意図的な形態の逆境にもかかわらず、要求されるシステム能力の提供を可能にする。
+
+> * It enforces constraints to ensure that only the desired behaviors and outcomes associated with the required system capability are realized while satisfying the first characteristic.
+
+* 第一の特徴を満たしながら、要求されるシステム能力に関連する望ましい行動と結果のみが実現されることを保証するための制約を強制する。
+
+> * It enforces constraints based on a set of rules to ensure that only authorized human-tomachine and machine-to-machine interactions and operations are allowed to occur while satisfying the second characteristic.
+
+* 第二の特徴を満たしながら、許可された人間と機械の相互作用および機械同士の相互作用と操作のみが発生することを保証するための一連のルールに基づいて制約を強制する。
+
+> These characteristics are to be achieved to the extent practicable, resulting in a gap between the ideal secure system and the security performance that the system can dependably achieve.[^24] The judgment that a system is adequately secure[^25] requires an evidence-based determination that security performance is optimized against all other performance objectives and constraints. The scope of conditions relevant to security and the acceptable level of security are specific to stakeholder needs. To be adequately secure, the system:
+
+これらの特徴は実際に可能な限り達成されるべきであり、理想的なセキュアなシステムとシステムが信頼性を持って達成できるセキュリティのパフォーマンスとの間にギャップが生じる。[^24j] システムが適切にセキュアである[^25j]という判断は、セキュリティのパフォーマンスが他のすべてのパフォーマンス目標および制約に対して最適化されていることを示す証拠に基づく決定を必要とする。セキュリティに関連する制約の範囲と許容されるセキュリティのレベルは、利害関係者のニーズに特有のものである。適切にセキュアであるためには、システムは以下を満たす：
+
+> * Meets minimum tolerable levels[^26] of security, as determined by experience, analysis, or a combination of both
+
+* 経験、分析、またはその両方によって決定されたセキュリティの最小許容レベル[^26j]を満たす
+
+> * Is as secure as reasonably practicable (ASARP)
+
+* 合理的に実行可能な限りセキュアである（ASARP）
+
+[^24]: > Because system security is asymmetric – that is, things can be observed to be insecure, but no observation allows one to declare an arbitrary system secure [22] – the ideal cannot be achieved without some uncertainty.
+
+[^24j]: システムセキュリティは非対称的であるため – つまり、セキュアでないことは観察できるが、任意のシステムをセキュアだと宣言する観察はできない [22] – 理想はある程度の不確実性なしには達成されない。
+
+[^25]: > The concept of adequately secure is an adaptation of the concept of adequately safe from [23].
+
+[^25j]: 適切にセキュアという概念は、適切に安全という概念からの適応である [23]。
+
+[^26]: > Below such levels, the system is considered insecure.
+
+[^26j]: そのようなレベル以下では、システムはセキュアでないと見なされる。
+
+> As secure as reasonably practicable means that an incremental improvement in security would require a disproportionate deterioration of meeting other system cost, schedule, or performance objectives; would violate system constraints; or would require unacceptable concessions such as an unacceptable change in the way operations are performed.
+
+合理的に実行可能な限りセキュアであることは、セキュリティの漸進的な改善が他のシステムのコスト、スケジュール、またはパフォーマンスの目標を不均衡に損なうことを要求することを意味し、システムの制約に違反するか、または運用方法の受け入れがたい変更のような受け入れがたい譲歩を要求するであろう。
+
+> An adequately secure system does not necessarily preclude all of the conditions that can lead to or result in undesirable consequences. The minimum tolerable levels of security performance and interpretations of as secure as reasonably practicable may not be fixed for the life of a system.
+
+適切にセキュアなシステムが、望ましくない結果につながるか、またはそれによって生じるすべての条件を必ずしも排除するわけではない。セキュリティパフォーマンスの最小許容レベルや、「合理的に実行可能な限りセキュアである」という解釈は、システムの寿命にわたって固定されているわけではないであろう。
+
+> The information gathered while the system is in use and the lessons learned may guide and inform modifications that raise the bar on either or both (tolerability and practicability).
+
+システムが使用されている間に収集された情報や得られた教訓は、どちらか一方、あるいは両方（許容性と実用性）のレベルを上げるような改良の指針や情報になるかもしれない。
+
+> The concept of adequately secure is, therefore, inherently context-dependent, and subjective in nature. It is based on assertions and expectations about the system security objectives and determining how well those objectives have been achieved. Figure 4 illustrates the trade-offs between system security and the cost, schedule, and technical performance of the system.
+
+したがって、「適切にセキュア」という概念は、本質的に文脈依存であり、主観的な性質を持つ。これは、システムのセキュリティ目標に関する言明と期待に基づいており、それらの目標がどの程度達成されているかを判断することに基づいている。図4は、システムのセキュリティとシステムのコスト、スケジュール、技術性能との間のトレードオフを示している。
+
+![Fig. 4. System Security and Cost/Schedule/Technical Performance](fig4.png)
 
 Fig. 4. System Security and Cost/Schedule/Technical Performance
 
