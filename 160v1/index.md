@@ -273,7 +273,7 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 
 信用性が高く、安全なシステムを工学的に構築することは、システム、コンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計への相当な投資を必要とする重要な取り組みである。信用性の高いシステムは、利害関係者に必要とされる保護と性能を提供するための要件を満たしているという主張を支持する説得力のある証拠を提供する。規律ある、構造化された、標準に基づく一連のシステムセキュリティエンジニアリング活動とタスクを導入することは、必要な変化を開始するための重要な出発点および強制機能を提供する。
 
-> [!Note]
+> [!NOTE]
 > > “Providing satisfactory security controls in a computer system is in itself a system design problem. A combination of hardware, software, communications, physical, personnel and administrativeprocedural safeguards is required for comprehensive security. In particular, software safeguards alone are not sufficient.”
 > > 
 > > “Security Controls for Computer Systems,” (The Ware Report), Rand Corporation
@@ -329,7 +329,7 @@ Alvi Lim, Logan Mailloux, Dennis Mangsen, Doug Maughn, Rosalie McQuaid, Joseph M
 
 Finally, the authors respectfully acknowledge the seminal work in computer security that began in the 1960s. The vision, insights, and dedicated efforts of those early pioneers in computer security serve as the philosophical and technical foundation for the security principles, concepts, methods, and practices employed in this publication to address the critically important problem of engineering trustworthy secure systems.
 
-> [!Note]
+> [!NOTE]
 > **VIEWING SECURITY FROM THE PROPER PERSPECTIVE / 適切な視点からのセキュリティ観察**
 > > “For the first few decades as a burgeoning discipline, cybersecurity has been dominated by the development of widgets to address some aspect of the problem. Systems have become increasingly complex and interconnected, creating even more attack opportunities, which in turn creates even more opportunities to create defensive widgets that will bring some value in detecting or preventing an aspect of the attack space. Eventually, this becomes a game of whack-a-mole in which a simulated mole pops up from one of many holes and the objective is to whack the mole before it pops back in its hole. The moles represent new attacks, and the holes represent a huge array of potential vulnerabilities – both known and as-yet-undiscovered.
 > > 
@@ -342,7 +342,7 @@ Finally, the authors respectfully acknowledge the seminal work in computer secur
 > 
 > エンジニアリングの基盤には科学がある。時にはエンジニアリングが科学を先取りすることがあり、例えば橋の建設では、材料科学の基本が十分に理解されていなかった。多くの橋が建設され、多くが崩壊し、いくつかは残った。残ったものの設計はコピーされた。最終的に、エンジニアリングがある点を超えて進むためには、科学がエンジニアリングに追いつかなければならない。サイバーセキュリティ（そしてより一般的にはセキュリティ）エンジニアリングの基盤となる科学は複雑で難しい。一方で、始めるには今が最適な時期である。なぜなら、それは未来にとって緊急かつ重要だからである…。」
 
-> [!Note]
+> [!NOTE]
 > **THE IMPORTANCE OF SCIENCE AND ENGINEERING / 科学とエンジニアリングの重要性**
 > > When crossing a bridge, we have a reasonable expectation that the bridge will not collapse and will get us to our destination without incident. For bridge builders, the focus is on equilibrium, static and dynamic loads, vibrations, and resonance. The science of physics combines with civil engineering principles and concepts to produce a product that we deem trustworthy, giving us a level of confidence that the bridge is fit-for-purpose.
 > 
@@ -356,7 +356,7 @@ Finally, the authors respectfully acknowledge the seminal work in computer secur
 > 
 > 信用性の高い安全なシステムは、よく定義されたセキュリティ要件と安全なアーキテクチャおよび設計によって導かれ、情報提供される学際的なシステムズ エンジニアリングの努力を用いて、基礎となるシステムおよびシステムコンポーネントを強化するための重要かつ実質的な投資によって達成される。このような努力は、時間をかけて複雑で難しいシステムセキュリティの問題に対する健全な工学ベースの解決策を生み出すことが証明されている。これらの状況の下でのみ、私たちは適切に安全で、システムが構築された目的に十分な信用性を示すシステムを構築することができる。
 
-> [!Note]
+> [!NOTE]
 > > “Scientists study the world as it is, engineers create the world that never has been.”
 > > 
 > > Theodore von Kármán
@@ -364,7 +364,7 @@ Finally, the authors respectfully acknowledge the seminal work in computer secur
 > 
 > 「科学者はあるがままの世界を研究するが、エンジニアはこれまでになかった世界を創造する。」
 
-> [!Note]
+> [!NOTE]
 > **CRITICAL SYSTEM BEHAVIORS OF THE FUTURE / 未来における重要システムの振る舞い**
 > > “To deliver system behavior, the systems engineer must define a group of subsystems and precisely how those subsystems are to interact with each other. It is the subsystems and their interactions which produce the system-level behavior. Many of us recognize a vehicle that can take a 60-degree curve at 200 miles per hour as possessing a valuable system behavior. Would we as quickly recognize safe, private, trusted, and available as system behaviors? These behaviors require the same careful system-level design and trades to achieve optimal solutions as the performance system behavior I mentioned above. And there is a clear need — investors want the system to keep their data private, to be safe, and to be trustworthy so that their control is not compromised by a cyber threat, and to be highly available.
 > > 

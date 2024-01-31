@@ -1,10 +1,10 @@
-# System Security Concepts / システムセキュリティの概念^- 
+# System Security Concepts / システムセキュリティの概念
 This chapter describes the aspects necessary for a systems engineering perspective on security. A systems engineering perspective on security requires an understanding of the concept of security (Section 3.1), the concept of an adequately secure system (Section 3.2), and the characteristics of systems (Section 3.3). It also requires an understanding of the concept of assets (Section 3.4), the concepts of loss and loss control (Section 3.5), how to reason about asset loss (Section 3.6), and how to determine protection needs (Section 3.7). In satisfying such needs, specific viewpoints (Section 3.8) and how security is demonstrated are considered, including what is adequate (Section 3.9). The systems engineering subdiscipline that encompasses these considerations is referred to as systems security engineering (Section 3.10).
 
 ## The Concept of Security / セキュリティの概念
 A system with freedom from those conditions that can cause a loss of assets with unacceptable consequences must provide the intended behaviors and outcomes and also avoid any unintended behaviors and outcomes that constitute a loss. The term intended is reflected in two cases, both of which must be satisfied:
-* User intent: The system behaviors and outcomes expected by the user
-* Design intent: The system behaviors and outcomes to be achieved by the design
+* *User intent*: The system behaviors and outcomes expected by the user
+* *Design intent*: The system behaviors and outcomes to be achieved by the design
 
 A system that delivers a capability per the design intent but inconsistent with the user intent constitutes a loss. For example, vehicle control loss might result from a failure in the vehicle’s steering control function (i.e., failure to meet the design intent) or through an attack that takes control away from the driver (i.e., failure to meet the user intent).
 
@@ -19,11 +19,17 @@ Privileges[^23] define the set of allowed and disallowed behavior and outcomes g
 Privileges are the basis for making mediated access decisions. A restrictive default practice for security policy enforcement is to design the enforcement mechanism to allow only what the policy explicitly allows and to deny everything else. For a system to be deemed trustworthy secure, there must be sufficient confidence that the system is capable of enforcing the security policy on a continuous basis for the duration of the time that the policy is in effect (Appendix F).
 
 [^17]: Intended behaviors include interactions. Relevant interactions include human-to-machine and machine-to-machine interactions. Human-tomachine interactions are transformed into machine-to-machine interactions, whereby a machine element operates on behalf of the human.
+
 [^18]: An attacker seeks to produce unauthorized behaviors or outcomes. Attackers attempt to accomplish something that they are not authorized to accomplish, even if that behavior or outcome is authorized for some other entity.
+
 [^19]: A security policy is a set of rules that govern security-relevant system and system element behavior (Appendix C).
+
 [^20]: Life cycle concepts include operation, sustainment, evolution, maintenance, training, startup, and shutdown.
+
 [^21]: Active entities exhibit behavior (e.g., a process in execution) while passive entities do not (e.g., data, file).
+
 [^22]: At the highest level of assurance, security policies are formally specified and verified.
+
 [^23]: Privileges are also referred to as authorizations or rights.
 
 ## The Concept of an Adequately Secure System / 十分に安全なシステムの概念
@@ -37,7 +43,9 @@ These characteristics are to be achieved to the extent practicable, resulting in
 * Is as secure as reasonably practicable (ASARP)
 
 [^24]: Because system security is asymmetric – that is, things can be observed to be insecure, but no observation allows one to declare an arbitrary system secure [22] – the ideal cannot be achieved without some uncertainty.
+
 [^25]: The concept of adequately secure is an adaptation of the concept of adequately safe from [23].
+
 [^26]: Below such levels, the system is considered insecure.
 
 As secure as reasonably practicable means that an incremental improvement in security would require a disproportionate deterioration of meeting other system cost, schedule, or performance objectives; would violate system constraints; or would require unacceptable concessions such as an unacceptable change in the way operations are performed.
@@ -81,42 +89,31 @@ An asset is an item of value. There are many different types of assets. Assets a
 
 Table 1. Common Asset Classes
 
-ASSET CLASS DESCRIPTION LOSS PROTECTION CRITERIA
-MATERIAL
-RESOURCES AND
-INFRASTRUCTURE
-This asset class includes physical property (e.g., buildings, facilities, equipment) and physical resources (e.g., water, fuel). It also includes the basic physical and organizational structures and facilities (i.e., infrastructure) needed for an activity or the operation of an enterprise or society.29 An infrastructure may be comprised of assets in other classes. For example, the National Airspace System
-Material resources are protected from loss if they are not stolen, damaged, or destroyed or are able to function or be used as intended, as needed, and when needed.
-Infrastructure is protected from loss if it meets performance expectations while delivering only the authorized and intended
-ASSET CLASS DESCRIPTION LOSS PROTECTION CRITERIA (NAS) may be considered infrastructure that itself is a system and contains other elements that are forms of systems and infrastructures, such as Air Traffic
-Control, navigational aids, weather aids, airports, and the aircraft that maneuver within the NAS.
-capability and producing only the authorized and intended outcomes.
-SYSTEM
-CAPABILITY
-This asset class is the set of capabilities or services provided by the system. Generally, system capability is determined by (1) the nature of the system (e.g., entertainment, vehicular, medical, financial, industrial, or recreational) and (2) the use of the system to achieve mission or business objectives.
-System capability is protected from loss if the system meets its performance expectations while delivering only the authorized and intended capability and producing only the authorized and intended outcomes.
-HUMAN
-RESOURCES
-This asset class includes personnel who are part of the system and are directly or indirectly involved with or affected by the system. The consequences of loss associated with the system may significantly change the importance of this asset class (e.g., the effect on personnel due to a failure of a guidance system in an aircraft is significantly different from the effect on personnel due to the breach of a system that compromises individual credit card information).
-Human resources are protected from loss if they are not injured, suffer illness, or killed.
-INTELLECTUAL
-PROPERTY[^30]
-This asset class includes trade secrets, recipes, technology,[^31] and other items that constitute an advantage over competitors. The advantage is domain-specific and may be referred to as a competitive advantage, technological advantage, or combative advantage.
-Intellectual property is protected from loss if it is not stolen, corrupted, destroyed, copied, substituted in an unauthorized manner, or reverse-engineered in an unauthorized manner.
-DATA AND
-INFORMATION
-This asset class includes all types of data and information (aggregations of data) and all encodings and representations of data and information (e.g., digital, optical, audio, visual). There are general sensitivity classes of data and information that do not fall within the above categories, such as classified information, Controlled Unclassified Information (CUI), and unclassified data and information.
-Data and information are protected from loss due to unauthorized alteration, exfiltration, infiltration, and destruction.
-DERIVATIVE NONTANGIBLES
-This asset class is comprised of derivative, nontangible assets, such as image, reputation, and trust.
-These assets are defined, assessed, and affected – positively and negatively – by the success or failure to provide adequate protection for assets in the other classes.
-Non-tangible assets are protected from loss by ensuring the adequate protection of assets in the other classes.
+| ASSET CLASS / 資産クラス | DESCRIPTION LOSS / 損失の説明 | PROTECTION CRITERIA / 保護規準 |
+|----|----|----|
+| MATERIAL RESOURCES AND INFRASTRUCTURE | This asset class includes physical property (e.g., buildings, facilities, equipment) and physical resources (e.g., water, fuel). It also includes the basic physical and organizational structures and facilities (i.e., infrastructure) needed for an activity or the operation of an enterprise or society.[^29] An infrastructure may be comprised of assets in other classes. For example, the National Airspace System (NAS) may be considered infrastructure that itself is a system and contains other elements that are forms of systems and infrastructures, such as Air Traffic Control, navigational aids, weather aids, airports, and the aircraft that maneuver within the NAS. | Material resources are protected from loss if they are not stolen, damaged, or destroyed or are able to function or be used as intended, as needed, and when needed. Infrastructure is protected from loss if it meets performance expectations while delivering only the authorized and intended capability and producing only the authorized and intended outcomes. |
+| 物質的資源とインフラ | この資産クラスには物理的財産（例：建物、施設、機器）と物理的資源（例：水、燃料）が含まれる。また、活動や企業または社会の運営に必要な基本的な物理的及び組織的構造と施設（すなわちインフラ）も含まれる。[^29]インフラは他のクラスの資産で構成されている可能性がある。例えば、国家航空システム（NAS）はそれ自体がシステムであり、航空交通管制、航法支援、気象支援、空港、及びNAS内を操縦する航空機といった形態のシステムやインフラの他の要素を含むインフラと考えることができる。 | 物質的資源は盗難、損傷、破壊されていない場合、または意図した通りに機能し、必要な時に使用可能な場合に損失から保護されている。インフラは、認可された、意図した能力のみを提供し、認可された、意図した結果のみを生み出す間、性能の期待を満たす場合に損失から保護されている。 |
+| SYSTEM CAPABILITY | This asset class is the set of capabilities or services provided by the system. Generally, system capability is determined by (1) the nature of the system (e.g., entertainment, vehicular, medical, financial, industrial, or recreational) and (2) the use of the system to achieve mission or business objectives. | System capability is protected from loss if the system meets its performance expectations while delivering only the authorized and intended capability and producing only the authorized and intended outcomes. |
+| システム能力 | この資産クラスはシステムによって提供される能力またはサービスのセットである。一般的に、システム能力は（1）システムの性質（例：エンターテイメント、車両、医療、金融、工業、レクリエーションなど）と（2）ミッションやビジネス目的を達成するためのシステムの使用によって決定される。 | システム能力は、認可された、意図した能力のみを提供し、認可された、意図した結果のみを生み出す間、その性能の期待を満たす場合に損失から保護されている。 |
+| HUMAN RESOURCES | This asset class includes personnel who are part of the system and are directly or indirectly involved with or affected by the system. The consequences of loss associated with the system may significantly change the importance of this asset class (e.g., the effect on personnel due to a failure of a guidance system in an aircraft is significantly different from the effect on personnel due to the breach of a system that compromises individual credit card information). | Human resources are protected from loss if they are not injured, suffer illness, or killed. |
+| 人的資源 | この資産クラスには、システムの一部であり、直接的または間接的にシステムに関与するか影響を受ける人員が含まれる。システムに関連する損失の結果は、この資産クラスの重要性を著しく変化させる可能性がある（例：航空機の誘導システムの故障による人員への影響と、個人のクレジットカード情報の漏洩による人員への影響は著しく異なる）。 | 人的資源は、負傷、疾病、死亡していない場合に損失から保護されている。 |
+| INTELLECTUAL PROPERTY[^30] | This asset class includes trade secrets, recipes, technology,[^31] and other items that constitute an advantage over competitors. The advantage is domain-specific and may be referred to as a competitive advantage, technological advantage, or combative advantage. | Intellectual property is protected from loss if it is not stolen, corrupted, destroyed, copied, substituted in an unauthorized manner, or reverse-engineered in an unauthorized manner. |
+| 知的財産[^30] | この資産クラスには、企業秘密、レシピ、技術[^31]、競争相手に対する優位性を構成するその他の項目が含まれる。この優位性はドメイン特有のものであり、競争上の優位性、技術的優位性、または戦闘的優位性として言及されることがある。 | 知的財産は、盗まれず、腐敗しない、破壊されない、無許可でコピーされない、無許可で不正に代替されない、または無許可で逆エンジニアリングされない場合に、損失から保護されている。 |
+| DATA AND INFORMATION | This asset class includes all types of data and information (aggregations of data) and all encodings and representations of data and information (e.g., digital, optical, audio, visual). There are general sensitivity classes of data and information that do not fall within the above categories, such as classified information, Controlled Unclassified Information (CUI), and unclassified data and information. | Data and information are protected from loss due to unauthorized alteration, exfiltration, infiltration, and destruction. |
+| データと情報 | この資産クラスには、すべてのタイプのデータと情報（データの集合）およびデータと情報のすべての符号化と表現（例：デジタル、光学、音声、視覚）が含まれる。上記のカテゴリーに該当しないデータと情報の一般的な感度クラスがあり、例えば、機密情報、管理された未分類情報（CUI）、未分類のデータと情報がある。 | データと情報は、無許可での変更、抜き取り、浸入、および破壊から損失を受けないよう保護されている。 |
+| DERIVATIVE NONTANGIBLES | This asset class is comprised of derivative, nontangible assets, such as image, reputation, and trust. These assets are defined, assessed, and affected – positively and negatively – by the success or failure to provide adequate protection for assets in the other classes. | Non-tangible assets are protected from loss by ensuring the adequate protection of assets in the other classes. |
+| 派生的無形資産 | この資産クラスは、イメージ、評判、信用などの派生的で無形の資産で構成される。これらの資産は、他のクラスの資産の適切な保護の提供の成功または失敗によって、肯定的にも否定的にも定義され、評価され、影響を受ける。 | 無形資産は、他のクラスの資産を適切に保護することによって、損失から保護されている。 |
+
 Assets may also be considered as individual items or as an aggregate or group of items that spans asset types or asset classes (e.g., personnel data, fire control function, environmental sensor capability). This publication uses the term asset of interest to emphasize and establish bounds on the scope of reasoning for a specific asset, asset type, or asset class. The valuation of an asset is a key input in decision-making about investments to protect an asset (Section 3.6). For those cases where an asset is associated with multiple stakeholders, there may be differing, contradictory, competing, or conflicting views about the valuation that must be resolved.
 
 [^27]: To the extent feasible, self-protection is a required capability that enables the system to deliver the required stakeholder capabilities while also protecting their assets against loss and the consequences of loss.
+
 [^28]: Humans are perhaps the most important and valuable of all intangible assets. Safety and security explicitly consider the human asset.
+
 [^29]: Adapted from the Merriam Webster and Oxford definitions of infrastructure.
+
 [^30]: The term intellectual property is defined as an output of a creative human thought process that has some intellectual or informational value [24]. Examples include microcomputer design and computer programs.
+
 [^31]: The term technology is defined as the application of scientific knowledge, tools, techniques, crafts, systems, or methods of organization to solve a problem or achieve an objective [25].
 
 ## The Concepts of Loss and Loss Control / 損失と損失コントロールの概念
@@ -144,49 +141,28 @@ The loss control objectives in Table 2 address the possibilities to control the 
 
 Avoiding or limiting the loss of one asset may come at the expense of not avoiding or limiting the loss of another asset, as well as having trade-offs with other objectives (e.g., cost and schedule).
 
+|  | 目的論議 |
+
 Table 2. Loss Control Objectives
-LOSS CONTROL
-OBJECTIVE DISCUSSION
-LOSS PREVENTION (Prevent the loss from occurring)
-* This is the case where a loss is totally avoided. That is, despite the presence of adversity:
-  * The system continues to provide only the intended behavior and produces only the intended outcomes.
-  * The desired properties of the system and assets used by the system are retained.
-  * The assets continue to exist.
-* Loss avoidance may be achieved by any combination of:
-  * Preventing or removing the event or events that cause the loss
-  * Preventing or removing the condition or conditions that allow the loss to occur
-  * Not suffering an adverse effect despite the events or conditions
-* Terms such as avoid, continue, delay, divert, eliminate, harden, prevent, redirect, remove, tolerate, and withstand are typically used to characterize approaches to achieving this objective such that a loss does not occur despite the system being subjected to adversity.
-* The term tolerate refers to the objective of fault/failure tolerance, whereby adversity in the form of faults, errors, and failures is rendered inconsequential and does not alter or prevent the realization of authorized and intended system behavior and outcomes (i.e., the faults, errors, and failures are tolerated).
-LOSS LIMITATION
-* This covers cases where a loss can or has occurred, and the extent of loss is to be limited.
-* The extent of loss can be limited in terms of any combination of the following: 
-LOSS CONTROL
-OBJECTIVE DISCUSSION (Limit the extent of the loss)
-  * Limited dispersion (e.g., migration, propagation, spreading, ripple, domino, or cascading effects)
-  * Limited duration (e.g., milliseconds, minutes, hours, days)
-  * Limited capacity (e.g., diminished utility, delivery of function, service, or capability)
-  * Limited volume (e.g., bits or bytes of data/information)
-* Decisions to limit the extent of loss may require prioritizing what constitutes acceptable loss across a set of losses, whereby the objective to limit the loss for one asset requires accepting a loss of some other asset.
-* The extreme case of loss limitation is to avoid destruction of the asset.
-* Terms such as tolerate, withstand, remove, continue, constrain, stop/halt, and restart fall into this category in the case where the loss occurs and the system can, or enables the ability to, limit the effect of the loss.
-* Loss recovery and loss delay are two means to limit loss:
-  * Loss Recovery: Action is taken by the system or enabled by the system to recover (or allow the recovery of) some or all of its ability to function (i.e., behave, interact, produce outcomes) and to recover assets used by the system (e.g., re-imaging, reloading, or recreating data and information, including software in the system). The restoration of the asset, fully or partially, can limit the dispersion, duration, capacity, or volume of the loss.
-  * Loss Delay: The loss event is avoided until the adverse effect is lessened or when a delay enables a more robust response or quicker recovery.
-* System and environmental conditions may be assumed to result in loss, but measures are taken to limit impacts.
-* Terms such as contain, recover, restore, reconstitute, reconfigure, and restart are typically used to characterize approaches to achieving this objective.
+| LOSS CONTROL / 損失制御 | OBJECTIVE DISCUSSION / 目的の議論 |
+|----|----|
+| LOSS PREVENTION (Prevent the loss from occurring) | * This is the case where a loss is totally avoided. That is, despite the presence of adversity:<br />&nbsp;&nbsp;- The system continues to provide only the intended behavior and produces only the intended outcomes.<br />&nbsp;&nbsp;- The desired properties of the system and assets used by the system are retained.<br />&nbsp;&nbsp;- The assets continue to exist.<br />* Loss avoidance may be achieved by any combination of:<br />&nbsp;&nbsp;- Preventing or removing the event or events that cause the loss<br />&nbsp;&nbsp;- Preventing or removing the condition or conditions that allow the loss to occur<br />&nbsp;&nbsp;- Not suffering an adverse effect despite the events or conditions<br />* Terms such as avoid, continue, delay, divert, eliminate, harden, prevent, redirect, remove, tolerate, and withstand are typically used to characterize approaches to achieving this objective such that a loss does not occur despite the system being subjected to adversity.<br />* The term tolerate refers to the objective of fault/failure tolerance, whereby adversity in the form of faults, errors, and failures is rendered inconsequential and does not alter or prevent the realization of authorized and intended system behavior and outcomes (i.e., the faults, errors, and failures are tolerated). |
+| 損失予防（損失が発生するのを防ぐ） | * 損失が完全に避けられるケースである。つまり、逆境が存在しても：<br />&nbsp;&nbsp;-  システムは意図した行動のみを提供し、意図した結果のみを生み出す。<br />&nbsp;&nbsp;-  システムが使用する資産の望ましい特性が維持される。<br />&nbsp;&nbsp;-  資産は存在し続ける。<br />* 損失回避は、次のいずれかの組み合わせによって達成されるかもしれない：<br />&nbsp;&nbsp;-  損失を引き起こすイベントを防ぐ、または取り除く<br />&nbsp;&nbsp;-  損失が発生する条件を防ぐ、または取り除く<br />&nbsp;&nbsp;-  イベントや条件にもかかわらず、悪影響を受けない<br />* 避ける、続ける、遅らせる、逸らす、排除する、強化する、防ぐ、転換する、取り除く、耐える、耐え抜くなどの用語は、システムが逆境にさらされても損失が発生しないようにする目的を達成するアプローチを特徴付けるために一般的に使用される。<br />* 耐えるという用語は、故障/障害耐性の目的を指し、故障、エラー、障害という形の逆境が無意味にされ、承認された意図されたシステム行動と結果の実現を変更または防ぐことがない（つまり、故障、エラー、障害が耐えられる）。 |
+| LOSS LIMITATION (Limit the extent of the loss) | * This covers cases where a loss can or has occurred, and the extent of loss is to be limited.<br />* The extent of loss can be limited in terms of any combination of the following: <br />&nbsp;&nbsp;- Limited dispersion (e.g., migration, propagation, spreading, ripple, domino, or cascading effects)<br />&nbsp;&nbsp;- Limited duration (e.g., milliseconds, minutes, hours, days)<br />&nbsp;&nbsp;- Limited capacity (e.g., diminished utility, delivery of function, service, or capability)<br />&nbsp;&nbsp;- Limited volume (e.g., bits or bytes of data/information)<br />* Decisions to limit the extent of loss may require prioritizing what constitutes acceptable loss across a set of losses, whereby the objective to limit the loss for one asset requires accepting a loss of some other asset.<br />* The extreme case of loss limitation is to avoid destruction of the asset.<br />* Terms such as tolerate, withstand, remove, continue, constrain, stop/halt, and restart fall into this category in the case where the loss occurs and the system can, or enables the ability to, limit the effect of the loss.<br />* Loss recovery and loss delay are two means to limit loss:<br />&nbsp;&nbsp;- Loss Recovery: Action is taken by the system or enabled by the system to recover (or allow the recovery of) some or all of its ability to function (i.e., behave, interact, produce outcomes) and to recover assets used by the system (e.g., re-imaging, reloading, or recreating data and information, including software in the system). The restoration of the asset, fully or partially, can limit the dispersion, duration, capacity, or volume of the loss.<br />&nbsp;&nbsp;- Loss Delay: The loss event is avoided until the adverse effect is lessened or when a delay enables a more robust response or quicker recovery.<br />* System and environmental conditions may be assumed to result in loss, but measures are taken to limit impacts.<br />* Terms such as contain, recover, restore, reconstitute, reconfigure, and restart are typically used to characterize approaches to achieving this objective. |
+| 損失限定（損失の範囲を限定する） | * これは損失が発生するか、または発生しており、その範囲を限定する場合をカバーする。<br />* 損失の範囲は、以下の組み合わせのどれかによって限定することができる：<br />&nbsp;&nbsp;-  限定された拡散（例：移動、伝播、広がり、波及効果、ドミノ効果、またはカスケード効果）<br />&nbsp;&nbsp;-  限定された期間（例：ミリ秒、分、時間、日）<br />&nbsp;&nbsp;-  限定された能力（例：効用の低下、機能の提供、サービス、または能力）<br />&nbsp;&nbsp;-  限定された量（例：データ/情報のビットまたはバイト）<br />* 損失の範囲を限定するという決定は、損失のセットにわたって受け入れられる損失とは何かを優先することを要求するかもしれない。一つの資産の損失を限定する目標は、他の資産のいくつかの損失を受け入れることを必要とする。<br />* 損失限定の極端なケースは、資産の破壊を避けることである。<br />* 損失が発生し、システムが損失の影響を限定する能力を持つ、またはそれを可能にする場合に、耐える、耐える、取り除く、続ける、制約する、停止/中断する、再開するといった用語がこのカテゴリーに分類される。<br />* 損失回復と損失遅延は損失を限定する手段である：<br />&nbsp;&nbsp;-  損失回復：システムによって、またはシステムによって可能にされた行動が取られ、いくつかまたは全ての機能（すなわち、振る舞い、相互作用、結果の生産）を回復し、システムによって使用される資産（例：再イメージング、再読み込み、またはデータおよび情報の再作成、システム内のソフトウェアを含む）を回復する。<br />&nbsp;&nbsp;-  損失遅延：損失イベントは、有害な影響が減少するか、遅延がより強固な対応またはより迅速な回復を可能にするまで避けられる。<br />* システムおよび環境条件は損失につながると仮定されるが、影響を限定するための措置が取られる。<br />* 含める、回復する、復元する、再構成する、再設定する、再開するなどの用語は、通常、この目標を達成するアプローチを特徴づけるために使用される。 |
 
 ## Reasoning about Asset Loss / 資産損失についての推論
 As shown in Figure 6, the elements of a structured approach to reason about asset loss include the (1) context of loss, (2) confidence in addressing loss, (3) significance of loss, (4) addressing loss, and (5) cause of loss. The elements provide an asset-protection basis to determine the objectives for a secure system, optimize the system protection capability, and judge the overall suitability and effectiveness of the implemented protections.[^33] The elements are also grouped into two objectives to facilitate reasoning about the asset of interest:
-* Objective 1: Determine asset protection needs
+* **Objective 1**: Determine asset protection needs
   * Context of Loss: The scope and criteria that bounds reasoning about asset loss
   * Significance of Loss: The effect of asset loss (or consequences) based on its valuation[^34]
   * Confidence in Addressing Loss: The assurance to be achieved based on claims-driven and evidence-based arguments about the effectiveness of what is done to address potential and actual loss
-* Objective 2: Satisfy asset protection needs
+* **Objective 2**: Satisfy asset protection needs
   * Cause of Loss: The events, conditions, or circumstances that describe what has happened before and what can happen in the future that constitute the potential for loss to occur
   * Addressing Loss: The various actions taken to exercise control over loss to the extent practicable. The control objectives are to prevent loss from occurring and to limit the extent and duration for those losses that do occur. Limiting loss includes recovery from loss to the extent practicable.
 
 [^33]: Applying the asset reasoning approach works equally to reason about assets in terms of mission (i.e., mission-driven asset reasoning), organization (i.e., organization-driven asset reasoning), and enterprise (i.e., enterprise-driven asset reasoning).
+
 [^34]: Valuation is a stakeholder determination. Factors that stakeholders may consider include the various costs associated with the asset and the effects of loss. The effects of loss may be short-term (e.g., completing a business transaction) or long-term (e.g., extended loss of capability awaiting replacement of asset).
 
 Fig. 6. Reasoning about Asset Protection
@@ -197,6 +173,12 @@ The context of loss establishes the boundary, scope, and time frame for the reas
 
 Additionally, system life cycle assets (Section 3.8) may only exist within a development or production system and their associated supporting environments. The effect of the loss for these assets may transfer to a loss associated with the system of interest. Therefore, the context of loss includes the life cycle of the asset, the state and mode of the system, and other time-based periods or characteristics during which loss is addressed.
 
+> [!NOTE]
+> **TIME FRAME OF LOSS – AN EXAMPLE**
+> 
+> > A financial portfolio (i.e., an asset or collection of assets) with specific investment objectives and risk acceptance considerations may be created by a financial advisor for a client, funded by the client, and subsequently managed using multiple systems across one or more institutional investment firms throughout the portfolio’s life cycle. Each asset of interest within the portfolio may have differing protection needs at different times depending on the type of asset, market conditions, regulatory jurisdiction, risk position, and other asset management factors that are imposed on the system.
+> 
+
 The significance of loss is the adverse effect (consequence) on the asset of interest or the resultant adverse effect associated with the asset. The significance of loss is best described as an experience that is to be avoided, thereby warranting an investment to protect against the loss occurring and to minimize the extent of the adverse effect should the loss occur. The significance of loss is determined and assessed as an effects-based judgment. That is, it is determined without any consideration of how or why the loss occurs, the probability or likelihood of the loss occurring, and any intent or the absence of intent related to the loss.[^37]
 
 The significance of loss answers the following questions:
@@ -204,16 +186,22 @@ The significance of loss answers the following questions:
 * What is the severity of those ramifications, effects, and problems?
 
 [^35]: The lifetime of an asset may be different from the lifetime of the system. Assets may predate the system and may persist after the system’s retirement from use. The significance of the loss of an asset can have ramifications that are independent of the system, system function, and business and mission objectives.
+
 [^36]: The asset life cycle is the same as the system life cycle when the asset of interest is the system of interest. The asset life cycle may be the same or shorter than the system life cycle for those assets created by the system of interest and only required while the system of interest is operating.
+
 [^37]: Determining the significance of loss is not a determination of risk.
 
-> [!NOTE]
-> **TIME FRAME OF LOSS – AN EXAMPLE**
-> 
-> > A financial portfolio (i.e., an asset or collection of assets) with specific investment objectives and risk acceptance considerations may be created by a financial advisor for a client, funded by the client, and subsequently managed using multiple systems across one or more institutional investment firms throughout the portfolio’s life cycle. Each asset of interest within the portfolio may have differing protection needs at different times depending on the type of asset, market conditions, regulatory jurisdiction, risk position, and other asset management factors that are imposed on the system.
-> 
-
 The significance of loss requires clarity in what loss means for the asset of interest. Examples of terms used to describe asset loss include ability, accessibility, accuracy, assurance, advantage (technological, competitive, combatant), capability, control, correctness, existence, investment, ownership, performance, possession, precision, quality, satisfaction, and time.
+
+> [!NOTE]
+> **SIGNIFICANCE OF LOSS – AN EXAMPLE**
+> > The significance of loss due to a flat tire is determined and assessed without consideration for how or why the tire became flat (e.g., puncture, manufacturing defect, impact with curb or other object) and without any consideration of malicious intent (e.g., tire cut, valve stem loosened). Regardless of how or why the tire became flat, the significance of loss remains the same (e.g., loss of control if the vehicle is moving, inability to drive if the vehicle is stationary, time lost to replace or repair the tire to make the vehicle operable).
+> 
+> 
+> 
+> > The significance of loss due to a flat tire includes the inability to steer the vehicle, and the resultant adverse effect may be to impact some other object (i.e., a crash). The adverse effect of the loss of steering (loss of control) is specific, while the adverse effect of a crash is general (many other circumstances may result in a crash without any loss of the ability to steer the vehicle).
+> 
+> 
 
 Confidence in addressing loss ensures that protections have a body of objective evidence that demonstrates the effectiveness, sufficiency, and suitability of protective measures to satisfy asset protection needs. Confidence in addressing loss is cumulative. It begins with determining the loss concerns for the asset of interest and continuously builds as those concerns are better understood and addressed across the context of loss, the significance of loss, the causes of loss, and how loss is addressed. The evidence basis that provides confidence is informed by the verification and validation activities that occur throughout the life cycles of the assets and the system, including requirements elicitation and analysis. A key informing element to those activities is to ensure that the results contribute to the confidence sought.
 
@@ -222,11 +210,6 @@ The cause of loss[^38] is the individual or combination of events, conditions, a
 * Combinations, sequences, and aggregate events and conditions
 
 [^38]: Many terms are used to describe the cause of asset loss. Some of these terms are specific to a community of interest or specialty field, while others span communities and specialties. There are also cases where the same term may be used differently across communities and specialty fields (e.g., the term threat has varying interpretations across communities, such as physical security, cybersecurity, commerce, law enforcement, industry, military combat operations, and military intelligence). The terms used as a synonym for the cause of asset loss include attack, breach, compromise, hazard, mishap, threat, violation, and vulnerability.
-
-SIGNIFICANCE OF LOSS – AN EXAMPLE
-The significance of loss due to a flat tire is determined and assessed without consideration for how or why the tire became flat (e.g., puncture, manufacturing defect, impact with curb or other object) and without any consideration of malicious intent (e.g., tire cut, valve stem loosened). Regardless of how or why the tire became flat, the significance of loss remains the same (e.g., loss of control if the vehicle is moving, inability to drive if the vehicle is stationary, time lost to replace or repair the tire to make the vehicle operable).
-
-The significance of loss due to a flat tire includes the inability to steer the vehicle, and the resultant adverse effect may be to impact some other object (i.e., a crash). The adverse effect of the loss of steering (loss of control) is specific, while the adverse effect of a crash is general (many other circumstances may result in a crash without any loss of the ability to steer the vehicle).
 
 * Events and conditions that are desirable, intended, and even planned yet produce unanticipated, unforeseen, and unpredictable results
 * Cascading and ripple events and conditions
@@ -245,10 +228,15 @@ The terminology used to describe means and methods includes mechanisms, configur
 
 [^39]: This point distinguishes analysis of what can happen from a risk assessment that determines probability greater than zero and less than one that the adverse event will happen.
 
-ASSET-BASED PROTECTION – ENGINEERING FOR SUCCESS
-Do not focus on what is likely to happen. Instead, focus on what can happen, and be prepared. That is what systems security engineering means by adopting a preemptive and reactive strategy (Section D.2) in the form of a concept of secure function that addresses the spectrum of asset loss and associated consequences.
-
-This means proactively planning and designing to prevent the loss of an asset that you are not willing to accept, to be able to minimize the consequences should such a loss occur, and to be in an informed position to reactively recover from the loss when it does happen.
+> [!]NOTE
+> ASSET-BASED PROTECTION – ENGINEERING FOR SUCCESS
+> > Do not focus on what is likely to happen. Instead, focus on what can happen, and be prepared. That is what systems security engineering means by adopting a preemptive and reactive strategy (Section D.2) in the form of a concept of secure function that addresses the spectrum of asset loss and associated consequences.
+> 
+> 
+> 
+> > This means proactively planning and designing to prevent the loss of an asset that you are not willing to accept, to be able to minimize the consequences should such a loss occur, and to be in an informed position to reactively recover from the loss when it does happen.
+> 
+> 
 
 ## Determining Protection Needs / 保護ニーズの特定
 Stakeholders need to achieve their mission or business objectives in a secure manner that preserves assets and limits the extent of asset loss. Asset protection must be continuous, thereby making it possible for stakeholders to have a realistic expectation of continuous success in the ability of their systems to support and achieve their objectives.
@@ -314,6 +302,7 @@ Life cycle assets are associated with the system but are not engineered into or 
 * Developmental, manufacturing, fabrication, and production capabilities and systems used to utilize, operate, and sustain the system[^42]
 
 [^42]: Examples include software and hardware development tools and suites; modeling and simulation environments and tools; maintenance and diagnostics devices, components, and suites; simulators and test-case scenario generators; and training systems. While these assets are not necessarily within the scope of engineering the system of interest, behaviors and outcomes of these systems have security implications that must be addressed in the secure design of the system of interest. The behaviors and outcomes to consider include how they might directly or indirectly enable, interface, interact, and interoperate with the system of interest.
+
 [^43]: An emergent property is a property exhibited by entities that is meaningful only when attributed to the whole, not to any individual constituent element [27]. Emergent properties of systems include its capability, safety, security, reliability, resilience, survivability, agility, maintainability, and availability. Appendix D discusses emergence in greater detail.
 
 ## Demonstrating System Security / システムセキュリティの実証
@@ -331,12 +320,16 @@ Demonstrating this justified confidence or assurance is achieved by an evidentia
 The reasoning considers the system needs and capabilities, contributing system quantitative and qualitative factors, and how these capabilities and factors produce an evidentiary base upon which further analyses are conducted in the context of system security. In turn, these analyses support substantiated and reasoned conclusions that serve as the basis for consensus among stakeholders that the system is adequately secure (Appendix F).
 
 [^44]: An individual function or mechanism can be verified and validated for correctness against its quality and performance attributes. Those results help inform the determination of system security but are insufficient alone.
+
 [^45]: While the evidence obtained through demonstrating compliance to a set of expectations or criteria may support judgments of adequate security, such evidence alone does not support a claim of adequate security.
+
+> [!NOTE]
+> > No system can provide absolute security due to the limits of human certainty, the uncertainty that exists in the life cycle of every system, and the constraints of cost, schedule, performance, feasibility, and practicality. As such, trade-offs made routinely across contradictory, competing, and conflicting needs and constraints are optimized to achieve adequate security, which reflects a decision made by stakeholders.
+> 
+> 
 
 ## Systems Security Engineering / システムセキュリティエンジニアリング
 As a subdiscipline of systems engineering, systems security engineering is a transdisciplinary and integrative approach to enabling the successful realization, use, and retirement of engineered trustworthy secure systems. Systems security engineering employs systems, security, and other principles and concepts, as well as scientific, technological, and management methods. Systems security engineering ensures that these principles, concepts, methods, and practices are applied during the system life cycle to achieve stakeholder objectives for assured trustworthiness and asset protection despite adversity. It also helps to reduce and control the causes and conditions that can lead to vulnerability and, as a result, reduces the effect that adversity can have on the system.
-
-No system can provide absolute security due to the limits of human certainty, the uncertainty that exists in the life cycle of every system, and the constraints of cost, schedule, performance, feasibility, and practicality. As such, trade-offs made routinely across contradictory, competing, and conflicting needs and constraints are optimized to achieve adequate security, which reflects a decision made by stakeholders.
 
 Systems security engineering overlaps with other subdisciplines and leverages multiple specialties to accomplish systems security engineering activities and tasks. These specialties include computer security; communications security; transmission security; electronic emissions security; anti-tamper protection; physical security; information, software, hardware, and supply chain assurance; and technology specialties, such as biometrics and cryptography.
 
@@ -347,6 +340,7 @@ Figure 9 illustrates the relationships among systems engineering, systems securi
 Fig. 9. Systems Engineering and Other Specialty Engineering Disciplines
 
 [^46]: Enabling engineering disciplines and specialties include reliability, availability, and maintainability (RAM) engineering; software engineering; resilience engineering; and human factors engineering (ergonomics).
+
 [^47]: This includes assessing potential supply chain assurance deficiencies when third parties and reuse are considered in planning the system and its realization.
 
 As part of a transdisciplinary systems engineering effort to deliver a trustworthy secure system, systems security engineering:
@@ -364,7 +358,11 @@ As part of a transdisciplinary systems engineering effort to deliver a trustwort
 * Leverages security and other specialties to address all feasible solutions
 
 [^48]: It is important to understand the context in which the term system security requirement is being used in this publication. For example, due to the complexity of system security, there are several types and purposes of system security requirements (Section 3.8 and Appendix C).
+
 [^49]: The term risk treatment is used in [4] and defined in [28].
 
-SECURITY – AN EMERGING PROPERTY OF AN ENGINEERING PROCESS
-A system is engineered to achieve a capability driven by stakeholder mission and business needs. Security is an emergent property of a system that is achieved through a principled engineering process that reflects the stakeholder’s protection needs and concerns. The engineered security capability contributes to the overall system capability that satisfies stakeholder mission and business needs. No system can provide absolute security due to the limits of human certainty, the uncertainty that exists in the life cycle of every system, and the constraints of cost, schedule, performance, feasibility, and practicality. As such, trade-offs made routinely across contradictory, competing, and conflicting needs and constraints are optimized to provide adequate security.
+> [!NOTE]
+> **SECURITY – AN EMERGING PROPERTY OF AN ENGINEERING PROCESS**
+> > A system is engineered to achieve a capability driven by stakeholder mission and business needs. Security is an emergent property of a system that is achieved through a principled engineering process that reflects the stakeholder’s protection needs and concerns. The engineered security capability contributes to the overall system capability that satisfies stakeholder mission and business needs. No system can provide absolute security due to the limits of human certainty, the uncertainty that exists in the life cycle of every system, and the constraints of cost, schedule, performance, feasibility, and practicality. As such, trade-offs made routinely across contradictory, competing, and conflicting needs and constraints are optimized to provide adequate security.
+> 
+> 

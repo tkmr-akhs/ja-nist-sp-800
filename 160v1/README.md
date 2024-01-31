@@ -24,7 +24,7 @@ Please translate terms as following:
 - "systems engineering" to "システムズ エンジニアリング"
 - "interfacing system" to "インターフェイシング システム"
 - "Enabling system" to "イネーブリング システム"
-- "interoperation system" to "インターオペレーティング システム".
+- "interoperation system" to "インターオペレーティング システム"
 
 --------
 ```

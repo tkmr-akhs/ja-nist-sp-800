@@ -27,17 +27,25 @@
 
 [^5j]: [6] から改変。
 
-> Peter Neumann described the concept of trustworthiness in [2] as follows:
-
-Peter Neumann は信用性の概念について[2]で以下のように述べている。
-
-> “By trustworthiness, we mean simply worthy of being trusted to fulfill whatever critical requirements may be needed for a particular component, subsystem, system, network, application, mission, enterprise, or other entity. Trustworthiness requirements might typically involve (for example) attributes of security, reliability, performance, and survivability under a wide range of potential adversities. Measures of trustworthiness are meaningful only to the extent that (a) the requirements are sufficiently complete and well defined, and (b) can be accurately evaluated.”
-
-「信用性とは、特定のコンポーネント、サブシステム、システム、ネットワーク、アプリケーション、ミッション、企業、あるいは他のエンティティに対して、必要とされる重要な要件を満たすことに信頼できるということを単純に意味する。信用性の要件は、一般に、さまざまな潜在的な逆境の下でのセキュリティ、信頼性、性能、生存性などの属性を含むことが多い。信用性の尺度は、（a）要件が十分に完全で明確に定義され、（b）正確に評価できる範囲でのみ意味を持つ。」
+> [!NOTE]
+> > Peter Neumann described the concept of trustworthiness in [2] as follows:
+> 
+> Peter Neumann は信用性の概念について[2]で以下のように述べている。
+> 
+> > “By trustworthiness, we mean simply worthy of being trusted to fulfill whatever critical requirements may be needed for a particular component, subsystem, system, network, application, mission, enterprise, or other entity. Trustworthiness requirements might typically involve (for example) attributes of security, reliability, performance, and survivability under a wide range of potential adversities. Measures of trustworthiness are meaningful only to the extent that (a) the requirements are sufficiently complete and well defined, and (b) can be accurately evaluated.”
+> 
+> 「信用性とは、特定のコンポーネント、サブシステム、システム、ネットワーク、アプリケーション、ミッション、企業、あるいは他のエンティティに対して、必要とされる重要な要件を満たすことに信頼できるということを単純に意味する。信用性の要件は、一般に、さまざまな潜在的な逆境の下でのセキュリティ、信頼性、性能、生存性などの属性を含むことが多い。信用性の尺度は、（a）要件が十分に完全で明確に定義され、（b）正確に評価できる範囲でのみ意味を持つ。」
 
 > Systems security engineering provides complementary engineering capabilities that extend the concept of trustworthiness to deliver trustworthy secure systems. Trustworthiness is not only about demonstrably meeting a set of requirements. The requirements must also be complete, consistent, and correct. From a security perspective, a trustworthy system meets a set of welldefined requirements, including security requirements. Through evidence and expert judgment, trustworthy secure systems can limit and prevent the effects of modern adversities. Such adversities come in malicious and non-malicious forms and can emanate from a variety of sources, including physical and electronic. Adversities can include attacks from determined and capable adversaries, human errors of omission and commission, accidents and incidents, component faults and failures, abuses and misuses, and natural and human-made disasters.
 
 システムセキュリティエンジニアリングは、信用性の概念を拡張して、信頼できるセキュアなシステムを提供する補完的なエンジニアリング能力を提供する。信用性とは、一連の要件を明示的に満たすことだけではない。要件は、完全で、一貫性があり、正確でなければならない。セキュリティの観点から、信頼できるシステムは、セキュリティ要件を含む一連の明確に定義された要件を満たす。証拠と専門家の判断により、信頼できるセキュアなシステムは、現代の逆境の影響を限定し、防ぐことができる。そのような逆境は、悪意のあるものとないものの形を取り、物理的なものや電子的なものを含む様々な源から発生することがある。逆境には、決意があり能力がある敵からの攻撃、省略と委任の人間の誤り、事故やインシデント、コンポーネントの欠陥や故障、乱用と誤用、自然災害や人為的災害が含まれることがある。
+
+> [!NOTE]
+> > “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”
+> > 
+> > -- An Objective of Security in the Future of Systems Engineering [7]
+> 
+> 「セキュリティはシステムに組み込まれている。他を守ることを目的とした2つのシステムを設計する2つのエンジニアリンググループではなく、システムズ エンジニアリングは、システムとそのコンポーネントにセキュリティを組み込んだ単一のシステムを指定し設計する。」
 
 ## Purpose and Applicability / 目的と適用範囲
 > This publication is intended to:
@@ -67,9 +75,9 @@ Peter Neumann は信用性の概念について[2]で以下のように述べて
 
 本書に記載されている考慮事項は、44 U.S.C., Section 3542.　に定義されている国家安全保障システムとして指定されたシステムを除く、すべての連邦システムに適用される。[^6j] これらの考慮事項は、国家安全保障システムのための類似の考慮事項を補完するために、技術的および技術管理の観点から広く開発されており、そのようなシステムに対して連邦当局者が政策権限を行使する承認を得た場合に使用される可能性がある。州、地方、部族政府、および民間部門の実体も、適切であればこの出版物の内容の使用を検討することが奨励される。
 
-[^6]: > Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.  “Security is embedded in systems. Rather than two engineering groups designing two systems, one intended to protect the other, systems engineering specifies and designs a single system with security embedded in the system and its components.”  -- An Objective of Security in the Future of Systems Engineering [7]
+[^6]: > Increasing the trustworthiness of systems is a significant undertaking that requires a substantial investment in the requirements, architecture, design, and development of systems, system components, applications, and networks. The policy in [8] requires federal agencies to implement the systems security engineering principles, concepts, techniques, and system life cycle processes in this publication for all high-value assets.
 
-[^6j]: システムの信用性を高めることは、システム、システムコンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計、開発において相当な投資を必要とする重要な取り組みである。[8]の方針では、連邦機関に対して、本書のシステムセキュリティエンジニアリングの原則、概念、技術、システムライフサイクルプロセスを全ての高価値資産に対して実施することを要求している。  「セキュリティはシステムに組み込まれている。他を守ることを目的とした2つのシステムを設計する2つのエンジニアリンググループではなく、システムズ エンジニアリングは、システムとそのコンポーネントにセキュリティを組み込んだ単一のシステムを指定し設計する。」  -- An Objective of Security in the Future of Systems Engineering [7]
+[^6j]: システムの信用性を高めることは、システム、システムコンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計、開発において相当な投資を必要とする重要な取り組みである。[8]の方針では、連邦機関に対して、本書のシステムセキュリティエンジニアリングの原則、概念、技術、システムライフサイクルプロセスを全ての高価値資産に対して実施することを要求している。
 
 > The applicability statement is not meant to limit the technical and management application of these considerations. That is, the security design principles, concepts, and techniques described in this publication are part of a trustworthy secure design approach as described in Appendix D and can be applied in any of the following cases:
 
@@ -198,11 +206,21 @@ Peter Neumann は信用性の概念について[2]で以下のように述べて
 >   * Appendix K: Agreement Processes / 契約プロセス
 >   * Appendix L: Change Log / 更新履歴
 
-## ENGINEERING-DRIVEN SOLUTIONS / エンジニアリング主導のソリューション
-> The effectiveness of any engineering discipline first requires a thorough understanding of the problem and consideration of all feasible solutions before acting to solve the identified problem. To maximize the effectiveness of systems security engineering, the security requirements for the protection against asset loss must be driven by business, mission, and all other stakeholder asset loss concerns.
-
-> The security requirements are defined and managed as a well-defined set of engineering requirements and cannot be addressed independently or after the fact.
-
-> In the context of systems security engineering, the term protection has a broad scope and is primarily focused on the concept of assets and asset loss resulting in unacceptable consequences. The protection capability provided by a system goes beyond prevention and aims to control the events, conditions, and consequences that constitute asset loss. It is achieved in the form of the specific capability and constraints on system architecture, design, function, implementation, construction, selection of technology, methods, and tools and must be “engineered in” as part of the system life cycle process.
-
-> Understanding stakeholder asset protection needs (including assets that they own and assets that they do not own but must protect) and expressing those needs through a set of well-defined security requirements is an investment in the organization’s mission and business success in the modern age of global commerce, powerful computing systems, and network connectivity.
+> [!NOTE]
+> **ENGINEERING-DRIVEN SOLUTIONS / エンジニアリング主導のソリューション**
+> 
+> > The effectiveness of any engineering discipline first requires a thorough understanding of the problem and consideration of all feasible solutions before acting to solve the identified problem. To maximize the effectiveness of systems security engineering, the security requirements for the protection against asset loss must be driven by business, mission, and all other stakeholder asset loss concerns.
+> 
+> あらゆるエンジニアリング分野の効果を最大化するには、まず問題を徹底的に理解し、特定された問題を解決するための行動に移る前に、実行可能なすべての解決策を検討する必要がある。システムズ セキュリティ エンジニアリングの効果を最大化するためには、資産損失に対する保護のためのセキュリティ要件が、ビジネス、ミッション、およびその他すべての利害関係者の資産損失に関する懸念によって推進されなければならない。
+>  
+> > The security requirements are defined and managed as a well-defined set of engineering requirements and cannot be addressed independently or after the fact.
+> 
+> セキュリティ要件は、よく定義された一連のエンジニアリング要件として定義され、管理されるものであり、独立して、または事後に対応することはできない。
+> 
+> > In the context of systems security engineering, the term protection has a broad scope and is primarily focused on the concept of assets and asset loss resulting in unacceptable consequences. The protection capability provided by a system goes beyond prevention and aims to control the events, conditions, and consequences that constitute asset loss. It is achieved in the form of the specific capability and constraints on system architecture, design, function, implementation, construction, selection of technology, methods, and tools and must be “engineered in” as part of the system life cycle process.
+> 
+> システムズ セキュリティ エンジニアリングの文脈において、保護という用語は広範な範囲を持ち、主に資産と資産損失が受け入れがたい結果を招くという概念に焦点を当てている。システムによって提供される保護機能は予防を超え、資産損失を構成する出来事、状況、および結果を制御することを目的としている。これはシステムのアーキテクチャ、設計、機能、実装、構築、技術の選択、方法、ツールにおける特定の能力と制約の形で達成され、システムのライフサイクルプロセスの一部として「エンジニアリングされる」必要がある。
+> 
+> > Understanding stakeholder asset protection needs (including assets that they own and assets that they do not own but must protect) and expressing those needs through a set of well-defined security requirements is an investment in the organization’s mission and business success in the modern age of global commerce, powerful computing systems, and network connectivity.
+> 
+> 利害関係者の資産保護ニーズ（所有している資産および所有していないが保護しなければならない資産を含む）を理解し、それらのニーズを明確に定義されたセキュリティ要件のセットを通じて表現することは、グローバルな商取引、強力なコンピューティングシステム、そしてネットワーク接続の現代における組織のミッションとビジネス成功への投資である。

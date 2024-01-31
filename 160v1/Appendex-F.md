@@ -3,11 +3,12 @@
 
 システムの信用性は、保証という概念に基づいている。保証とは、ある主張または一連の主張が達成された、あるいは達成されるという正当な確信の根拠である[61]。正当な確信は、不確実性を受け入れられるレベルまで減少させ、それによって関連するリスクを減少させる客観的証拠から導かれる（セクションF.2）[^85j]。証拠は、エンジニアリングの検証と妥当性確認の方法によって生成される[^86j]。証拠は、関連性があり、正確で、信頼できるものでなければならず、また、主張が満たされているという合理的な結論に至り、専門家間でのコンセンサスを可能にするための十分な量でなければならない。証拠と主張との関係は、多くの方法で表現されることがある。セクションF.2では、これらのアプローチについて議論している。
 
-> “The trust we place in our digital infrastructure should be proportional to how trustworthy and transparent that infrastructure is and to the consequences we will incur if that trust is misplaced.”
+> [!NOTE]
+> > “The trust we place in our digital infrastructure should be proportional to how trustworthy and transparent that infrastructure is and to the consequences we will incur if that trust is misplaced.”
+> > 
+> > -- Executive Order (EO) on Improving the Nation’s Cybersecurity [1]  May 2021 
 > 
-> -- Executive Order (EO) on Improving the Nation’s Cybersecurity [1]  May 2021 
-
-「私たちがデジタルインフラに置く信用は、そのインフラがどれだけ信用できるか、そして透明であるか、またその信用が誤っていた場合に私たちが負うであろう結果に比例すべきである。」
+> 「私たちがデジタルインフラに置く信用は、そのインフラがどれだけ信用できるか、そして透明であるか、またその信用が誤っていた場合に私たちが負うであろう結果に比例すべきである。」
 
 [^85]: > This includes risks attributed to poor, incorrect, and unjustified decisions.
 
@@ -40,9 +41,10 @@ The expectations of trustworthiness of the system, inclusive of its elements, ar
 
 セキュリティに関する信用性の要件は、システムが承認された意図された行動や結果を達成し、逆境に対応し、損失をコントロールする能力に関連する保護の必要性、優先順位、制約、懸念から派生している。要件はまた、信用性を評価するために使用される手段、信用性の結論を裏付け、信用を与えるために必要な証拠データと情報にも対応している。要件工学の規律は、これが発生するための方法、プロセス、技術、ツールを提供する。
 
-> “A meaningful claim of trustworthiness cannot be based on an isolated demonstration that the system contains a protection capability assumed to be effective or sufficient. Instead, conclusions about a protection capability must have their basis on evidence that the system was properly specified, designed, and implemented with the rigor needed to deliver a system-level function in a manner deemed to be trustworthy and secure.” [2] 
-
-「信用に値するという意味のある主張は、システムに有効または十分と仮定される保護能力が含まれているという孤立した実証に基づいてはならない。代わりに、保護能力に関する結論は、システムが信用に値すると考えられる方法でシステムレベルの機能を提供するために必要な厳格さをもって適切に指定され、設計され、実装されたことを示す証拠に基づいてなければならない。」
+> [!NOTE]
+> > “A meaningful claim of trustworthiness cannot be based on an isolated demonstration that the system contains a protection capability assumed to be effective or sufficient. Instead, conclusions about a protection capability must have their basis on evidence that the system was properly specified, designed, and implemented with the rigor needed to deliver a system-level function in a manner deemed to be trustworthy and secure.” [2] 
+> 
+> 「信用に値するという意味のある主張は、システムに有効または十分と仮定される保護能力が含まれているという孤立した実証に基づいてはならない。代わりに、保護能力に関する結論は、システムが信用に値すると考えられる方法でシステムレベルの機能を提供するために必要な厳格さをもって適切に指定され、設計され、実装されたことを示す証拠に基づいてなければならない。」
 
 ### F.1.2. Design Considerations / 設計上の考慮事項
 > The design for a trustworthy secure system requires the application of principled engineering concepts and methods supported by evidence that provides assurance that all security-relevant claims about the system are satisfied (Section F.2).[^87] Some considerations that apply to achieving trustworthiness in system design are:
@@ -110,22 +112,23 @@ The expectations of trustworthiness of the system, inclusive of its elements, ar
 
 [-88j]: 「逆境」という用語は、資産の損失を引き起こす可能性のある条件を指す（例えば、脅威、攻撃、脆弱性、危険、中断、および露出）。
 
-### VENEER SECURITY / うわべのセキュリティ
-> Assurance is difficult but necessary.
-
-保証は困難だが必要である。
-
-> “I’ve covered a lot of material in this book, some of it quite tricky. But I’ve left the hardest parts to the last. First, there’s the question of assurance …“ [5].
-
-「この本では多くの内容を扱ったが、中にはかなり厄介なものもある。しかし、最も難しい部分は最後に残した。まず、保証の問題だ…。」
-
-> Veneer security is security functionality provided without corresponding assurance so that the functionality only appears to protect resources when it does not. Veneer security results in a false sense of security and, in fact, increases risk due to the uncertainty about the behavior and outcomes produced by the security functionality in the presence and absence of adversity. Veneer security must be avoided [62].
-
-うわべのセキュリティとは、対応する保証なしに提供されるセキュリティ機能のことで、その機能がリソースを保護しているように見えるだけで、実際には保護していないものである。うわべのセキュリティは、誤った安心感をもたらし、実際、逆境があるときとないときのセキュリティ機能によって生じる振る舞いや結果が不確実であるために、リスクを増大させる。うわべだけのセキュリティは避けなければならない。
-
-> Compliance is a form of “veneer security.” While compliance may have an important informing role in judgments of trustworthiness, compliance-based judgments – like other forms of veneer security – do not suffice as the sole evidentiary basis for assurance and the associated judgments of trustworthiness.
-
-コンプライアンスは、「うわべのセキュリティ」の一形態である。コンプライアンスは、信頼性の判断において重要な情報提供の役割を果たすかもしれないが、コンプライアンスに基づく判断は、他のうわべのセキュリティの形態と同様、保証とそれに関連する信頼性の判断の唯一の証拠能力として十分ではない。
+> [!NOTE]
+> **VENEER SECURITY / うわべのセキュリティ**
+> > Assurance is difficult but necessary.
+> 
+> 保証は困難だが必要である。
+> 
+> > “I’ve covered a lot of material in this book, some of it quite tricky. But I’ve left the hardest parts to the last. First, there’s the question of assurance …“ [5].
+> 
+> 「この本では多くの内容を扱ったが、中にはかなり厄介なものもある。しかし、最も難しい部分は最後に残した。まず、保証の問題だ…。」
+> 
+> > Veneer security is security functionality provided without corresponding assurance so that the functionality only appears to protect resources when it does not. Veneer security results in a false sense of security and, in fact, increases risk due to the uncertainty about the behavior and outcomes produced by the security functionality in the presence and absence of adversity. Veneer security must be avoided [62].
+> 
+> うわべのセキュリティとは、対応する保証なしに提供されるセキュリティ機能のことで、その機能がリソースを保護しているように見えるだけで、実際には保護していないものである。うわべのセキュリティは、誤った安心感をもたらし、実際、逆境があるときとないときのセキュリティ機能によって生じる振る舞いや結果が不確実であるために、リスクを増大させる。うわべだけのセキュリティは避けなければならない。
+> 
+> > Compliance is a form of “veneer security.” While compliance may have an important informing role in judgments of trustworthiness, compliance-based judgments – like other forms of veneer security – do not suffice as the sole evidentiary basis for assurance and the associated judgments of trustworthiness.
+> 
+> コンプライアンスは、「うわべのセキュリティ」の一形態である。コンプライアンスは、信頼性の判断において重要な情報提供の役割を果たすかもしれないが、コンプライアンスに基づく判断は、他のうわべのセキュリティの形態と同様、保証とそれに関連する信頼性の判断の唯一の証拠能力として十分ではない。
 
 ### F.2.1. Security Assurance Claims / セキュリティ保証の主張
 > From a security perspective, a top-level claim addresses freedom from the conditions that cause asset loss and the associated consequences. Specifically, this means the system will adequately contribute to freedom from the conditions that cause asset loss and the associated consequences.
@@ -136,10 +139,12 @@ The expectations of trustworthiness of the system, inclusive of its elements, ar
 
 トップレベルの主張は、信用に値する安全なシステムの望ましい属性に関する下位の主張へと、構造的に分解される。下位の主張は、システムが認可された意図されたシステムの振る舞いと結果を保証するために十分に貢献することを実証する要件、設計、実装、方法、および逆境に対応する。これらの下位の主張は、利害関係者およびシステム要件の完全性と正確さに関する懸念[^89]、セキュリティポリシーの適用、設計の適切な実装、システムの適切な維持、システムの使用可能性[^90]、欠陥、エラー、脆弱性の回避、最小化、および緩和[^91]から導かれる。その他の下位の主張には、逆境の存在および不在で安全な状態で動作しながら予測可能な振る舞いを示す能力や、不安全な状態から回復する能力に関与するものが存在するかもしれない。主張は、機能の正確性、機能の強度、および基準への遵守や特定のプロセス、手順、方法の使用から導かれる保護能力の観点から表現できる。
 
-#### LEARNING FROM SAFETY / 安全からの学び
-> The NASA System Safety Handbook [6] describes the relevant claims to be met in terms of the top-level claim that the system is adequately safe with subclaims, including that the system is designed to be as safe as reasonably practicable, built to be as safe as reasonably practicable, and operated as safely as reasonably practicable.
-
-NASAのシステム安全ハンドブック[6]では、システムが十分に安全であるというトップレベルの主張に関連する主張を述べている。これには、システムが合理的に実現可能な限り安全に設計され、合理的に実現可能な限り安全に構築され、合理的に実現可能な限り安全に運用されるというサブクレームが含まれる。
+> [!NOTE]
+> **LEARNING FROM SAFETY / 安全からの学び**
+> > The NASA System Safety Handbook [6] describes the relevant claims to be met in terms of the top-level claim that the system is adequately safe with subclaims, including that the system is designed to be as safe as reasonably practicable, built to be as safe as reasonably practicable, and operated as safely as reasonably practicable.
+> 
+> NASAのシステム安全ハンドブック[6]では、システムが十分に安全であるというトップレベルの主張に関連する主張を述べている。これには、システムが合理的に実現可能な限り安全に設計され、合理的に実現可能な限り安全に構築され、合理的に実現可能な限り安全に運用されるというサブクレームが含まれる。
+> 
 
 [^89]: > Claims are not expressed solely as a restatement of the security functional and performance requirements. Doing so only provides assurance that the security requirements are satisfied with the implicit assumption that the requirements are correct, provide adequate coverage, and accurately reflect stakeholder needs and concerns.
 
@@ -186,30 +191,31 @@ Assurance depends on the quality of the evidence used in arguments demonstrating
 
 統合的保証は、システムに関する主張が満たされていることを実証する議論で使用される証拠の品質に依存する。統合的保証の証拠は、直接的に測定、テスト、観察、検査を通じて、または間接的に分析を通じて、測定、テスト、観察、検査から得られたデータの分析を含む方法で得ることができる。証拠は、正確性、信頼性、関連性、厳密さ、量の点で十分な品質を持つ必要がある。証拠の正確性、信頼性、関連性は、使用する前に確認されるべきである。例えば、ある証拠は機能の強度に関する主張を支持することができ、他の証拠は否定的な要件（すなわち、起こらないこと）に対して、また別の証拠は質的特性に対して支持することができる。
 
-#### ASSURANCE CASE / 保証ケース
-> An assurance case is a reasoned, auditable artifact that is created to support the contention that a top-level claim is satisfied. The assurance case includes systematic argumentation, evidence, and explicit assumptions that support the claim.
-
-保証ケースは、上位レベルの主張が満たされているという論争を支持するために作成される、合理的で監査可能な成果物である。保証ケースには、主張を支持するための体系的な論証、証拠、そして明示的な前提が含まれている。
-
-> An assurance case contains the following elements [30]:
-> * One or more claims about properties
-> * Arguments that logically link the evidence and any assumptions
-> * A body of evidence
-> * Justification of the choice of a top-level claim and the method of reasoning
-
-保証ケースには以下の要素が含まれる[30]：
-* 特性に関する一つ以上の主張
-* 証拠と任意の前提を論理的に結びつける論証
-* 証拠の本体
-* 上位レベルの主張の選択と推論方法の正当化
-
-> Assurance cases have numerous advantages over other means for obtaining confidence, such as in the areas of comprehension, informing needed allocation responsibilities, information organization, and robust due diligence [63]. These advantages were greater in areas with otherwise insufficient methods for achieving high assurance. Additionally, assurance cases were determined to be more efficient for complex and novel systems, as well as systems in need of high assurance.
-
-保証ケースは、理解、必要な責任分担の情報提供、情報の整理、および厳格な適切な注意[63]の領域など、確信を得るための他の手段よりも多くの利点がある。これらの利点は、高度な保証を達成するための方法が不十分な領域でより大きかった。さらに、保証ケースは、複雑で革新的なシステムや、高度な保証が必要なシステムに対してより効率的であると判断された。
-
-> Many formalizations and tools for building assurance cases have been developed in recent years, including the Goal Structuring Notation (GSN) [64] and NASA’s AdvoCATE: Assurance Case Automation Toolset [65].
-
-近年、保証ケースを構築するための多くの形式化手法とツールが開発されている。これには、ゴール構造化表記（GSN）[64]やNASAのAdvoCATE：保証ケース自動化ツールセット[65]が含まれる。
+> [!NOTE]
+> **ASSURANCE CASE / 保証ケース**
+> > An assurance case is a reasoned, auditable artifact that is created to support the contention that a top-level claim is satisfied. The assurance case includes systematic argumentation, evidence, and explicit assumptions that support the claim.
+> 
+> 保証ケースは、上位レベルの主張が満たされているという論争を支持するために作成される、合理的で監査可能な成果物である。保証ケースには、主張を支持するための体系的な論証、証拠、そして明示的な前提が含まれている。
+> 
+> > An assurance case contains the following elements [30]:
+> > * One or more claims about properties
+> > * Arguments that logically link the evidence and any assumptions
+> > * A body of evidence
+> > * Justification of the choice of a top-level claim and the method of reasoning
+> 
+> 保証ケースには以下の要素が含まれる[30]：
+> * 特性に関する一つ以上の主張
+> * 証拠と任意の前提を論理的に結びつける論証
+> * 証拠の本体
+> * 上位レベルの主張の選択と推論方法の正当化
+> 
+> > Assurance cases have numerous advantages over other means for obtaining confidence, such as in the areas of comprehension, informing needed allocation responsibilities, information organization, and robust due diligence [63]. These advantages were greater in areas with otherwise insufficient methods for achieving high assurance. Additionally, assurance cases were determined to be more efficient for complex and novel systems, as well as systems in need of high assurance.
+> 
+> 保証ケースは、理解、必要な責任分担の情報提供、情報の整理、および厳格な適切な注意[63]の領域など、確信を得るための他の手段よりも多くの利点がある。これらの利点は、高度な保証を達成するための方法が不十分な領域でより大きかった。さらに、保証ケースは、複雑で革新的なシステムや、高度な保証が必要なシステムに対してより効率的であると判断された。
+> 
+> > Many formalizations and tools for building assurance cases have been developed in recent years, including the Goal Structuring Notation (GSN) [64] and NASA’s AdvoCATE: Assurance Case Automation Toolset [65].
+> 
+> 近年、保証ケースを構築するための多くの形式化手法とツールが開発されている。これには、ゴール構造化表記（GSN）[64]やNASAのAdvoCATE：保証ケース自動化ツールセット[65]が含まれる。
 
 ### F.2.3. Assurance Needs
 > Assurance is a need that is to be engineered and satisfied similar to the need to engineer the system capability to satisfy specified capability needs. Assurance needs for trustworthy secure systems are grounded in the concerns of loss and adverse effects due to intentional and unintentional adversity (Commensurate Trustworthiness, Substantiated Trustworthiness, Commensurate Rigor). Assurance needs include the evidence-basis for reasoning, the degree of rigor to acquire and interpret the evidence, and the selection of the methods, tools, and processes used throughout the system life cycle. Similar to capability and performance needs, assurance needs, expectations, priorities, and constraints should be expressed as system requirements and achieved, tracked, and maintained within the systems engineering effort.
@@ -226,10 +232,11 @@ Assurance depends on the quality of the evidence used in arguments demonstrating
 * *システムズ エンジニアリングの努力を行う手段*：セキュアなシステムの設計を実現するために用いられる方法、プロセス、およびツール（厳密さと保証の目的によって推進される）
 * *システムズ エンジニアリングの努力の結果*：セキュアなシステムの実現された設計の裏付けられた効果性
 
-#### CONFIDENCE MAY BE NEGATIVE / 確信は否定的である可能性がある
-> Assurance evidence can support a conclusion that a stated claim is not achieved or that there is an insufficient basis to conclude that the claim is supported or not supported. In either case, the assurance is negative relative to the goal of substantiating the claim. That is, the system or some part of the system is not sufficiently trustworthy and should not be trusted relative to its specified function without further action.
-
-保証の証拠は、特定の主張が達成されていない、または主張が支持されているかどうかを結論付けるための十分な根拠がないという結論を支持することができる。いずれの場合も、保証は主張の裏付けという目標に対して否定的である。すなわち、システムまたはシステムの一部が十分に信用に値しないのであり、指定された機能に関してさらなる行動なしに信用されるべきではない。
+> [!NOTE]
+> **CONFIDENCE MAY BE NEGATIVE / 確信は否定的である可能性がある**
+> > Assurance evidence can support a conclusion that a stated claim is not achieved or that there is an insufficient basis to conclude that the claim is supported or not supported. In either case, the assurance is negative relative to the goal of substantiating the claim. That is, the system or some part of the system is not sufficiently trustworthy and should not be trusted relative to its specified function without further action.
+> 
+> 保証の証拠は、特定の主張が達成されていない、または主張が支持されているかどうかを結論付けるための十分な根拠がないという結論を支持することができる。いずれの場合も、保証は主張の裏付けという目標に対して否定的である。すなわち、システムまたはシステムの一部が十分に信用に値しないのであり、指定された機能に関してさらなる行動なしに信用されるべきではない。
 
 > Assurance needs can vary and constitute a trade space that must be managed similar to how capability and performance needs can vary. The degree of rigor is the primary means of varying assurance. As shown in Figure 17, a direct relationship exists between the degree of rigor and assurance and the stakeholder’s assessment of the effects of asset loss. The assurance trade space includes the following considerations:
 > * Cost, schedule, and performance

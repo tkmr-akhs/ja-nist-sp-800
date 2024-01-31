@@ -116,11 +116,12 @@ Fig. 3. System of Interest and Interfacing Systems
 
 [^16j]: INCOSEは、一般的なリソースとしてシステムズエンジニアリングハンドブック[15]とシステムズエンジニアリングナレッジブック[13]を提供している。国立航空宇宙局（NASA）も、NASAコミュニティ内で適用されるシステムズエンジニアリングの資料を提供している。出版物には、NASAシステムズエンジニアリングハンドブック[17]と拡張されたシステムズエンジニアリングガイダンスの2巻[18][19]が含まれる。
 
-## ENGINEERING FOR TRUST / 信用に対するエンジニアリング
-> In January 2022, INCOSE released the Systems Engineering Vision 2035 [16]. It is intended to inspire, guide, and inform the strategic direction for the global systems engineering community. A core element identified for the future state of systems engineering is increased confidence in systems to improve the practice of engineering trusted systems.
-
-2022年1月、INCOSEは「システムエンジニアリング・ビジョン2035」[16]を発表した。これは、グローバルなシステムエンジニアリング・コミュニティの戦略的方向性を鼓舞し、導き、情報提供することを目的としている。システムエンジニアリングの将来のあり方について特定された中核的な要素は、信用されるシステムのエンジニアリングの実践を改善するために、システムに対する確信を高めることである。
-
-> As noted in [7], a key problem to address in realizing Vision 2035 is that “systems security has moved from its traditional focus on trust to a more singular focus on risk.” The need is to prove a level of system security through evidence-based assurance.
-
-[7]に記されているように、ビジョン2035を実現するために取り組むべき主要な問題は、「システムのセキュリティは従来の信用に焦点を当てたアプローチから、より単一的なリスクへの焦点に移行している」ということである。必要なのは、証拠に基づく保証を通じて、一定レベルのシステムセキュリティを実証することである。
+> [!NOTE]
+> **ENGINEERING FOR TRUST / 信用に対するエンジニアリング**
+> > In January 2022, INCOSE released the Systems Engineering Vision 2035 [16]. It is intended to inspire, guide, and inform the strategic direction for the global systems engineering community. A core element identified for the future state of systems engineering is increased confidence in systems to improve the practice of engineering trusted systems.
+> 
+> 2022年1月、INCOSEは「システムエンジニアリング・ビジョン2035」[16]を発表した。これは、グローバルなシステムエンジニアリング・コミュニティの戦略的方向性を鼓舞し、導き、情報提供することを目的としている。システムエンジニアリングの将来のあり方について特定された中核的な要素は、信用されるシステムのエンジニアリングの実践を改善するために、システムに対する確信を高めることである。
+> 
+> > As noted in [7], a key problem to address in realizing Vision 2035 is that “systems security has moved from its traditional focus on trust to a more singular focus on risk.” The need is to prove a level of system security through evidence-based assurance.
+> 
+> [7]に記されているように、ビジョン2035を実現するために取り組むべき主要な問題は、「システムのセキュリティは従来の信用に焦点を当てたアプローチから、より単一的なリスクへの焦点に移行している」ということである。必要なのは、証拠に基づく保証を通じて、一定レベルのシステムセキュリティを実証することである。
