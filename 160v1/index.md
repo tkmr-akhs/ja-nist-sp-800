@@ -273,47 +273,48 @@ ITLは、本書の使用において特許侵害を回避するためのライ�
 
 信用性が高く、安全なシステムを工学的に構築することは、システム、コンポーネント、アプリケーション、ネットワークの要件、アーキテクチャ、設計への相当な投資を必要とする重要な取り組みである。信用性の高いシステムは、利害関係者に必要とされる保護と性能を提供するための要件を満たしているという主張を支持する説得力のある証拠を提供する。規律ある、構造化された、標準に基づく一連のシステムセキュリティエンジニアリング活動とタスクを導入することは、必要な変化を開始するための重要な出発点および強制機能を提供する。
 
-> “Providing satisfactory security controls in a computer system is in itself a system design problem. A combination of hardware, software, communications, physical, personnel and administrativeprocedural safeguards is required for comprehensive security. In particular, software safeguards alone are not sufficient.”
+> [!Note]
+> > “Providing satisfactory security controls in a computer system is in itself a system design problem. A combination of hardware, software, communications, physical, personnel and administrativeprocedural safeguards is required for comprehensive security. In particular, software safeguards alone are not sufficient.”
+> > 
+> > “Security Controls for Computer Systems,” (The Ware Report), Rand Corporation
+> > Defense Science Board Task Force on Computer Security, February 1970
 > 
-> “Security Controls for Computer Systems,” (The Ware Report), Rand Corporation
-> Defense Science Board Task Force on Computer Security, February 1970
-
-「コンピュータシステムに満足のいくセキュリティコントロールを提供すること自体が、システム設計の問題である。包括的なセキュリティには、ハードウェア、ソフトウェア、通信、物理的、人事的および管理手続きのセーフガードの組み合わせが必要である。特に、ソフトウェアのセーフガードだけでは不十分である。」
-
-> “Mission assurance requires systems that behave with predictability and proportionality.”
+> 「コンピュータシステムに満足のいくセキュリティコントロールを提供すること自体が、システム設計の問題である。包括的なセキュリティには、ハードウェア、ソフトウェア、通信、物理的、人事的および管理手続きのセーフガードの組み合わせが必要である。特に、ソフトウェアのセーフガードだけでは不十分である。」
 > 
-> General Michael Hayden
-> Former Director National Security Agency (NSA) and Central Intelligence Agency (CIA) Syracuse University,
+> > “Mission assurance requires systems that behave with predictability and proportionality.”
+> > 
+> > General Michael Hayden
+> > Former Director National Security Agency (NSA) and Central Intelligence Agency (CIA) Syracuse University,
 October 2009
-
-「ミッションの保証は、予測可能性と比例性を持って動作するシステムを必要とする。」
-
-> “In the past, it has been assumed that to show that a system is safe, it is sufficient to provide assurance that the process for identifying the hazards has been as comprehensive as possible, and that each identified hazard has one or more associated controls. While historically this approach has been used reasonably effectively to ensure that known risks are controlled, it has become increasingly apparent that evolution to a more holistic approach is needed as systems become more complex and the cost of designing, building, and operating them become more of an issue.”
 > 
-> Preface, National Aeronautics and Space Administration (NASA) System Safety Handbook, Volume 1,
-> November 2011
-
-「過去には、システムが安全であることを示すためには、危険を特定するプロセスが可能な限り網羅的であったことを保証し、特定された各危険に一つ以上の関連するコントロールが存在することを示すことが十分であると考えられていた。このアプローチは歴史的に既知のリスクが管理されることを合理的に効果的に保証するために使用されてきたが、システムがより複雑になり、それらの設計、構築、運用のコストがより問題となるにつれて、より包括的なアプローチへの進化が必要であることが徐々に明らかになってきている。」
-
-> “This whole economic boom in cybersecurity seems largely to be a consequence of poor engineering.”
+> 「ミッションの保証は、予測可能性と比例性を持って動作するシステムを必要とする。」
 > 
-> Carl Landwehr
-> Communications of the Association for Computing Machinery (ACM), February 2015
-
-「このサイバーセキュリティにおける経済的なブームは、主に劣ったエンジニアリングの結果であるように思われる。」
-
-> “Cybersecurity requires more than government action. Protecting our Nation from malicious cyber actors requires the Federal Government to partner with the private sector. The private sector must adapt to the continuously changing threat environment, ensure its products are built and operate securely, and partner with the Federal Government to foster a more secure cyberspace…Incremental improvements will not give us the security we need; instead, the Federal Government needs to make bold changes and significant investments in order to defend the vital institutions that underpin the American way of life.”
+> > “In the past, it has been assumed that to show that a system is safe, it is sufficient to provide assurance that the process for identifying the hazards has been as comprehensive as possible, and that each identified hazard has one or more associated controls. While historically this approach has been used reasonably effectively to ensure that known risks are controlled, it has become increasingly apparent that evolution to a more holistic approach is needed as systems become more complex and the cost of designing, building, and operating them become more of an issue.”
+> > 
+> > Preface, National Aeronautics and Space Administration (NASA) System Safety Handbook, Volume 1,
+> > November 2011
 > 
-> Executive Order (EO) on Improving the Nation’s Cybersecurity, May 2021
-
-「サイバーセキュリティは、政府の行動だけでは足りない。我が国を悪意のあるサイバー行為者から守るためには、連邦政府が民間部門と提携する必要がある。民間部門は、絶えず変化する脅威環境に適応し、製品が安全に構築され、安全に運用されるようにし、より安全なサイバー空間を育成するために連邦政府と提携しなければならない…段階的な改善では、私たちが必要とするセキュリティを提供することはできない。その代わりに、連邦政府は大胆な変更と重要な投資を行う必要があり、アメリカの生活様式を支える重要な機関を守るために努力しなければならない。」
-
-> “[Systems] security engineering must be fundamental to systems engineering, not just a specialty discipline. Security concepts must be fundamental to [an] engineering education, and security proficiency must be fundamental in development teams. Security fundamentals must be clearly understood by stakeholders and effectively evaluated in a way that considers broad goals with security functions and outcomes.”
+> 「過去には、システムが安全であることを示すためには、危険を特定するプロセスが可能な限り網羅的であったことを保証し、特定された各危険に一つ以上の関連するコントロールが存在することを示すことが十分であると考えられていた。このアプローチは歴史的に既知のリスクが管理されることを合理的に効果的に保証するために使用されてきたが、システムがより複雑になり、それらの設計、構築、運用のコストがより問題となるにつれて、より包括的なアプローチへの進化が必要であることが徐々に明らかになってきている。」
 > 
-> Security in the Future of Systems Engineering (FuSE), a Roadmap of Foundational Concepts, INCOSE
-> International Symposium, July 2021
-
-「システムセキュリティエンジニアリングは、単なる専門分野ではなく、システムズ エンジニアリングの基本でなければならない。セキュリティの概念は、エンジニアリング教育の基本でなければならず、開発チームにおけるセキュリティの熟練度も基本でなければならない。セキュリティの基本は、利害関係者によって明確に理解され、セキュリティ機能と結果を考慮した方法で効果的に評価されなければならない。」
+> > “This whole economic boom in cybersecurity seems largely to be a consequence of poor engineering.”
+> > 
+> > Carl Landwehr
+> > Communications of the Association for Computing Machinery (ACM), February 2015
+> 
+> 「このサイバーセキュリティにおける経済的なブームは、主に劣ったエンジニアリングの結果であるように思われる。」
+> 
+> > “Cybersecurity requires more than government action. Protecting our Nation from malicious cyber actors requires the Federal Government to partner with the private sector. The private sector must adapt to the continuously changing threat environment, ensure its products are built and operate securely, and partner with the Federal Government to foster a more secure cyberspace…Incremental improvements will not give us the security we need; instead, the Federal Government needs to make bold changes and significant investments in order to defend the vital institutions that underpin the American way of life.”
+> > 
+> > Executive Order (EO) on Improving the Nation’s Cybersecurity, May 2021
+> 
+> 「サイバーセキュリティは、政府の行動だけでは足りない。我が国を悪意のあるサイバー行為者から守るためには、連邦政府が民間部門と提携する必要がある。民間部門は、絶えず変化する脅威環境に適応し、製品が安全に構築され、安全に運用されるようにし、より安全なサイバー空間を育成するために連邦政府と提携しなければならない…段階的な改善では、私たちが必要とするセキュリティを提供することはできない。その代わりに、連邦政府は大胆な変更と重要な投資を行う必要があり、アメリカの生活様式を支える重要な機関を守るために努力しなければならない。」
+> 
+> > “[Systems] security engineering must be fundamental to systems engineering, not just a specialty discipline. Security concepts must be fundamental to [an] engineering education, and security proficiency must be fundamental in development teams. Security fundamentals must be clearly understood by stakeholders and effectively evaluated in a way that considers broad goals with security functions and outcomes.”
+> > 
+> > Security in the Future of Systems Engineering (FuSE), a Roadmap of Foundational Concepts, INCOSE
+> > International Symposium, July 2021
+> 
+> 「システムセキュリティエンジニアリングは、単なる専門分野ではなく、システムズ エンジニアリングの基本でなければならない。セキュリティの概念は、エンジニアリング教育の基本でなければならず、開発チームにおけるセキュリティの熟練度も基本でなければならない。セキュリティの基本は、利害関係者によって明確に理解され、セキュリティ機能と結果を考慮した方法で効果的に評価されなければならない。」
 
 # Acknowledgments / 謝辞
 The authors gratefully acknowledge and appreciate the significant contributions from individuals and organizations in the public and private sectors whose constructive comments improved the overall quality, thoroughness, and usefulness of this publication. In particular, we wish to thank Jeff Brewer, Ken Cureton, Jordan Denmark, Rick Dove, Holly Dunlap, Jim Foti, Michael Hankins, Daryl Hild, M. Lee, Tom Llanso, Jimmie McEver, Perri Nejib, Cory Ocker, Daniel Patrick Pereira, Victoria Pillitteri, Greg Ritter, Thom Schoeffling, Theresa Soloway, Nick Stegman, Gary Stoneburner, Gregory Touhill, Isabel Van Wyk, Adam Williams, Drew Wilson, Carol Woody, William Young, and Michael Zisa. The authors also wish to acknowledge members of the International Council for Systems Engineering (INCOSE), including members of the Systems Security Engineering and the Resilient Systems Working Groups, for numerous discussions on the content of the document. Finally, the authors wish to thank the students participating in INCOSE tutorials and MITRE Systems Security Engineering courses whose comments and valuable insights helped to guide and inform many of the proposed changes in this publication.
@@ -328,47 +329,51 @@ Alvi Lim, Logan Mailloux, Dennis Mangsen, Doug Maughn, Rosalie McQuaid, Joseph M
 
 Finally, the authors respectfully acknowledge the seminal work in computer security that began in the 1960s. The vision, insights, and dedicated efforts of those early pioneers in computer security serve as the philosophical and technical foundation for the security principles, concepts, methods, and practices employed in this publication to address the critically important problem of engineering trustworthy secure systems.
 
-# VIEWING SECURITY FROM THE PROPER PERSPECTIVE / 適切な視点からのセキュリティ観察
-> “For the first few decades as a burgeoning discipline, cybersecurity has been dominated by the development of widgets to address some aspect of the problem. Systems have become increasingly complex and interconnected, creating even more attack opportunities, which in turn creates even more opportunities to create defensive widgets that will bring some value in detecting or preventing an aspect of the attack space. Eventually, this becomes a game of whack-a-mole in which a simulated mole pops up from one of many holes and the objective is to whack the mole before it pops back in its hole. The moles represent new attacks, and the holes represent a huge array of potential vulnerabilities – both known and as-yet-undiscovered.
+> [!Note]
+> **VIEWING SECURITY FROM THE PROPER PERSPECTIVE / 適切な視点からのセキュリティ観察**
+> > “For the first few decades as a burgeoning discipline, cybersecurity has been dominated by the development of widgets to address some aspect of the problem. Systems have become increasingly complex and interconnected, creating even more attack opportunities, which in turn creates even more opportunities to create defensive widgets that will bring some value in detecting or preventing an aspect of the attack space. Eventually, this becomes a game of whack-a-mole in which a simulated mole pops up from one of many holes and the objective is to whack the mole before it pops back in its hole. The moles represent new attacks, and the holes represent a huge array of potential vulnerabilities – both known and as-yet-undiscovered.
+> > 
+> > Underlying [the discipline of] engineering is science. Sometimes engineering gets ahead of science, such as in bridge building, where the fundamentals of material science were not well understood. Many bridges were built; many fell down; some stayed up; designs of the ones that stayed up were copied. Eventually, for engineering to advance beyond some point, science must catch up with engineering. The science underlying cybersecurity [and more generally, security] engineering is complex and difficult. On the other hand, there is no time like the present to start, because it is both urgent and important to the future.…”
+> > 
+> > -- O. Sami Saydjari
+> >  Engineering Trustworthy Systems McGraw-Hill, August 2018
 > 
-> Underlying [the discipline of] engineering is science. Sometimes engineering gets ahead of science, such as in bridge building, where the fundamentals of material science were not well understood. Many bridges were built; many fell down; some stayed up; designs of the ones that stayed up were copied. Eventually, for engineering to advance beyond some point, science must catch up with engineering. The science underlying cybersecurity [and more generally, security] engineering is complex and difficult. On the other hand, there is no time like the present to start, because it is both urgent and important to the future.…”
+> 「サイバーセキュリティが成長していく新興分野としての最初の数十年間、問題のある側面に対処するためのウィジェットの開発が支配的であった。システムはますます複雑で相互接続され、さらに多くの攻撃機会を生み出し、それがさらに防御ウィジェットを作成する機会を生み出す。これらのウィジェットは、攻撃空間のある側面を検出または防止する価値をもたらす。最終的には、これはモグラたたきのゲームとなり、シミュレートされたモグラが多くの穴の1つから現れ、そのモグラが穴に戻る前にたたくことが目的となる。モグラは新しい攻撃を表し、穴は既知のものもまだ発見されていないものも含む膨大な潜在的脆弱性を表す。
 > 
-> -- O. Sami Saydjari
->  Engineering Trustworthy Systems McGraw-Hill, August 2018
+> エンジニアリングの基盤には科学がある。時にはエンジニアリングが科学を先取りすることがあり、例えば橋の建設では、材料科学の基本が十分に理解されていなかった。多くの橋が建設され、多くが崩壊し、いくつかは残った。残ったものの設計はコピーされた。最終的に、エンジニアリングがある点を超えて進むためには、科学がエンジニアリングに追いつかなければならない。サイバーセキュリティ（そしてより一般的にはセキュリティ）エンジニアリングの基盤となる科学は複雑で難しい。一方で、始めるには今が最適な時期である。なぜなら、それは未来にとって緊急かつ重要だからである…。」
 
-「サイバーセキュリティが成長していく新興分野としての最初の数十年間、問題のある側面に対処するためのウィジェットの開発が支配的であった。システムはますます複雑で相互接続され、さらに多くの攻撃機会を生み出し、それがさらに防御ウィジェットを作成する機会を生み出す。これらのウィジェットは、攻撃空間のある側面を検出または防止する価値をもたらす。最終的には、これはモグラたたきのゲームとなり、シミュレートされたモグラが多くの穴の1つから現れ、そのモグラが穴に戻る前にたたくことが目的となる。モグラは新しい攻撃を表し、穴は既知のものもまだ発見されていないものも含む膨大な潜在的脆弱性を表す。
-
-エンジニアリングの基盤には科学がある。時にはエンジニアリングが科学を先取りすることがあり、例えば橋の建設では、材料科学の基本が十分に理解されていなかった。多くの橋が建設され、多くが崩壊し、いくつかは残った。残ったものの設計はコピーされた。最終的に、エンジニアリングがある点を超えて進むためには、科学がエンジニアリングに追いつかなければならない。サイバーセキュリティ（そしてより一般的にはセキュリティ）エンジニアリングの基盤となる科学は複雑で難しい。一方で、始めるには今が最適な時期である。なぜなら、それは未来にとって緊急かつ重要だからである…。」
-
-# THE IMPORTANCE OF SCIENCE AND ENGINEERING / 科学とエンジニアリングの重要性
-> When crossing a bridge, we have a reasonable expectation that the bridge will not collapse and will get us to our destination without incident. For bridge builders, the focus is on equilibrium, static and dynamic loads, vibrations, and resonance. The science of physics combines with civil engineering principles and concepts to produce a product that we deem trustworthy, giving us a level of confidence that the bridge is fit-for-purpose.
-
-橋を渡る際、私たちはその橋が崩れることなく、何の問題もなく目的地に着くという合理的な期待を持っている。橋の建設者にとって、焦点は平衡、静的および動的荷重、振動、共鳴にある。物理学の科学は土木工学の原理と概念と組み合わさり、私たちが信用できると判断する製品を生み出す。これにより、橋が目的に適しているという信頼感が得られる。
-
-> For system developers, there are also fundamental principles and concepts that can be found in mathematics, computer science, computer and electrical engineering, systems engineering, and software engineering that when properly employed, provide the necessary trustworthiness to engender that same level of confidence.
-
-システム開発者にとっても、数学、コンピュータサイエンス、コンピュータおよび電気工学、システムズ エンジニアリング、ソフトウェアエンジニアリングにおいて見出される基本的な原理と概念があり、これらが適切に用いられることで、必要な信用性を提供し、同じレベルの信頼感を生み出す。
-
-> Trustworthy secure systems are achieved by making a significant and substantial investment in strengthening the underlying systems and system components by employing transdisciplinary systems engineering efforts guided and informed by welldefined security requirements and secure architectures and designs. Such efforts have been proven over time to produce sound engineering-based solutions to complex and challenging systems security problems. Only under those circumstances can we build systems that are adequately secure and exhibit a level of trustworthiness that is sufficient for the purpose for which the system was built.
-
-信用性の高い安全なシステムは、よく定義されたセキュリティ要件と安全なアーキテクチャおよび設計によって導かれ、情報提供される学際的なシステムズ エンジニアリングの努力を用いて、基礎となるシステムおよびシステムコンポーネントを強化するための重要かつ実質的な投資によって達成される。このような努力は、時間をかけて複雑で難しいシステムセキュリティの問題に対する健全な工学ベースの解決策を生み出すことが証明されている。これらの状況の下でのみ、私たちは適切に安全で、システムが構築された目的に十分な信用性を示すシステムを構築することができる。
-
-> “Scientists study the world as it is, engineers create the world that never has been.”
+> [!Note]
+> **THE IMPORTANCE OF SCIENCE AND ENGINEERING / 科学とエンジニアリングの重要性**
+> > When crossing a bridge, we have a reasonable expectation that the bridge will not collapse and will get us to our destination without incident. For bridge builders, the focus is on equilibrium, static and dynamic loads, vibrations, and resonance. The science of physics combines with civil engineering principles and concepts to produce a product that we deem trustworthy, giving us a level of confidence that the bridge is fit-for-purpose.
 > 
-> Theodore von Kármán
-> 1962 National Medal of Science Recipient
-
-「科学者はあるがままの世界を研究するが、エンジニアはこれまでになかった世界を創造する。」
-
-# CRITICAL SYSTEM BEHAVIORS OF THE FUTURE / 未来における重要システムの振る舞い
-> “To deliver system behavior, the systems engineer must define a group of subsystems and precisely how those subsystems are to interact with each other. It is the subsystems and their interactions which produce the system-level behavior. Many of us recognize a vehicle that can take a 60-degree curve at 200 miles per hour as possessing a valuable system behavior. Would we as quickly recognize safe, private, trusted, and available as system behaviors? These behaviors require the same careful system-level design and trades to achieve optimal solutions as the performance system behavior I mentioned above. And there is a clear need — investors want the system to keep their data private, to be safe, and to be trustworthy so that their control is not compromised by a cyber threat, and to be highly available.
+> 橋を渡る際、私たちはその橋が崩れることなく、何の問題もなく目的地に着くという合理的な期待を持っている。橋の建設者にとって、焦点は平衡、静的および動的荷重、振動、共鳴にある。物理学の科学は土木工学の原理と概念と組み合わさり、私たちが信用できると判断する製品を生み出す。これにより、橋が目的に適しているという信頼感が得られる。
 > 
-> If we systems engineers are willing to recognize these behaviors as system behaviors, then we are accountable for delivering them as part of our job. If we choose to view these behaviors as attributes of the parts of our system but not the system as a whole, then we are likely to consider them as jobs for the “specialty engineers.” I’ve looked back into past behaviors of our system engineering community. What I find are examples of systems engineers giving our ‘specialty engineering’ colleagues these challenges by way of the requirements-allocation process. I think we have been wrong to do this. Our “specialty” colleagues are likely to take these allocated requirements and focus on building safe, private, trusted, available parts of a system—rather than in delivering safe, private, trusted, and available system behaviors. It is true you can build a safer system by building safe parts. However, you can’t build a truly safe system without having safe parts interacting with each other in a safe manner. The same can be said for other system behaviors (private, trusted, available, and so on).”
+> > For system developers, there are also fundamental principles and concepts that can be found in mathematics, computer science, computer and electrical engineering, systems engineering, and software engineering that when properly employed, provide the necessary trustworthiness to engender that same level of confidence.
 > 
-> -- John A. Thomas
->  President, INCOSE
->  INCOSE Insight, July 2013.
+> システム開発者にとっても、数学、コンピュータサイエンス、コンピュータおよび電気工学、システムズ エンジニアリング、ソフトウェアエンジニアリングにおいて見出される基本的な原理と概念があり、これらが適切に用いられることで、必要な信用性を提供し、同じレベルの信頼感を生み出す。
+> 
+> > Trustworthy secure systems are achieved by making a significant and substantial investment in strengthening the underlying systems and system components by employing transdisciplinary systems engineering efforts guided and informed by welldefined security requirements and secure architectures and designs. Such efforts have been proven over time to produce sound engineering-based solutions to complex and challenging systems security problems. Only under those circumstances can we build systems that are adequately secure and exhibit a level of trustworthiness that is sufficient for the purpose for which the system was built.
+> 
+> 信用性の高い安全なシステムは、よく定義されたセキュリティ要件と安全なアーキテクチャおよび設計によって導かれ、情報提供される学際的なシステムズ エンジニアリングの努力を用いて、基礎となるシステムおよびシステムコンポーネントを強化するための重要かつ実質的な投資によって達成される。このような努力は、時間をかけて複雑で難しいシステムセキュリティの問題に対する健全な工学ベースの解決策を生み出すことが証明されている。これらの状況の下でのみ、私たちは適切に安全で、システムが構築された目的に十分な信用性を示すシステムを構築することができる。
 
-「システムの振る舞いを実現するために、システムエンジニアは一群のサブシステムを定義し、それらのサブシステムが互いにどのように相互作用するかを正確に決めなければならない。システムレベルの振る舞いを生み出すのは、これらのサブシステムとその相互作用である。多くの人々は、60度のカーブを時速200マイルで曲がることができる車両を、価値あるシステムの振る舞いを持つものと認識する。しかし、安全で、プライベートで、信頼され、利用可能なものをシステムの振る舞いとしてすぐに認識するだろうか？これらの振る舞いは、私が上述した性能システムの振る舞いと同様に、最適な解決策を達成するための慎重なシステムレベルの設計とトレードオフを必要とする。そして、明らかなニーズがある―投資家たちは、システムがデータをプライベートに保ち、安全で、信頼できること、つまりサイバー脅威によってコントロールが妥協されないこと、そして高い可用性を持つことを望んでいる。
+> [!Note]
+> > “Scientists study the world as it is, engineers create the world that never has been.”
+> > 
+> > Theodore von Kármán
+> > 1962 National Medal of Science Recipient
+> 
+> 「科学者はあるがままの世界を研究するが、エンジニアはこれまでになかった世界を創造する。」
 
-もし私たちシステムエンジニアがこれらの振る舞いをシステムの振る舞いとして認識する意志があるなら、私たちはそれらを私たちの仕事の一部として提供する責任がある。これらの振る舞いをシステムの一部としてではなく、システム全体として見ることを選ぶなら、私たちはそれらを「専門のエンジニア」の仕事と考える可能性が高い。私は私たちのシステムズ エンジニアリングコミュニティの過去の振る舞いを振り返ってみた。そこで見つけたのは、システムエンジニアが要件割り当てプロセスを通じて「専門エンジニアリング」の同僚にこれらの課題を与えている例である。これを行うことは間違っていたと思う。私たちの「専門」の同僚は、これらの割り当てられた要件を受け取り、安全で、プライベートで、信頼され、利用可能なシステムの部分を構築することに焦点を当てることが多い―安全で、プライベートで、信頼され、利用可能なシステムの振る舞いを提供するというよりも。安全な部品を構築することでより安全なシステムを構築することは可能であるが、安全な部品が互いに安全な方法で相互作用することなく、本当に安全なシステムを構築することはできない。これは他のシステムの振る舞い（プライベート、信頼、利用可能など）についても同様である。」
+> [!Note]
+> **CRITICAL SYSTEM BEHAVIORS OF THE FUTURE / 未来における重要システムの振る舞い**
+> > “To deliver system behavior, the systems engineer must define a group of subsystems and precisely how those subsystems are to interact with each other. It is the subsystems and their interactions which produce the system-level behavior. Many of us recognize a vehicle that can take a 60-degree curve at 200 miles per hour as possessing a valuable system behavior. Would we as quickly recognize safe, private, trusted, and available as system behaviors? These behaviors require the same careful system-level design and trades to achieve optimal solutions as the performance system behavior I mentioned above. And there is a clear need — investors want the system to keep their data private, to be safe, and to be trustworthy so that their control is not compromised by a cyber threat, and to be highly available.
+> > 
+> > If we systems engineers are willing to recognize these behaviors as system behaviors, then we are accountable for delivering them as part of our job. If we choose to view these behaviors as attributes of the parts of our system but not the system as a whole, then we are likely to consider them as jobs for the “specialty engineers.” I’ve looked back into past behaviors of our system engineering community. What I find are examples of systems engineers giving our ‘specialty engineering’ colleagues these challenges by way of the requirements-allocation process. I think we have been wrong to do this. Our “specialty” colleagues are likely to take these allocated requirements and focus on building safe, private, trusted, available parts of a system—rather than in delivering safe, private, trusted, and available system behaviors. It is true you can build a safer system by building safe parts. However, you can’t build a truly safe system without having safe parts interacting with each other in a safe manner. The same can be said for other system behaviors (private, trusted, available, and so on).”
+> > 
+> > -- John A. Thomas
+> >  President, INCOSE
+> >  INCOSE Insight, July 2013.
+> 
+> 「システムの振る舞いを実現するために、システムエンジニアは一群のサブシステムを定義し、それらのサブシステムが互いにどのように相互作用するかを正確に決めなければならない。システムレベルの振る舞いを生み出すのは、これらのサブシステムとその相互作用である。多くの人々は、60度のカーブを時速200マイルで曲がることができる車両を、価値あるシステムの振る舞いを持つものと認識する。しかし、安全で、プライベートで、信頼され、利用可能なものをシステムの振る舞いとしてすぐに認識するだろうか？これらの振る舞いは、私が上述した性能システムの振る舞いと同様に、最適な解決策を達成するための慎重なシステムレベルの設計とトレードオフを必要とする。そして、明らかなニーズがある―投資家たちは、システムがデータをプライベートに保ち、安全で、信頼できること、つまりサイバー脅威によってコントロールが妥協されないこと、そして高い可用性を持つことを望んでいる。
+> 
+> もし私たちシステムエンジニアがこれらの振る舞いをシステムの振る舞いとして認識する意志があるなら、私たちはそれらを私たちの仕事の一部として提供する責任がある。これらの振る舞いをシステムの一部としてではなく、システム全体として見ることを選ぶなら、私たちはそれらを「専門のエンジニア」の仕事と考える可能性が高い。私は私たちのシステムズ エンジニアリングコミュニティの過去の振る舞いを振り返ってみた。そこで見つけたのは、システムエンジニアが要件割り当てプロセスを通じて「専門エンジニアリング」の同僚にこれらの課題を与えている例である。これを行うことは間違っていたと思う。私たちの「専門」の同僚は、これらの割り当てられた要件を受け取り、安全で、プライベートで、信頼され、利用可能なシステムの部分を構築することに焦点を当てることが多い―安全で、プライベートで、信頼され、利用可能なシステムの振る舞いを提供するというよりも。安全な部品を構築することでより安全なシステムを構築することは可能であるが、安全な部品が互いに安全な方法で相互作用することなく、本当に安全なシステムを構築することはできない。これは他のシステムの振る舞い（プライベート、信頼、利用可能など）についても同様である。」
