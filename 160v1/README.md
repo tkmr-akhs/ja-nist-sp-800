@@ -4,7 +4,7 @@
 基本的には、以下のプロンプトとともに ChatGPT 4 にて翻訳しています。
 
 ```
-Please translate the following sentences into Japanese using the "だ・である" style. 
+Please translate the following sentences into Japanese using the "だ・である" style. Do not omit footnote calls.
 Please translate terms as following:
 - "trust" to "信用" or "信用する"
 - "trusted" to "信用した" or "信用された"
@@ -16,11 +16,14 @@ Please translate terms as following:
 - "demonstrate" to "実証する"
 - "criteria" to "規準"
 - "standard" to "基準"
+- "assurance" to "保証"
+- "assertion" to "言明"
+- "claim" to "主張"
+- "synthetic assurance" to "統合的保証"
 - "systems engineering" to "システムズ エンジニアリング"
 - "interfacing system" to "インターフェイシング システム"
 - "Enabling system" to "イネーブリング システム"
 - "interoperation system" to "インターオペレーティング システム".
 
 --------
-
 ```

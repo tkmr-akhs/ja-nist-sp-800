@@ -153,62 +153,110 @@ NASAのシステム安全ハンドブック[6]では、システムが十分に�
 
 [^90j]: 全ての脆弱性を許容可能なレベルまで緩和することはできない。システムには三つの脆弱性のクラスがある：(1) 存在が知られており、排除されたか、無意味にされた脆弱性、(2) 存在が知られているが十分に緩和されていない脆弱性、そして (3) 不明な脆弱性で、これは不確実性の要素を構成する。つまり、脆弱性が特定されていないという事実は、その脆弱性が存在しないという確信を高めるものではない。配信されたシステム内の脆弱性の影響を判断し、それらの脆弱性によってもたらされるリスクと、時間が経つにつれてのみ知られるようになる脆弱性の存在に関する不確実性を受け入れることは、保証によって対処される重要な側面である。
 
-### F.2.2. Approaches to Assurance
-There are three general approaches to assurance. These assurance approaches can vary based on the type of evidence, how the evidence is acquired, the strength of the judgments made based on the acquired evidence, and the extent to which the assurance matches decision-making needs.
+### F.2.2. Approaches to Assurance / 保証へのアプローチ
+> There are three general approaches to assurance. These assurance approaches can vary based on the type of evidence, how the evidence is acquired, the strength of the judgments made based on the acquired evidence, and the extent to which the assurance matches decision-making needs.
 
-From weakest to strongest, the assurance approaches are axiomatic, analytic, and synthetic.
-* **Axiomatic Assurance** (assurance by assertion) is based on beliefs accepted on faith in an artifact or process. The beliefs are often accepted because they are not contradicted by experiment or demonstration. Axiomatic assurance is not suited to complex scenarios [62].
-  * Demonstration of conformance and compliance are types of axiomatic assurance. While useful, they are not well-suited as the sole basis of assurance for complex scenarios.
-* **Analytic Assurance** (assurance by test and analysis) derives from testing or reasoning to justify conclusions about properties of interest. Belief is relocated from an artifact or process to trust in some method of analysis. The feasibility of establishing an analytic basis depends on the amount of work involved in performing the analysis and on the soundness of any assumptions underlying that analysis. Analytic methods are most relevant in a model that spans all relevant uses and all interfaces to the environment. That is, the model must not ignore too many details.
-  * Testing demonstrates the presence but not the absence of errors and vulnerabilities.
+保証には、一般的に三つのアプローチが存在する。これらの保証のアプローチは、証拠の種類、証拠の取得方法、取得した証拠に基づく判断の強度、及び信頼性が意思決定のニーズにどれだけマッチしているかに応じて変わることがある。
+
+> From weakest to strongest, the assurance approaches are axiomatic, analytic, and synthetic.
+
+保証のアプローチを弱いものから強いものの順に並べると、公理的、分析的、統合的となる。
+
+> * **Axiomatic Assurance** (assurance by assertion) is based on beliefs accepted on faith in an artifact or process. The beliefs are often accepted because they are not contradicted by experiment or demonstration. Axiomatic assurance is not suited to complex scenarios [62].
+>   * Demonstration of conformance and compliance are types of axiomatic assurance. While useful, they are not well-suited as the sole basis of assurance for complex scenarios.
+
+* **公理的保証**（言明による保証）は、成果物やプロセスに対する信念を信仰に基づいて受け入れることに基づいている。これらの信念は、実験や実証によって否定されないためにしばしば受け入れられる。公理的保証は複雑なシナリオには適していない。[62]
+  * 適合性や遵守の実証は公理的保証のタイプである。有用ではあるが、複雑なシナリオの保証の唯一の基盤としては適していない。
+
+> * **Analytic Assurance** (assurance by test and analysis) derives from testing or reasoning to justify conclusions about properties of interest. Belief is relocated from an artifact or process to trust in some method of analysis. The feasibility of establishing an analytic basis depends on the amount of work involved in performing the analysis and on the soundness of any assumptions underlying that analysis. Analytic methods are most relevant in a model that spans all relevant uses and all interfaces to the environment. That is, the model must not ignore too many details.
+>   * Testing demonstrates the presence but not the absence of errors and vulnerabilities.
 Testing and analyses will have uncertainty that cannot be ignored, especially when they lack comprehensiveness. Uncertainty contributes to risk.
 
-* **Synthetic Assurance** (assurance by structured reasoning) derives from the method of composition of the “components of assurance” (i.e., the assurance derives from the manner of synthesis of the constituent parts). It requires that assurance be a consideration at every step of design and implementation, from the smallest components to the final subsystem realization.
-  * The assurance case described in [30] is an example of structured reasoning (Section 4.3).
+* **分析的保証**（テストと分析による保証）は、興味のある特性に関する結論を正当化するためのテストや推論から派生する。信念は成果物やプロセスから分析の方法への信頼に移される。分析的基盤を確立する実現可能性は、分析を行うための作業量と、その分析に基づく仮定の健全性に依存する。分析的方法は、関連するすべての使用法と環境への全てのインターフェイスをカバーするモデルで最も関連性が高い。つまり、モデルはあまりにも多くの詳細を無視してはならない。
+  * テストはエラーや脆弱性の存在を実証するが、その不存在を実証するわけではない。テストと分析には、特に包括性に欠ける場合、無視できない不確実性がある。不確実性はリスクに寄与する。
+
+> * **Synthetic Assurance** (assurance by structured reasoning) derives from the method of composition of the “components of assurance” (i.e., the assurance derives from the manner of synthesis of the constituent parts). It requires that assurance be a consideration at every step of design and implementation, from the smallest components to the final subsystem realization.
+>   * The assurance case described in [30] is an example of structured reasoning (Section 4.3).
 Structured reasoning serves to fill the gaps associated with the axiomatic and analytic assurance approaches. Since synthetic assurance is based on the expert judgment of available evidence, it is not complete. However, synthetic assurance does further reduce uncertainty and, thus, reduces risk.
 
+* **統合的保証**（構造化された推論による保証）は、「保証の要素」（すなわち、構成部分の合成方法から保証が派生する）の構成方法から派生する。これは、最小のコンポーネントから最終的なサブシステムの実現に至るまで、設計と実装の各段階で保証を考慮することを要求する。
+  * [30]に記述されている保証ケースは、構造化された推論の例である（セクション4.3）。構造化された推論は、公理的および分析的保証アプローチに関連するギャップを埋めるために役立つ。統合的保証は利用可能な証拠に基づく専門家の判断に基づいているため、完全ではない。しかし、統合的保証は不確実性をさらに減少させ、それによってリスクを減少させる。
 
 Assurance depends on the quality of the evidence used in arguments demonstrating that claims about the system are satisfied. Assurance evidence can be obtained either directly through measurement, testing, observation, or inspection or indirectly through analysis, including the analysis of data obtained from measurement, testing, observation, or inspection. Evidence must have sufficient quality in accuracy, credibility, relevance, rigor, and quantity. The accuracy, credibility, and relevance of evidence should be confirmed prior to its use. For example, some evidence can support arguments for strength of function, others for negative requirements (i.e., what will not happen), and still other evidence for qualitative properties.
 
-#### ASSURANCE CASE
-An assurance case is a reasoned, auditable artifact that is created to support the contention that a top-level claim is satisfied. The assurance case includes systematic argumentation, evidence, and explicit assumptions that support the claim.
+統合的保証は、システムに関する主張が満たされていることを実証する議論で使用される証拠の品質に依存する。統合的保証の証拠は、直接的に測定、テスト、観察、検査を通じて、または間接的に分析を通じて、測定、テスト、観察、検査から得られたデータの分析を含む方法で得ることができる。証拠は、正確性、信頼性、関連性、厳密さ、量の点で十分な品質を持つ必要がある。証拠の正確性、信頼性、関連性は、使用する前に確認されるべきである。例えば、ある証拠は機能の強度に関する主張を支持することができ、他の証拠は否定的な要件（すなわち、起こらないこと）に対して、また別の証拠は質的特性に対して支持することができる。
 
-An assurance case contains the following elements [30]:
-* One or more claims about properties
-* Arguments that logically link the evidence and any assumptions
-* A body of evidence
-* Justification of the choice of a top-level claim and the method of reasoning
+#### ASSURANCE CASE / 保証ケース
+> An assurance case is a reasoned, auditable artifact that is created to support the contention that a top-level claim is satisfied. The assurance case includes systematic argumentation, evidence, and explicit assumptions that support the claim.
 
-Assurance cases have numerous advantages over other means for obtaining confidence, such as in the areas of comprehension, informing needed allocation responsibilities, information organization, and robust due diligence [63]. These advantages were greater in areas with otherwise insufficient methods for achieving high assurance. Additionally, assurance cases were determined to be more efficient for complex and novel systems, as well as systems in need of high assurance.
+保証ケースは、上位レベルの主張が満たされているという論争を支持するために作成される、合理的で監査可能な成果物である。保証ケースには、主張を支持するための体系的な論証、証拠、そして明示的な前提が含まれている。
 
-Many formalizations and tools for building assurance cases have been developed in recent years, including the Goal Structuring Notation (GSN) [64] and NASA’s AdvoCATE: Assurance Case Automation Toolset [65].
+> An assurance case contains the following elements [30]:
+> * One or more claims about properties
+> * Arguments that logically link the evidence and any assumptions
+> * A body of evidence
+> * Justification of the choice of a top-level claim and the method of reasoning
+
+保証ケースには以下の要素が含まれる[30]：
+* 特性に関する一つ以上の主張
+* 証拠と任意の前提を論理的に結びつける論証
+* 証拠の本体
+* 上位レベルの主張の選択と推論方法の正当化
+
+> Assurance cases have numerous advantages over other means for obtaining confidence, such as in the areas of comprehension, informing needed allocation responsibilities, information organization, and robust due diligence [63]. These advantages were greater in areas with otherwise insufficient methods for achieving high assurance. Additionally, assurance cases were determined to be more efficient for complex and novel systems, as well as systems in need of high assurance.
+
+保証ケースは、理解、必要な責任分担の情報提供、情報の整理、および厳格な適切な注意[63]の領域など、確信を得るための他の手段よりも多くの利点がある。これらの利点は、高度な保証を達成するための方法が不十分な領域でより大きかった。さらに、保証ケースは、複雑で革新的なシステムや、高度な保証が必要なシステムに対してより効率的であると判断された。
+
+> Many formalizations and tools for building assurance cases have been developed in recent years, including the Goal Structuring Notation (GSN) [64] and NASA’s AdvoCATE: Assurance Case Automation Toolset [65].
+
+近年、保証ケースを構築するための多くの形式化手法とツールが開発されている。これには、ゴール構造化表記（GSN）[64]やNASAのAdvoCATE：保証ケース自動化ツールセット[65]が含まれる。
 
 ### F.2.3. Assurance Needs
-Assurance is a need that is to be engineered and satisfied similar to the need to engineer the system capability to satisfy specified capability needs. Assurance needs for trustworthy secure systems are grounded in the concerns of loss and adverse effects due to intentional and unintentional adversity (Commensurate Trustworthiness, Substantiated Trustworthiness, Commensurate Rigor). Assurance needs include the evidence-basis for reasoning, the degree of rigor to acquire and interpret the evidence, and the selection of the methods, tools, and processes used throughout the system life cycle. Similar to capability and performance needs, assurance needs, expectations, priorities, and constraints should be expressed as system requirements and achieved, tracked, and maintained within the systems engineering effort.
+> Assurance is a need that is to be engineered and satisfied similar to the need to engineer the system capability to satisfy specified capability needs. Assurance needs for trustworthy secure systems are grounded in the concerns of loss and adverse effects due to intentional and unintentional adversity (Commensurate Trustworthiness, Substantiated Trustworthiness, Commensurate Rigor). Assurance needs include the evidence-basis for reasoning, the degree of rigor to acquire and interpret the evidence, and the selection of the methods, tools, and processes used throughout the system life cycle. Similar to capability and performance needs, assurance needs, expectations, priorities, and constraints should be expressed as system requirements and achieved, tracked, and maintained within the systems engineering effort.
 
-Assurance needs determine the type of evidence and the rigor associated with the activities, methods, and tools used to acquire the evidence to satisfy the following cases:
-* *What is to be accomplished in the systems engineering effort*: The realization of the design for a secure system
-* *The means to conduct the systems engineering effort*: The methods, processes, and tools employed (driven by rigor and assurance objectives) to realize the design for a secure system
-* *The results of the systems engineering effort*: The substantiated effectiveness of the realized design of the secure system
+保証は、指定された能力ニーズを満たすためのシステム能力をエンジニアリングする必要性と同様に、エンジニアリングされ、満たされるべきニーズである。信用に値するセキュアなシステムのための保証ニーズは、意図的および非意図的な逆境による損失と悪影響の懸念に基づいている（相応の信用性、裏付けられた信用性、相応の厳密さ）。保証ニーズには、推論のための証拠基盤、証拠を取得し解釈するための厳密さの度合い、およびシステムのライフサイクルを通じて使用される方法、ツール、プロセスの選択が含まれる。能力およびパフォーマンスのニーズと同様に、保証ニーズ、期待、優先順位、制約はシステム要件として表現され、システムズ エンジニアリングの努力の中で達成され、追跡され、維持されるべきである。
 
-#### CONFIDENCE MAY BE NEGATIVE
-Assurance evidence can support a conclusion that a stated claim is not achieved or that there is an insufficient basis to conclude that the claim is supported or not supported. In either case, the assurance is negative relative to the goal of substantiating the claim. That is, the system or some part of the system is not sufficiently trustworthy and should not be trusted relative to its specified function without further action.
+> Assurance needs determine the type of evidence and the rigor associated with the activities, methods, and tools used to acquire the evidence to satisfy the following cases:
+> * *What is to be accomplished in the systems engineering effort*: The realization of the design for a secure system
+> * *The means to conduct the systems engineering effort*: The methods, processes, and tools employed (driven by rigor and assurance objectives) to realize the design for a secure system
+> * *The results of the systems engineering effort*: The substantiated effectiveness of the realized design of the secure system
 
-Assurance needs can vary and constitute a trade space that must be managed similar to how capability and performance needs can vary. The degree of rigor is the primary means of varying assurance. As shown in Figure 17, a direct relationship exists between the degree of rigor and assurance and the stakeholder’s assessment of the effects of asset loss. The assurance trade space includes the following considerations:
-* Cost, schedule, and performance
-* Architecture and design decisions
-* Selection of technology and solutions
-* Selection and employment of methods and tools
-* Qualifications necessary for subject-matter experts
+保証ニーズは、以下のケースを満たすために証拠を取得する活動、方法、およびツールに関連する証拠の種類と厳密さを決定する：
+* *システムズ エンジニアリングの努力で達成すべきこと*：セキュアなシステムのための設計の実現
+* *システムズ エンジニアリングの努力を行う手段*：セキュアなシステムの設計を実現するために用いられる方法、プロセス、およびツール（厳密さと保証の目的によって推進される）
+* *システムズ エンジニアリングの努力の結果*：セキュアなシステムの実現された設計の裏付けられた効果性
 
+#### CONFIDENCE MAY BE NEGATIVE / 確信は否定的である可能性がある
+> Assurance evidence can support a conclusion that a stated claim is not achieved or that there is an insufficient basis to conclude that the claim is supported or not supported. In either case, the assurance is negative relative to the goal of substantiating the claim. That is, the system or some part of the system is not sufficiently trustworthy and should not be trusted relative to its specified function without further action.
 
+保証の証拠は、特定の主張が達成されていない、または主張が支持されているかどうかを結論付けるための十分な根拠がないという結論を支持することができる。いずれの場合も、保証は主張の裏付けという目標に対して否定的である。すなわち、システムまたはシステムの一部が十分に信用に値しないのであり、指定された機能に関してさらなる行動なしに信用されるべきではない。
 
-Requirements analysis across stakeholder and system requirements determines the threshold degree of rigor that is required. When a system cannot practicably meet the needed degrees of rigor, stakeholders should have a means to determine if they will accept the associated risk.
+> Assurance needs can vary and constitute a trade space that must be managed similar to how capability and performance needs can vary. The degree of rigor is the primary means of varying assurance. As shown in Figure 17, a direct relationship exists between the degree of rigor and assurance and the stakeholder’s assessment of the effects of asset loss. The assurance trade space includes the following considerations:
+> * Cost, schedule, and performance
+> * Architecture and design decisions
+> * Selection of technology and solutions
+> * Selection and employment of methods and tools
+> * Qualifications necessary for subject-matter experts
+
+保証ニーズは変動する可能性があり、能力やパフォーマンスのニーズが変動するのと同様に管理されるべきトレードの空間を構成する。厳密さの程度は、保証を変動させる主要な手段である。図17に示されているように、厳密さと保証の程度と、利害関係者による資産損失の影響の評価との間には直接的な関係が存在する。保証のトレード空間には、以下の考慮事項が含まれる：
+* コスト、スケジュール、およびパフォーマンス
+* アーキテクチャおよび設計の決定
+* 技術およびソリューションの選択
+* 方法およびツールの選択と使用
+* 主題専門家に必要な資格条件
+
+> Requirements analysis across stakeholder and system requirements determines the threshold degree of rigor that is required. When a system cannot practicably meet the needed degrees of rigor, stakeholders should have a means to determine if they will accept the associated risk.
+
+利害関係者およびシステム要件を通じた要件分析は、必要とされる厳密さの閾値の程度を決定する。システムが実際に必要な厳密さの程度を満たすことができない場合、利害関係者は関連するリスクを受け入れるかどうかを判断する手段を持つべきである。
 
 ![Fig. 17. Assurance and Degree of Rigor in Realizing a Capability Need](fig17.png)
 
 Fig. 17. Assurance and Degree of Rigor in Realizing a Capability Need
 
-The highest levels of rigor across systems can require formal methods – techniques that model systems as mathematical entities to enable rigorous verification of the system’s properties through mathematical proofs. Formal methods depend on formal specifications (i.e., statements in a language whose vocabulary, syntax, and semantics are formally defined) and a variety of models, including a formal security policy model (i.e., a mathematically rigorous specification of a system’s security policy [Appendix C]).
+> The highest levels of rigor across systems can require formal methods – techniques that model systems as mathematical entities to enable rigorous verification of the system’s properties through mathematical proofs. Formal methods depend on formal specifications (i.e., statements in a language whose vocabulary, syntax, and semantics are formally defined) and a variety of models, including a formal security policy model (i.e., a mathematically rigorous specification of a system’s security policy [Appendix C]).
 
-Due to associated costs and complexity, formal methods are typically limited to engineering efforts where only the highest levels of assurance are needed, such as the formal modeling, specification, and verification of security policy and the implementation that enforces the policy (Section D.4.2). In this case, the security policy model is verified as complete for its scope of control and as self-consistent. The verified security policy model then serves as a foundation to verify the models of the design and implementation of the mechanisms that provide for decisionmaking and the enforcement of those decisions.
+システム全体で最高レベルの厳密さを求める場合、公式な方法が必要となることがある。これはシステムを数学的な実体としてモデル化し、数学的な証明を通じてシステムの特性を厳格に検証する技術である。公式な方法は、公式仕様（すなわち、語彙、構文、意味論が形式的に定義された言語での声明）と、公式セキュリティポリシーモデル（すなわち、システムのセキュリティポリシーの数学的に厳格な仕様\[[付録C](Appendex-C.md)]）を含む様々なモデルに依存する。
+
+> Due to associated costs and complexity, formal methods are typically limited to engineering efforts where only the highest levels of assurance are needed, such as the formal modeling, specification, and verification of security policy and the implementation that enforces the policy (Section D.4.2). In this case, the security policy model is verified as complete for its scope of control and as self-consistent. The verified security policy model then serves as a foundation to verify the models of the design and implementation of the mechanisms that provide for decisionmaking and the enforcement of those decisions.
+
+関連するコストと複雑さのため、公式な方法は通常、最高レベルの保証が必要なエンジニアリング努力に限定される。例えば、セキュリティポリシーの公式モデリング、仕様、および検証、そしてそのポリシーを施行する実装（セクションD.4.2）。この場合、セキュリティポリシーモデルは、その管理範囲において完全であり、自己一貫性があるとして検証される。検証されたセキュリティポリシーモデルは、意思決定を行い、それらの決定を施行するためのメカニズムの設計と実装のモデルを検証するための基盤として機能する。
